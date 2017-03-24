@@ -204,6 +204,11 @@ on enable-low-power
     write /dev/blkio/blkio.group_idle 2000
     write /dev/blkio/background/blkio.group_idle 0
 
+    # Set default schedTune value for foreground/top-app
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+
     # Turn off scheduler boost at the end
     write /proc/sys/kernel/sched_boost 0
 
