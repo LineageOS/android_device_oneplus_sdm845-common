@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# QTI
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
