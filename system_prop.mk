@@ -18,7 +18,8 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.min.duration.secs=30 \
     persist.vendor.audio.hac.enable=false \
-    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
+    ro.config.media_vol_steps=25
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
