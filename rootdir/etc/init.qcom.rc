@@ -1,3 +1,32 @@
+on boot
+    # Touchpanel
+    chmod 0660 /proc/touchpanel/double_swipe_enable
+    chmod 0660 /proc/touchpanel/down_arrow_enable
+    chmod 0660 /proc/touchpanel/down_swipe_enable
+    chmod 0660 /proc/touchpanel/left_arrow_enable
+    chmod 0660 /proc/touchpanel/left_swipe_enable
+    chmod 0660 /proc/touchpanel/letter_m_enable
+    chmod 0660 /proc/touchpanel/letter_o_enable
+    chmod 0660 /proc/touchpanel/letter_s_enable
+    chmod 0660 /proc/touchpanel/letter_w_enable
+    chmod 0660 /proc/touchpanel/right_arrow_enabl
+    chmod 0660 /proc/touchpanel/right_swipe_enabl
+    chmod 0660 /proc/touchpanel/up_arrow_enable
+    chmod 0660 /proc/touchpanel/up_swipe_enable
+    chown system system /proc/touchpanel/double_swipe_enable
+    chown system system /proc/touchpanel/down_arrow_enable
+    chown system system /proc/touchpanel/down_swipe_enable
+    chown system system /proc/touchpanel/left_arrow_enable
+    chown system system /proc/touchpanel/left_swipe_enable
+    chown system system /proc/touchpanel/letter_m_enable
+    chown system system /proc/touchpanel/letter_o_enable
+    chown system system /proc/touchpanel/letter_s_enable
+    chown system system /proc/touchpanel/letter_w_enable
+    chown system system /proc/touchpanel/right_arrow_enabl
+    chown system system /proc/touchpanel/right_swipe_enabl
+    chown system system /proc/touchpanel/up_arrow_enable
+    chown system system /proc/touchpanel/up_swipe_enable
+
 service dashd /sbin/dashd
     class core
     critical
