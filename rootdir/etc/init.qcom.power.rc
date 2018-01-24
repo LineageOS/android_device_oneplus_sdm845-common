@@ -87,6 +87,19 @@ on charger
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
 
+    # Lock to lowest frequency on charger mode
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor powersave
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor powersave
+
+    # Offline all cores except cpu0
+    write /sys/devices/system/cpu/cpu1/online 0
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/devices/system/cpu/cpu4/online 0
+    write /sys/devices/system/cpu/cpu5/online 0
+    write /sys/devices/system/cpu/cpu6/online 0
+    write /sys/devices/system/cpu/cpu7/online 0
+
 on enable-low-power
     # Set the default IRQ affinity to the silver cluster.
     # When a CPU is isolated/hotplugged, the IRQ affinity is adjusted
