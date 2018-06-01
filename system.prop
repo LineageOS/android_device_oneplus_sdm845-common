@@ -14,6 +14,7 @@ persist.vendor.cne.feature=1
 persist.debug.coresight.config=stm-events
 
 # Display
+debug.sf.early_phase_offset_ns=5000000
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 
