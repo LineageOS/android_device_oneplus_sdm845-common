@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "14f94524_676e0e2d",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 14
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-07-01T19:48:23Z",
+      "side": 1,
+      "message": "No-op",
+      "range": {
+        "startLine": 252,
+        "startChar": 0,
+        "endLine": 255,
+        "endChar": 59
+      },
+      "revId": "e72cd977a34f48a819ec8570c8f27bbb2333c599",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d7f84053_303f2812",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 14
+      },
+      "lineNbr": 269,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-07-01T19:48:23Z",
+      "side": 1,
+      "message": "Is this really necessary?",
+      "range": {
+        "startLine": 266,
+        "startChar": 0,
+        "endLine": 269,
+        "endChar": 75
+      },
+      "revId": "e72cd977a34f48a819ec8570c8f27bbb2333c599",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "83142643_3205ec4a",
+        "filename": "overlay/packages/services/Telephony/res/values/config.xml",
+        "patchSetId": 14
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-07-01T19:48:23Z",
+      "side": 1,
+      "message": "This (along with several other flags in here) are no-ops, that either don\u0027t matter or are now carrier config options.",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 40
+      },
+      "revId": "e72cd977a34f48a819ec8570c8f27bbb2333c599",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b91ce05a_f78bfd70",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-07-01T19:48:23Z",
+      "side": 1,
+      "message": "This is gross, it really should be aligned",
+      "revId": "e72cd977a34f48a819ec8570c8f27bbb2333c599",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fb796d7d_f77f5849",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 14
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-07-01T19:48:23Z",
+      "side": 1,
+      "message": "lol",
+      "range": {
+        "startLine": 37,
+        "startChar": 14,
+        "endLine": 37,
+        "endChar": 33
+      },
+      "revId": "e72cd977a34f48a819ec8570c8f27bbb2333c599",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
