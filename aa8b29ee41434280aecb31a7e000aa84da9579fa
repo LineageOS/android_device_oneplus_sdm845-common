@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "421f8e6d_98e7a026",
+        "filename": "common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-01T12:45:45Z",
+      "side": 1,
+      "message": "You probably don\u0027t need this - https://github.com/LineageOS/android_build/blob/lineage-15.1/target/product/treble_common.mk#L43-L44.\n\nAt the same time, you forgot to set:\n\nUSE_XML_AUDIO_POLICY_CONF :\u003d 1",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 108
+      },
+      "revId": "aa8b29ee41434280aecb31a7e000aa84da9579fa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

@@ -69,6 +69,30 @@
       "revId": "5e03c19ab447d93c998b51ac1b98725cc3ac0f62",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "35d282d6_18033c27",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-01T12:45:45Z",
+      "side": 1,
+      "message": "I still think it fits better on a device tree, rather than a common device tree. Just my 2 cents.",
+      "parentUuid": "bfff30f4_22506f67",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 81
+      },
+      "revId": "5e03c19ab447d93c998b51ac1b98725cc3ac0f62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
