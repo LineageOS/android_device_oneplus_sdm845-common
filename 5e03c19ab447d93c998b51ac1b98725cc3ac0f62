@@ -45,6 +45,30 @@
       "revId": "5e03c19ab447d93c998b51ac1b98725cc3ac0f62",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bfff30f4_22506f67",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-07-01T12:39:10Z",
+      "side": 1,
+      "message": "I don\u0027t think that\u0027s necessary.\nThe T variant (if it\u0027s still sdm845) will launch with MR1 as well most likely. And for the unlikely case that it doesn\u0027t, we can move it at that point.",
+      "parentUuid": "0976c5da_3b839d86",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 81
+      },
+      "revId": "5e03c19ab447d93c998b51ac1b98725cc3ac0f62",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
