@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "15fefbe9_eb22b6bf",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-01T14:14:49Z",
+      "side": 1,
+      "message": "Package name providing network location support. Used only when config_enableNetworkLocationOverlay is false.",
+      "range": {
+        "startLine": 305,
+        "startChar": 4,
+        "endLine": 305,
+        "endChar": 112
+      },
+      "revId": "9bdc11176ff89bf89e62d81c7b0b54f24044dbc9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "70bbc069_aaf41cbe",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 306,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-01T14:14:49Z",
+      "side": 1,
+      "message": "Package name providing fused location support. Used only when config_enableFusedLocationOverlay is false.",
+      "range": {
+        "startLine": 306,
+        "startChar": 4,
+        "endLine": 306,
+        "endChar": 110
+      },
+      "revId": "9bdc11176ff89bf89e62d81c7b0b54f24044dbc9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
