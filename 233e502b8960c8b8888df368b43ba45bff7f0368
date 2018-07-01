@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "afdb0590_a5803829",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-07-01T11:25:13Z",
+      "side": 1,
+      "message": "stock uses kryo300 that isn\u0027t supported on lineage platform yet.",
+      "range": {
+        "startLine": 28,
+        "startChar": 22,
+        "endLine": 28,
+        "endChar": 26
+      },
+      "revId": "233e502b8960c8b8888df368b43ba45bff7f0368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca95985f_9576700e",
         "filename": "BoardConfigCommon.mk",
         "patchSetId": 1
