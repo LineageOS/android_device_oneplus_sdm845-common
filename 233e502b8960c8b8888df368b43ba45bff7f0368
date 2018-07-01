@@ -72,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "27f0bdc3_4d3b4d90",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-01T12:49:36Z",
+      "side": 1,
+      "message": "no, oneplus fucked up",
+      "parentUuid": "dacbbd6d_b701939c",
+      "range": {
+        "startLine": 34,
+        "startChar": 26,
+        "endLine": 34,
+        "endChar": 35
+      },
+      "revId": "233e502b8960c8b8888df368b43ba45bff7f0368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca95985f_9576700e",
         "filename": "BoardConfigCommon.mk",
         "patchSetId": 1
