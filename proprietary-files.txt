@@ -1,0 +1,8 @@
+# IOP
+lib64/vendor.qti.hardware.iop@2.0.so
+lib/vendor.qti.hardware.iop@2.0.so
+
+# Telephony
+-app/QtiTelephonyService/QtiTelephonyService.apk
+etc/permissions/qcrilhook.xml
+framework/qcrilhook.jar
