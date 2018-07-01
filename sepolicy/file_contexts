@@ -1,0 +1,4 @@
+# Files in rootfs
+/op1(/.*)?               u:object_r:op1_file:s0
+/op2(/.*)?               u:object_r:op2_file:s0
+/bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
