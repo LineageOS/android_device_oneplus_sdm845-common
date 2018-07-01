@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "dacbbd6d_b701939c",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-01T12:47:48Z",
+      "side": 1,
+      "message": "Isn\u0027t this kryo300 as well?",
+      "range": {
+        "startLine": 34,
+        "startChar": 26,
+        "endLine": 34,
+        "endChar": 35
+      },
+      "revId": "233e502b8960c8b8888df368b43ba45bff7f0368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ca95985f_9576700e",
         "filename": "BoardConfigCommon.mk",
         "patchSetId": 1
