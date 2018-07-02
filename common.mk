@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.qcom
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
