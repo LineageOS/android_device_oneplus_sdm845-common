@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Lights
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.lights=oneplus666
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,20

@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.oneplus666
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
