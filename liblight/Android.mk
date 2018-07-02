@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +12,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Lights
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.lights=oneplus666
+LOCAL_PATH := $(call my-dir)
 
-# Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=22,20
+include $(CLEAR_VARS)
+LOCAL_HEADER_LIBRARIES += libhardware_headers
+
+LOCAL_SRC_FILES := lights.c
+LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_SHARED_LIBRARIES := liblog libcutils
+LOCAL_CFLAGS := -DLOG_TAG=\"qdlights\" -Wall -Wextra -Werror
+LOCAL_MODULE := lights.oneplus666
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
