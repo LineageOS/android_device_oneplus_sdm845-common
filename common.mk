@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.oneplus666
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
