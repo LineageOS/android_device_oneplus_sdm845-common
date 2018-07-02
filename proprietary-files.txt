@@ -1,3 +1,6 @@
+# DASH
+-sbin/dashd;rootfs
+
 # IOP
 lib64/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.iop@2.0.so
