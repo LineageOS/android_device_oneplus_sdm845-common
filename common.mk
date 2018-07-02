@@ -32,6 +32,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
