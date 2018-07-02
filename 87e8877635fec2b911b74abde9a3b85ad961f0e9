@@ -93,6 +93,30 @@
       "revId": "87e8877635fec2b911b74abde9a3b85ad961f0e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "49e7dbc4_6d82f937",
+        "filename": "system_prop.mk",
+        "patchSetId": 19
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-07-02T08:27:31Z",
+      "side": 1,
+      "message": "you can trust me that it ends up in proper place.",
+      "parentUuid": "d4729b93_e955b43c",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 26
+      },
+      "revId": "87e8877635fec2b911b74abde9a3b85ad961f0e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
