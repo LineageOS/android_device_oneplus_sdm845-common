@@ -45,6 +45,30 @@
       "revId": "6345de3e49f26c7b0f7501f1d87ff61a18fc2484",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "41c03fdb_c1f5c677",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 22
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-07-02T11:00:08Z",
+      "side": 1,
+      "message": "this whole fstab is pretty much useless, it\u0027ll be only used for generating OTA packages lol.",
+      "parentUuid": "3f9b110c_2e96fb99",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 140
+      },
+      "revId": "6345de3e49f26c7b0f7501f1d87ff61a18fc2484",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
