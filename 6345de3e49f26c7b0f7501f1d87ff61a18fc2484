@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6efda4ce_e42c5d06",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 22
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-02T10:59:20Z",
+      "side": 1,
+      "message": "Duplicated bellow",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 146
+      },
+      "revId": "6345de3e49f26c7b0f7501f1d87ff61a18fc2484",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f9b110c_2e96fb99",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 22
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-02T10:59:20Z",
+      "side": 1,
+      "message": "Useless. androidboot.usbcontroller\u003da600000.dwc3",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 140
+      },
+      "revId": "6345de3e49f26c7b0f7501f1d87ff61a18fc2484",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
