@@ -95,6 +95,7 @@ TARGET_USES_MKE2FS := true
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware odm op1 op2 persist
 
 # Sepolicy
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
