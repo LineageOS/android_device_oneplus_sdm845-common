@@ -32,6 +32,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
+# Common init scripts
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan
