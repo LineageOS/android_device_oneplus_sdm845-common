@@ -8,6 +8,9 @@ framework/com.quicinc.cne.api-V1.0-java.jar
 framework/com.quicinc.cne.jar
 -priv-app/CNEService/CNEService.apk
 
+# DASH
+-sbin/dashd;rootfs
+
 # IOP
 lib64/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.iop@2.0.so
