@@ -5,3 +5,6 @@
 /op1(/.*)?               u:object_r:op1_file:s0
 /op2(/.*)?               u:object_r:op2_file:s0
 /persist(/.*)?           u:object_r:persist_file:s0
+
+# Lights
+/system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
