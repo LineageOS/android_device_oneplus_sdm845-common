@@ -19,8 +19,11 @@
 #define LOG_TAG "LightsService"
 
 #include "Light.h"
-#include <log/log.h>
+#include <android-base/logging.h>
+#include <android-base/stringprintf.h>
 #include <fstream>
+
+#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
 namespace android {
 namespace hardware {
@@ -31,28 +34,26 @@ namespace implementation {
 /*
  * Write value to path and close file.
  */
-static void set(const std::string& path, std::string value) {
+template <typename T>
+static void set(const std::string& path, T value) {
     std::ofstream file(path);
     file << value;
 }
 
-static void set(const std::string& path, int value) {
-    set(path, std::to_string(value));
-}
-
-static int get(const std::string& path) {
+template <typename T>
+static T get(const std::string& path, const T& def) {
     std::ifstream file(path);
-    int result;
+    T result;
 
     file >> result;
-    return file.fail() ? -1 : result;
+    return file.fail() ? def : result;
 }
 
 static int rgbToBrightness(const LightState& state)
 {
     int color = state.color & 0x00ffffff;
-    return ((77 * ((color>>16) & 0x00ff))
-            + (150 * ((color>>8) & 0x00ff))
+    return ((77 * ((color >> 16) & 0x00ff))
+            + (150 * ((color >> 8) & 0x00ff))
             + (29 * (color & 0x00ff))) >> 8;
 }
 
@@ -66,14 +67,15 @@ Light::Light() {
 }
 
 void Light::handleBacklight(const LightState& state) {
-    int maxBrightness = get("/sys/class/backlight/panel0-backlight/max_brightness");
+    static int maxBrightness = get<int>("/sys/class/backlight/panel0-backlight/max_brightness", -1);
     if (maxBrightness < 0) {
         maxBrightness = 255;
     }
     int sentBrightness = rgbToBrightness(state);
     int brightness = sentBrightness * maxBrightness / 255;
-    ALOGD("Writing backlight brightness %d (orig %d)", brightness, sentBrightness);
-    set("/sys/class/backlight/panel0-backlight/brightness", brightness);
+    LOG(DEBUG) << "Writing backlight brightness " << std::to_string(brightness)
+               << " (orig " << sentBrightness << ")";
+    set<int>("/sys/class/backlight/panel0-backlight/brightness", brightness);
 }
 
 void Light::handleRgb(const LightState& state, size_t index) {
@@ -104,7 +106,7 @@ void Light::handleRgb(const LightState& state, size_t index) {
     };
     auto getScaledDutyPercent = [](int brightness) -> std::string {
         std::string output;
-        for (size_t i = 0; i < sizeof(kBrightnessRamp) / sizeof (kBrightnessRamp[0]); i++) {
+        for (size_t i = 0; i < ARRAY_SIZE(kBrightnessRamp); i++) {
             if (i != 0) {
                 output += ",";
             }
@@ -115,7 +117,7 @@ void Light::handleRgb(const LightState& state, size_t index) {
 
     // Disable all blinking before starting
     for (const auto& entry : colorValues) {
-        set(makeLedPath(entry.first, "blink"), 0);
+        set<int>(makeLedPath(entry.first, "blink"), 0);
     }
 
     if (onMs > 0 && offMs > 0) {
@@ -129,28 +131,29 @@ void Light::handleRgb(const LightState& state, size_t index) {
         }
 
         for (const auto& entry : colorValues) {
-            set(makeLedPath(entry.first, "start_idx"), 0);
-            set(makeLedPath(entry.first, "duty_pcts"), getScaledDutyPercent(entry.second));
-            set(makeLedPath(entry.first, "pause_lo"), offMs);
+            set<int>(makeLedPath(entry.first, "start_idx"), 0);
+            set<std::string>(makeLedPath(entry.first, "duty_pcts"), getScaledDutyPercent(entry.second));
+            set<int>(makeLedPath(entry.first, "pause_lo"), offMs);
             // The led driver is configured to ramp up then ramp
             // down the lut. This effectively doubles the ramp duration.
-            set(makeLedPath(entry.first, "pause_hi"), pauseHi);
-            set(makeLedPath(entry.first, "ramp_step_ms"), stepDuration);
+            set<int>(makeLedPath(entry.first, "pause_hi"), pauseHi);
+            set<int>(makeLedPath(entry.first, "ramp_step_ms"), stepDuration);
         }
 
         // Start blinking
         for (const auto& entry : colorValues) {
-            set(makeLedPath(entry.first, "blink"), entry.second);
+            set<int>(makeLedPath(entry.first, "blink"), entry.second);
         }
     } else {
         for (const auto& entry : colorValues) {
-            set(makeLedPath(entry.first, "brightness"), entry.second);
+            set<int>(makeLedPath(entry.first, "brightness"), entry.second);
         }
     }
 
-    ALOGD("handleRgb: mode=%d, color=%08X, onMs=%d, offMs=%d\n",
-          static_cast<std::underlying_type<Flash>::type>(stateToUse.flashMode),
-          stateToUse.color, onMs, offMs);
+    LOG(DEBUG) << base::StringPrintf(
+        "handleRgb: mode=%d, color=%08X, onMs=%d, offMs=%d",
+        static_cast<std::underlying_type<Flash>::type>(stateToUse.flashMode), stateToUse.color,
+        onMs, offMs);
 }
 
 Return<Status> Light::setLight(Type type, const LightState& state) {
