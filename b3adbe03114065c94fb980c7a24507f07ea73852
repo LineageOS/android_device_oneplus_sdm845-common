@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f35d3fb_01c588ef",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 40
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-07-05T19:42:56Z",
+      "side": 1,
+      "message": "I wouldn\u0027t do this as static, as you\u0027ll never get to re-read if first time fails. I\u0027d rather do it as member and like this:\n\nif (mMaxBrightness \u003c 0) {\n    mMaxBrightness \u003d get\u003cint\u003e(...);\n}",
+      "revId": "b3adbe03114065c94fb980c7a24507f07ea73852",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f3bb54ed_7910ae03",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 40
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-07-05T19:42:56Z",
+      "side": 1,
+      "message": "Can use operator[] here:\n\nmLightStates[index] \u003d state;",
+      "revId": "b3adbe03114065c94fb980c7a24507f07ea73852",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
