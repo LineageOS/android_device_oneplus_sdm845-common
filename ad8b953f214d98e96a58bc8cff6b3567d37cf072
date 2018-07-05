@@ -34,6 +34,24 @@
       "revId": "ad8b953f214d98e96a58bc8cff6b3567d37cf072",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "917b47c4_e5f40360",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 10
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-05T22:46:47Z",
+      "side": 1,
+      "message": "Yes sorry I\u0027m an idiot",
+      "parentUuid": "94668ec1_f8ef83b5",
+      "revId": "ad8b953f214d98e96a58bc8cff6b3567d37cf072",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
