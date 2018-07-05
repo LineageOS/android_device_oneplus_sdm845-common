@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "d46944a1_f8b9cbb4",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 32
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-07-05T18:46:11Z",
+      "side": 1,
+      "message": "Yeah, could probably save maxBrightness in a member variable and lazy init it.",
+      "parentUuid": "842ad1bf_0b992dd8",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 72,
+        "endChar": 5
+      },
+      "revId": "075b50b4cf9513be3c5930e01ec4c61a942d7238",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "aac49bf8_69249d33",
         "filename": "lights/service.cpp",
         "patchSetId": 32
