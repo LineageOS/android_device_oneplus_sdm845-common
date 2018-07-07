@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# CNE
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.cne.feature=1
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,20
