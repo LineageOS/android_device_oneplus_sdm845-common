@@ -8,3 +8,9 @@
 
 # Lights
 /system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
+
+# Modules
+/system/lib/modules/wlan\.ko    u:object_r:vendor_file:s0
+
+# tri-state-key
+/system/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
