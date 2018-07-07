@@ -1,0 +1,2 @@
+# Allow cneservice to be found
+allow platform_app cne_service:service_manager find;

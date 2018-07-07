@@ -1,0 +1,6 @@
+typeattribute dataservice_app mlstrustedsubject;
+typeattribute dataservice_app coredomain;
+app_domain(dataservice_app)
+net_domain(dataservice_app)
+
+add_service(dataservice_app, cne_service)
