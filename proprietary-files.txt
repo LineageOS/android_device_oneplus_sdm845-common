@@ -1,3 +1,13 @@
+# CNE
+etc/cne/andsfCne.xml
+etc/cne/SwimConfig.xml
+etc/permissions/cneapiclient.xml
+etc/permissions/com.quicinc.cne.xml
+framework/cneapiclient.jar
+framework/com.quicinc.cne.api-V1.0-java.jar
+framework/com.quicinc.cne.jar
+-priv-app/CNEService/CNEService.apk
+
 # DASH
 -sbin/dashd;rootfs
 
