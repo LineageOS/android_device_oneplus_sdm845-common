@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# CNE
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.cne.feature=1
+
 # IOP
 PRODUCT_PROPERTY_OVERRIDES += \
     iop.enable_prefetch_ofr=1 \
