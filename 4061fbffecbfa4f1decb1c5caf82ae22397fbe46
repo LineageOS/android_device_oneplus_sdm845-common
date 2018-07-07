@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b2fc96cb_6d9b5c06",
+        "filename": "tri-state-key/Android.bp",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-07-07T22:43:29Z",
+      "side": 1,
+      "message": "What does this do? Enable the experimental extensions of c++11/17?",
+      "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "486a8f98_60043441",
+        "filename": "tri-state-key/main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-07-07T22:43:29Z",
+      "side": 1,
+      "message": "Just use sprintf() if the string you write is constant.",
+      "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8c97ebfa_0b3f2861",
+        "filename": "tri-state-key/main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-07-07T22:43:29Z",
+      "side": 1,
+      "message": "Shouldn\u0027t that be handled by line 40?",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 25
+      },
+      "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "04407340_b0a57ed3",
+        "filename": "tri-state-key/main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-07-07T22:43:29Z",
+      "side": 1,
+      "message": "Probably a good idea to memset(0) this as well? Or are you always setting all fields?",
+      "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
