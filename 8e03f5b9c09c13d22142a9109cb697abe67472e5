@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf79c6d4_47c4fcc1",
+        "filename": "overlay/packages/services/Telephony/res/values/config.xml",
+        "patchSetId": 41
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-07T16:42:27Z",
+      "side": 1,
+      "message": "This config does\u0027t exist.",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 64
+      },
+      "revId": "8e03f5b9c09c13d22142a9109cb697abe67472e5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
