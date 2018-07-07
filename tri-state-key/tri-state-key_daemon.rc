@@ -1,0 +1,4 @@
+service tri-state-key_daemon /system/bin/tri-state-key_daemon
+    class late_start
+    user system
+    group system
