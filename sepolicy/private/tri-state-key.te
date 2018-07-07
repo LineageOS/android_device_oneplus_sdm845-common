@@ -1,0 +1,7 @@
+type tri-state-key_daemon, domain, coredomain;
+type tri-state-key_daemon_exec, exec_type, file_type;
+
+init_daemon_domain(tri-state-key_daemon)
+
+allow tri-state-key_daemon uhid_device:chr_file rw_file_perms;
+allow tri-state-key_daemon self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
