@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# tri-state-key
+PRODUCT_PACKAGES += \
+    tri-state-key_daemon
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
