@@ -14,6 +14,19 @@ lib/com.qualcomm.qti.ant@1.0.so
 # hwcomposer override
 lib64/hw/hwcomposer.qcom.so
 
+# IMS
+-app/ims/ims.apk
+etc/permissions/qti-vzw-ims-internal.xml
+lib64/libdiag_system.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib64/librcc.so
+lib64/vendor.qti.imsrtpservice@1.0.so
+
 # IOP
 lib64/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.iop@2.0.so
