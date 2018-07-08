@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c67a6589_378fc4f1",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-08T21:33:34Z",
+      "side": 1,
+      "message": "Duplicated",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 16
+      },
+      "revId": "39118d5f19cc8f9c5c688df2933991be2458bc08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
