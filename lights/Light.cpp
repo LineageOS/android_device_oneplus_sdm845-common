@@ -24,8 +24,6 @@
 #include <android-base/stringprintf.h>
 #include <fstream>
 
-#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
-
 namespace android {
 namespace hardware {
 namespace light {
@@ -89,26 +87,29 @@ void Light::handleRgb(const LightState& state, size_t index) {
 
     std::map<std::string, int> colorValues;
     colorValues["red"] = (stateToUse.color >> 16) & 0xff;
-    colorValues["green"] = (stateToUse.color >> 8) & 0xff;
+    // lower green brightness to adjust for the (lower) brightness of red and blue
+    colorValues["green"] = ((stateToUse.color >> 8) & 0xff) / 2;
     colorValues["blue"] = stateToUse.color & 0xff;
 
     int onMs = stateToUse.flashMode == Flash::TIMED ? stateToUse.flashOnMs : 0;
     int offMs = stateToUse.flashMode == Flash::TIMED ? stateToUse.flashOffMs : 0;
 
-    static constexpr int kRampSize = 8;
-    static constexpr int kBrightnessRamp[] = { 0, 12, 25, 37, 50, 72, 85, 100 };
-    static constexpr int kRampStepDuration = 50;
+    // LUT has 63 entries, we could theoretically use them as 3 (colors) * 21 (steps).
+    // However, the last LUT entries don't seem to behave correctly for unknown
+    // reasons, so we use 17 steps for a total of 51 LUT entries only.
+    static constexpr int kRampSteps = 16;
+    static constexpr int kRampMaxStepDurationMs = 15;
 
     auto makeLedPath = [](const std::string& led, const std::string& op) -> std::string {
         return "/sys/class/leds/" + led + "/" + op;
     };
     auto getScaledDutyPercent = [](int brightness) -> std::string {
         std::string output;
-        for (size_t i = 0; i < ARRAY_SIZE(kBrightnessRamp); i++) {
+        for (int i = 0; i <= kRampSteps; i++) {
             if (i != 0) {
                 output += ",";
             }
-            output += std::to_string(kBrightnessRamp[i] * brightness / 255);
+            output += std::to_string(i * 512 * brightness / (255 * kRampSteps));
         }
         return output;
     };
@@ -119,23 +120,25 @@ void Light::handleRgb(const LightState& state, size_t index) {
     }
 
     if (onMs > 0 && offMs > 0) {
-        int pauseHi, stepDuration;
-        if (kRampStepDuration * kRampSize * 2 > onMs) {
-            stepDuration = onMs / 2 * kRampSize;
+        int pauseLo, pauseHi, stepDuration, index = 0;
+        if (kRampMaxStepDurationMs * kRampSteps > onMs) {
+            stepDuration = onMs / kRampSteps;
             pauseHi = 0;
+            pauseLo = offMs;
         } else {
-            stepDuration = kRampStepDuration;
-            pauseHi = onMs - 2 * kRampSize * stepDuration;
+            stepDuration = kRampMaxStepDurationMs;
+            pauseHi = onMs - kRampSteps * stepDuration;
+            pauseLo = offMs - kRampSteps * stepDuration;
         }
 
         for (const auto& entry : colorValues) {
-            set(makeLedPath(entry.first, "start_idx"), 0);
+            set(makeLedPath(entry.first, "lut_flags"), 95);
+            set(makeLedPath(entry.first, "start_idx"), index);
             set(makeLedPath(entry.first, "duty_pcts"), getScaledDutyPercent(entry.second));
-            set(makeLedPath(entry.first, "pause_lo"), offMs);
-            // The led driver is configured to ramp up then ramp
-            // down the lut. This effectively doubles the ramp duration.
+            set(makeLedPath(entry.first, "pause_lo"), pauseLo);
             set(makeLedPath(entry.first, "pause_hi"), pauseHi);
             set(makeLedPath(entry.first, "ramp_step_ms"), stepDuration);
+            index += kRampSteps + 1;
         }
 
         // Start blinking
