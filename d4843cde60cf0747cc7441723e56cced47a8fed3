@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "47bcd84b_ab4f8627",
+        "filename": "tri-state-key/uevent_listener.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-07-08T16:48:35Z",
+      "side": 1,
+      "message": "remove this check and use LOG(DEBUG) instead?",
+      "range": {
+        "startLine": 53,
+        "startChar": 8,
+        "endLine": 53,
+        "endChar": 20
+      },
+      "revId": "d4843cde60cf0747cc7441723e56cced47a8fed3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
