@@ -73,6 +73,24 @@
       "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "498b7f33_25154540",
+        "filename": "tri-state-key/main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2018-07-08T16:42:49Z",
+      "side": 1,
+      "message": "since we are in ~ cpp land ~ we can do `struct input_event event{};`",
+      "parentUuid": "04407340_b0a57ed3",
+      "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
