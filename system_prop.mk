@@ -18,6 +18,10 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.cne.feature=1
 
+# DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.dpm.feature=9
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=22,20
