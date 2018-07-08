@@ -14,6 +14,29 @@
 # limitations under the License.
 #
 
+# IOP
+PRODUCT_PROPERTY_OVERRIDES += \
+    iop.enable_prefetch_ofr=1 \
+    iop.enable_uxe=0
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.data_con_rprt=0 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.force_on_dc=true \
+    persist.vendor.radio.ignore_dom_time=10 \
     ro.telephony.default_network=22,20
+
+# Netmgr
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.data.df.agg.dl_pkt=10 \
+    persist.data.df.agg.dl_size=4096 \
+    persist.data.df.dl_mode=5 \
+    persist.data.df.iwlan_mux=9 \
+    persist.data.df.mux_count=8 \
+    persist.data.df.ul_mode=5 \
+    persist.data.iwlan.enable=true \
+    persist.data.mode=concurrent \
+    persist.data.netmgrd.qos.enable=true \
+    persist.data.wda.enable=true \
+    persist.rmnet.data.enable=true
