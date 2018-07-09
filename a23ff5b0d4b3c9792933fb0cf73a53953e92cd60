@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "13425733_5e2bc645",
+        "filename": "lineagehw/org/lineageos/hardware/TouchscreenGestures.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-07-09T20:39:11Z",
+      "side": 1,
+      "message": "I know you probably copy-pasted this code from somewhere, but I don\u0027t think we should report \"false\" just because 1 up to N-1 of N gestures fail (aka are not writable).\n\nWe can let it slip and setGestureEnabled() will just return false each time that particular gesture is triggered.",
+      "revId": "a23ff5b0d4b3c9792933fb0cf73a53953e92cd60",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
