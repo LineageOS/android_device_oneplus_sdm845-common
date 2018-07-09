@@ -31,6 +31,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     iop.enable_prefetch_ofr=1 \
     iop.enable_uxe=0
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.settings.xml=/system/etc/media_profiles_vendor.xml
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.core_ctl_max_cpu=4 \
