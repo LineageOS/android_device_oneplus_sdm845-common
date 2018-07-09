@@ -14,10 +14,27 @@
 # limitations under the License.
 #
 
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.min.duration.secs=30 \
+    persist.vendor.audio.hac.enable=false \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.gralloc.gfx_ubwc_disable=0 \
+    debug.sf.latch_unsignaled=1 \
+    sdm.debug.prefersplit=1
+
 # IOP
 PRODUCT_PROPERTY_OVERRIDES += \
     iop.enable_prefetch_ofr=1 \
     iop.enable_uxe=0
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.core_ctl_max_cpu=4 \
+    ro.vendor.qti.core_ctl_min_cpu=2
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
