@@ -109,6 +109,24 @@
       "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2347459e_f1d2b17c",
+        "filename": "tri-state-key/main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2018-07-09T21:01:52Z",
+      "side": 1,
+      "message": "That\u0027s c++14 though - the old way is:\n\nstruct input_event event \u003d input_event();",
+      "parentUuid": "498b7f33_25154540",
+      "revId": "4061fbffecbfa4f1decb1c5caf82ae22397fbe46",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
