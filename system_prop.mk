@@ -26,6 +26,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     sdm.debug.prefersplit=1
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.settings.xml=/system/etc/media_profiles_vendor.xml
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.core_ctl_max_cpu=4 \
