@@ -19,6 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     iop.enable_prefetch_ofr=1 \
     iop.enable_uxe=0
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.settings.xml=/system/etc/media_profiles_vendor.xml
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_con_rprt=0 \
