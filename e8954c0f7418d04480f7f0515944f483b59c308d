@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a3b09de_b2f66cbe",
+        "filename": "lights/Light.cpp",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-10T12:08:51Z",
+      "side": 1,
+      "message": "Can be removed then.",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 50
+      },
+      "revId": "e8954c0f7418d04480f7f0515944f483b59c308d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
