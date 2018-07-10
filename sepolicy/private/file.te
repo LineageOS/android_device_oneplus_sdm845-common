@@ -4,3 +4,4 @@ type firmware_file, file_type;
 type op1_file, file_type;
 type op2_file, file_type;
 type persist_file, file_type;
+type pps_socket, file_type;

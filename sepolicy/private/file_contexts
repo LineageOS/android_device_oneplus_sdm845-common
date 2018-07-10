@@ -8,3 +8,7 @@
 
 # Lights
 /system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
+
+# Livedisplay
+/system/bin/hw/vendor\.lineage\.livedisplay@1\.0-service-sdm_system u:object_r:hal_livedisplay_default_exec:s0
+/data/display(/.*)?                                                 u:object_r:display_misc_file:s0

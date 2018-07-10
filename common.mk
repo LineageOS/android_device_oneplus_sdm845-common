@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@1.0-service-sdm_system
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
