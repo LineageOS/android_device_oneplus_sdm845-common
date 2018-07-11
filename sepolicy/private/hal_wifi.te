@@ -1,0 +1,1 @@
+allow hal_wifi system_file:system module_load;
