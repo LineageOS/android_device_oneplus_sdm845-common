@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
+# Doze
+PRODUCT_PACKAGES += \
+    OnePlusDoze
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/fpc1020.idc:system/usr/idc/fpc1020.idc \
