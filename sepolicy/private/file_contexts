@@ -9,5 +9,9 @@
 # Lights
 /system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
 
+# Power HAL
+/system/lib64/hw/power\.qcom\.so    u:object_r:vendor_file:s0
+/system/lib/hw/power\.qcom\.so      u:object_r:vendor_file:s0
+
 # tri-state-key
 /system/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
