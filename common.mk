@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Power
+PRODUCT_PACKAGES += \
+    power.qcom
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
