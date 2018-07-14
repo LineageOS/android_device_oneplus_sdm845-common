@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a8b64824_6b7885cd",
+        "filename": "KeyHandler/src/org/lineageos/settings/device/KeyHandler.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 8461
+      },
+      "writtenOn": "2018-07-14T18:48:46Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be using zenModeManager instead to set dnd?",
+      "revId": "ceb57a9860236f51108a575908b21b50b0f5e39c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
