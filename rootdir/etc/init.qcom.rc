@@ -1,4 +1,9 @@
 on boot
+    # DRM
+    chown system system /sys/module/msm_drm/parameters/red
+    chown system system /sys/module/msm_drm/parameters/green
+    chown system system /sys/module/msm_drm/parameters/blue
+
     # Touchpanel
     chmod 0660 /proc/touchpanel/double_swipe_enable
     chmod 0660 /proc/touchpanel/down_arrow_enable
