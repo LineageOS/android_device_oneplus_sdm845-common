@@ -39,6 +39,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.settings.xml=/system/etc/media_profiles_vendor.xml
 
+# OTG
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.oem.otg_support=true
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.core_ctl_max_cpu=4 \
