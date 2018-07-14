@@ -1,3 +1,6 @@
+on init
+    mount none /system/bin/hw/android.hardware.power@1.0-service.oneplus_sdm845 /vendor/bin/hw/android.hardware.power@1.0-service bind
+
 on boot
     # Touchpanel
     chmod 0660 /proc/touchpanel/double_swipe_enable
