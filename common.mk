@@ -91,6 +91,10 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Privileged app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/privapp-permissions-oneplus.xml:system/etc/permissions/privapp-permissions-oneplus.xml
+
 # QTI
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
