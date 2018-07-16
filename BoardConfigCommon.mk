@@ -63,6 +63,9 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 # Android Verified Boot
 BOARD_PREBUILT_VBMETAIMAGE := $(COMMON_PATH)/vbmeta.img
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
