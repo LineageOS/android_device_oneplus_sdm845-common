@@ -31,6 +31,9 @@ on boot
     chown system system /proc/touchpanel/up_arrow_enable
     chown system system /proc/touchpanel/up_swipe_enable
 
+    # Fingerprint
+    chown system system /sys/devices/platform/soc/soc:goodix_fp/proximity_state
+
 service dashd /sbin/dashd
     class core
     critical
