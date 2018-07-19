@@ -32,6 +32,11 @@ on boot
     chown system system /proc/touchpanel/up_arrow_enable
     chown system system /proc/touchpanel/up_swipe_enable
 
+    chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
+    chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
+    chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
+    chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
+
 service dashd /sbin/dashd
     class core
     critical
