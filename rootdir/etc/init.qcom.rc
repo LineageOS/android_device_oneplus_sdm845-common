@@ -3,6 +3,9 @@ on init
     mount none /system/lib/hw/power.qcom.so /vendor/lib/hw/power.qcom.so bind
 
 on boot
+    # Fingerprint
+    chown system system /sys/devices/platform/soc/soc:goodix_fp/proximity_state
+
     # Touchpanel
     chmod 0660 /proc/touchpanel/double_swipe_enable
     chmod 0660 /proc/touchpanel/down_arrow_enable
