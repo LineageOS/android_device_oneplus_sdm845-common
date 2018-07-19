@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d802a094_2cbf6088",
+        "filename": "lineagehw/org/lineageos/hardware/DisplayModeControl.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-07-19T14:25:04Z",
+      "side": 1,
+      "message": "Might also add the \u0027oneplus\u0027, \u0027night\u0027 and \u0027adaption\u0027 modes here, but I\u0027m not sure about the usefulness of doing so.",
+      "revId": "a0d9d3c5de405ab05f9ce908d7cc2d26d5813500",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
