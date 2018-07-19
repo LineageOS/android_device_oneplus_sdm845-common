@@ -22,6 +22,30 @@
       "revId": "c159775919a8c718dc2f1c50e39e7b63cfdd393b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f9618085_b7deb9b6",
+        "filename": "common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-07-19T08:45:55Z",
+      "side": 1,
+      "message": "Is that the reason why stock doesn\u0027t include it?",
+      "parentUuid": "bd0aec4d_f018bfff",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 131
+      },
+      "revId": "c159775919a8c718dc2f1c50e39e7b63cfdd393b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
