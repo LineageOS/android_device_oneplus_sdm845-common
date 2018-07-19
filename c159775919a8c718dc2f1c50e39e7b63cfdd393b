@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bd0aec4d_f018bfff",
+        "filename": "common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-19T08:24:12Z",
+      "side": 1,
+      "message": "We can probably remove these, I couldn\u0027t find any app using the library in this way, and anyways it wouldn\u0027t work since it\u0027s a stub",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 131
+      },
+      "revId": "c159775919a8c718dc2f1c50e39e7b63cfdd393b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
