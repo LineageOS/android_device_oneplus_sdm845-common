@@ -34,4 +34,5 @@ etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml
 etc/permissions/privapp-permissions-qti.xml
 framework/qcrilhook.jar
+framework/qti-telephony-common.jar|b1d392dbc9b06ac8d650b874c502da0a3fff81c7
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
