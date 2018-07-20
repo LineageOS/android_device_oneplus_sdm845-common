@@ -20,4 +20,5 @@ lib/vendor.qti.hardware.iop@2.0.so
 etc/permissions/qcrilhook.xml
 etc/permissions/privapp-permissions-qti.xml
 framework/qcrilhook.jar
+framework/qti-telephony-common.jar|2eba987ae297a892e895ec1e9a302b41dbe0232e
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
