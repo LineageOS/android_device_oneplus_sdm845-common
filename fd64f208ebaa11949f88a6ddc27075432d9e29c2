@@ -68,6 +68,29 @@
       "revId": "fd64f208ebaa11949f88a6ddc27075432d9e29c2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aaf90419_8850cecb",
+        "filename": "pocketmode/src/org/lineageos/pocketmode/PocketSensor.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-07-20T07:21:59Z",
+      "side": 1,
+      "message": "Do we want to enable FIFO there?",
+      "range": {
+        "startLine": 77,
+        "startChar": 27,
+        "endLine": 77,
+        "endChar": 43
+      },
+      "revId": "fd64f208ebaa11949f88a6ddc27075432d9e29c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
