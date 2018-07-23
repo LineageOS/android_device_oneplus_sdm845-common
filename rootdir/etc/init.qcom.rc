@@ -31,6 +31,9 @@ on boot
     chown system system /proc/touchpanel/up_arrow_enable
     chown system system /proc/touchpanel/up_swipe_enable
 
+on charger
+    write /sys/class/backlight/panel0-backlight/brightness 100
+
 service dashd /sbin/dashd
     class core
     critical
