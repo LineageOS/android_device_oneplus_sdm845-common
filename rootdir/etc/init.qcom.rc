@@ -39,6 +39,9 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
 
+on charger
+    write /sys/class/backlight/panel0-backlight/brightness 150
+
 service dashd /sbin/dashd
     class core
     critical

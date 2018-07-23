@@ -70,6 +70,9 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
+# Charger
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
