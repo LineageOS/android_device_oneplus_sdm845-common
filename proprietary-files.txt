@@ -15,6 +15,9 @@ lib/com.qualcomm.qti.ant@1.0.so
 lib64/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.iop@2.0.so
 
+# Power-off alarms
+etc/permissions/vendor-qti-hardware-alarm.xml
+
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
