@@ -69,3 +69,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     persist.data.wda.enable=true \
     persist.rmnet.data.enable=true
+
+# SSR
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.ssr.restart_level=ALL_ENABLE
