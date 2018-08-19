@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d58f9c59_2305e555",
+        "filename": "common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-08-19T10:25:47Z",
+      "side": 1,
+      "message": "Not needed\nlibnqnfc-nci -\u003e Dep of NQNfcNci\nlibnqp61-jcop-kit -\u003e Dep of libnqnfc-nci\ncom.nxp.nfc.nq -\u003e Dep of NQNfcNci\ncom.nxp.nfc.nq.xml -\u003e Required module com.nxp.nfc.nq",
+      "range": {
+        "startLine": 106,
+        "startChar": 0,
+        "endLine": 109,
+        "endChar": 23
+      },
+      "revId": "8c2915484be4ee5c8577a2ba0a322bbddde4e85f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
