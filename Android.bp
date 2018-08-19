@@ -1,6 +1,0 @@
-subdirs = [
-    "lights",
-    "livedisplay",
-    "touch",
-    "tri-state-key"
-]
