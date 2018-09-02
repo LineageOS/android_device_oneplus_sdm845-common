@@ -27,21 +27,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.gfx_ubwc_disable=0 \
-    debug.sf.latch_unsignaled=1 \
-    sdm.debug.prefersplit=1
+    debug.sf.latch_unsignaled=1
 
 # IOP
 PRODUCT_PROPERTY_OVERRIDES += \
-    iop.enable_prefetch_ofr=1 \
-    iop.enable_uxe=0
-
-# Media
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.settings.xml=/system/etc/media_profiles_vendor.xml
+    vendor.iop.enable_prefetch_ofr=1 \
+    vendor.iop.enable_uxe=0
 
 # OTG
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.oem.otg_support=true
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.settings.xml=/system/etc/media_profiles_vendor.xml
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -50,25 +49,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.radio.data_con_rprt=0 \
+    persist.vendor.radio.bar_fake_gcell=1 \
+    persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.ignore_dom_time=10 \
-    ro.telephony.default_network=22,20
+    ro.telephony.default_network=22,22
+
+# Touchscreen
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.qti.inputopts.enable=true \
+    persist.vendor.qti.inputopts.movetouchslop=0.6
 
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.df.agg.dl_pkt=10 \
-    persist.data.df.agg.dl_size=4096 \
-    persist.data.df.dl_mode=5 \
-    persist.data.df.iwlan_mux=9 \
-    persist.data.df.mux_count=8 \
-    persist.data.df.ul_mode=5 \
-    persist.data.iwlan.enable=true \
-    persist.data.mode=concurrent \
-    persist.data.netmgrd.qos.enable=true \
-    persist.data.wda.enable=true \
-    persist.rmnet.data.enable=true
+    persist.vendor.data.iwlan.enable=true \
+    persist.vendor.data.mode=concurrent
 
 # SSR
 PRODUCT_PROPERTY_OVERRIDES += \
