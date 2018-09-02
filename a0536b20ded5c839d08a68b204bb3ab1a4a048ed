@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e0be0e43_5b9e261d",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2018-09-02T10:40:02Z",
+      "side": 1,
+      "message": "Can\u0027t landscape be less now?",
+      "revId": "a0536b20ded5c839d08a68b204bb3ab1a4a048ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
