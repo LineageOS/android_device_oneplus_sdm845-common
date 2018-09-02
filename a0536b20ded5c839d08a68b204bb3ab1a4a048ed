@@ -16,6 +16,24 @@
       "revId": "a0536b20ded5c839d08a68b204bb3ab1a4a048ed",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "21dc1c1a_ac238e82",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 360,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2018-09-02T10:45:55Z",
+      "side": 1,
+      "message": "It\u0027s like that in stock",
+      "parentUuid": "e0be0e43_5b9e261d",
+      "revId": "a0536b20ded5c839d08a68b204bb3ab1a4a048ed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
