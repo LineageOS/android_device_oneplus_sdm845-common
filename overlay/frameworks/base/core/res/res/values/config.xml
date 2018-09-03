@@ -52,6 +52,8 @@
         <item>"softap0"</item>
         <item>"wigig0"</item>
         <item>"wifi_br0"</item>
+        <item>"wlan0"</item>
+        <item>"wlan1"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
