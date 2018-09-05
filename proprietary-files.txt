@@ -15,8 +15,8 @@ lib64/libaptXHD_encoder.so
 -priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 
-# hwcomposer override
-lib64/hw/hwcomposer.qcom.so
+# HWComposer override
+lib64/hw/hwcomposer.sdm845.so|8e6389a1ddae937c8e5b71c5d57026a29212e5c5
 
 # IMS
 -app/ims/ims.apk
