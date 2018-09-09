@@ -9,6 +9,9 @@
 # Files in sysfs
 /sys/devices/platform/soc/soc:goodix_fp/proximity_state    u:object_r:sysfs_fpc_proximity:s0
 
+# Audio
+/system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+
 # Lights
 /system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
 
