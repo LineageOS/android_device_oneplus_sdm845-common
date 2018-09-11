@@ -4,6 +4,10 @@ lib64/com.qualcomm.qti.ant@1.0.so
 lib/com.qualcomm.qti.ant@1.0.so
 -lib/libantradio.so
 
+# Bluetooth (aptX)
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+
 # DASH
 -sbin/dashd;rootfs
 
