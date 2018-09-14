@@ -7,3 +7,4 @@ type persist_file, file_type;
 type proc_touchpanel, fs_type;
 type sysfs_fpc_proximity, sysfs_type, fs_type;
 type sysfs_oem, sysfs_type, fs_type;
+type sysfs_battery_supply, sysfs_type, fs_type;
