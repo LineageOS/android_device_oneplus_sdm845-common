@@ -1,0 +1,2 @@
+# Allow mediacodec to get boottime_prop
+get_prop(mediacodec, boottime_prop)
