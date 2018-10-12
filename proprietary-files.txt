@@ -30,10 +30,6 @@ lib64/lib-imsvtutils.so
 lib64/librcc.so
 lib64/vendor.qti.imsrtpservice@1.0.so
 
-# IOP
-lib64/vendor.qti.hardware.iop@2.0.so
-lib/vendor.qti.hardware.iop@2.0.so
-
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
