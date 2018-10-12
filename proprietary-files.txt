@@ -20,7 +20,6 @@ lib64/hw/hwcomposer.qcom.so
 
 # IMS
 -app/ims/ims.apk
-etc/permissions/qti-vzw-ims-internal.xml
 lib64/libdiag_system.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
@@ -34,9 +33,6 @@ lib64/vendor.qti.imsrtpservice@1.0.so
 # IOP
 lib64/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.iop@2.0.so
-
-# Power-off alarms
-etc/permissions/vendor-qti-hardware-alarm.xml
 
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
