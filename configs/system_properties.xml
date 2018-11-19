@@ -34,5 +34,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <property name="vidc_enc_log_in" value="0"/>
         <property name="vidc_enc_log_out" value="0"/>
         <property name="vidc_enc_csc_custom_matrix" value="0"/>
+        <!-- Buffer size : internal : 30 MB (30 X 1), output : 50 MB (3.125 X 16) -->
+        <property name="vidc_dec_sec_prefetch_size_internal" value="31457280"/>
+        <property name="vidc_dec_sec_prefetch_size_output" value="3276800"/>
         <property name="vidc_dec_arb_mode_override" value="4"/>
 </configs>
