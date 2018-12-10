@@ -7,7 +7,9 @@
 /persist(/.*)?           u:object_r:persist_file:s0
 
 # Files in sysfs
-/sys/devices/platform/soc/soc:goodix_fp/proximity_state    u:object_r:sysfs_fpc_proximity:s0
+/sys/devices/platform/soc/soc:goodix_fp/proximity_state    			u:object_r:sysfs_fpc_proximity:s0
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm		u:object_r:sysfs_livedisplay:s0
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode	u:object_r:sysfs_livedisplay:s0
 
 # Audio
 /system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
