@@ -1,4 +1,4 @@
-# Allow init to mount wlan kernel module
+# Allow init to mount power module
 allow init vendor_file:file mounton;
 
 # Allow init to mount vendor configs
