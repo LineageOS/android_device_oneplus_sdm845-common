@@ -35,3 +35,6 @@ etc/permissions/qti_permissions.xml
 etc/permissions/privapp-permissions-qti.xml
 framework/qcrilhook.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# SDM
+lib64/libsdm-disp-apis.so

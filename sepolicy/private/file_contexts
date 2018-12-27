@@ -12,11 +12,17 @@
 # Audio
 /system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
 
-# Lights
-/system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
+# Data files
+/data/display(/.*)?                 u:object_r:display_data_file:s0
 
 # Modules
 /system/lib/modules/wlan\.ko    u:object_r:vendor_file:s0
+
+# Lights HAL
+/system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
+
+# LiveDisplay HAL
+/system/bin/hw/lineage\.livedisplay@1\.0-service-sdm                   u:object_r:shal_livedisplay_default_exec:s0
 
 # Power HAL
 /system/lib64/hw/power\.qcom\.so    u:object_r:vendor_file:s0
