@@ -43,6 +43,8 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     private TextView mTextView;
 
+    private SwitchPreference mAlwaysOnDisplayPreference;
+
     private SwitchPreference mPickUpPreference;
 
     @Override
@@ -58,6 +60,13 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         }
 
         boolean dozeEnabled = Utils.isDozeEnabled(getActivity());
+
+        mAlwaysOnDisplayPreference = (SwitchPreference) findPreference(DozeUtils.ALWAYS_ON_DISPLAY);
+        mAlwaysOnDisplayPreference.setEnabled(dozeEnabled);
+        mAlwaysOnDisplayPreference.setOnPreferenceChangeListener(this);
+        if (!DozeUtils.alwaysOnDisplayAvailable(getActivity())) {
+            getPreferenceScreen().removePreference(mAlwaysOnDisplayPreference);
+        }
 
         mPickUpPreference = (SwitchPreference) findPreference(Utils.GESTURE_PICK_UP_KEY);
         mPickUpPreference.setEnabled(dozeEnabled);
@@ -95,8 +104,13 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        Utils.enablePickUp(getActivity(), (Boolean) newValue);
+        if (Utils.ALWAYS_ON_DISPLAY.equals(preference.getKey())) {
+            Utils.enableAlwaysOn(getActivity(), (Boolean) newValue);
+        } else {
+            Utils.enablePickUp(getActivity(), (Boolean) newValue);
+        }
         Utils.checkDozeService(getActivity());
+
         return true;
     }
 
@@ -106,6 +120,8 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         Utils.checkDozeService(getActivity());
 
         mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
+
+        mAlwaysOnDisplayPreference.setEnabled(isChecked);
 
         mPickUpPreference.setEnabled(isChecked);
     }
