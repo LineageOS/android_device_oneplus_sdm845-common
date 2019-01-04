@@ -87,9 +87,9 @@ void Light::handleRgb(const LightState& state, size_t index) {
 
     std::map<std::string, int> colorValues;
     colorValues["red"] = (stateToUse.color >> 16) & 0xff;
-    // lower green brightness to adjust for the (lower) brightness of red and blue
+    // lower green and blue brightness to adjust for the (lower) brightness of red
     colorValues["green"] = ((stateToUse.color >> 8) & 0xff) / 2;
-    colorValues["blue"] = stateToUse.color & 0xff;
+    colorValues["blue"] = (stateToUse.color & 0xff) / 2;
 
     int onMs = stateToUse.flashMode == Flash::TIMED ? stateToUse.flashOnMs : 0;
     int offMs = stateToUse.flashMode == Flash::TIMED ? stateToUse.flashOffMs : 0;
