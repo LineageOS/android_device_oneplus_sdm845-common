@@ -28,4 +28,16 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="proximity_sensor"
+        android:title="@string/proximity_sensor_title">
+
+        <SwitchPreference
+            android:key="gesture_pocket"
+            android:defaultValue="false"
+            android:title="@string/pocket_gesture_title"
+            android:summary="@string/pocket_gesture_summary" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
