@@ -36,6 +36,7 @@ public final class Utils {
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
+    protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
 
     protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
@@ -50,7 +51,8 @@ public final class Utils {
     }
 
     protected static void checkDozeService(Context context) {
-        if (isDozeEnabled(context) && isPickUpEnabled(context)) {
+        if (isDozeEnabled(context) &&
+                (isPickUpEnabled(context) || isPocketEnabled(context))) {
             startService(context);
         } else {
             stopService(context);
@@ -81,6 +83,16 @@ public final class Utils {
     protected static boolean isPickUpEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
                 .getBoolean(GESTURE_PICK_UP_KEY, false);
+    }
+
+    protected static void enablePocket(Context context, boolean enable) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit()
+                .putBoolean(GESTURE_POCKET_KEY, enable).apply();
+    }
+
+    protected static boolean isPocketEnabled(Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context)
+                .getBoolean(GESTURE_POCKET_KEY, false);
     }
 
     protected static Sensor getSensor(SensorManager sm, String type) {
