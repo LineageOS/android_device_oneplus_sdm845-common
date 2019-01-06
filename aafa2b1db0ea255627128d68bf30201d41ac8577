@@ -40,6 +40,24 @@
       "revId": "aafa2b1db0ea255627128d68bf30201d41ac8577",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a9833a3_a4a5d0da",
+        "filename": "doze/res/xml/doze_settings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-06T00:04:25Z",
+      "side": 1,
+      "message": "I know, but it was just for the sake of consistency, to match java class name.",
+      "parentUuid": "3597629b_bf4c7c9f",
+      "revId": "aafa2b1db0ea255627128d68bf30201d41ac8577",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
