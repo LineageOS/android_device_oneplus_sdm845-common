@@ -16,6 +16,24 @@
       "revId": "17d7094d020c621aff41af1bb8a43c06ed89e3a6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27a76a86_bfd5110f",
+        "filename": "doze/res/xml/doze_settings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-08T12:04:12Z",
+      "side": 1,
+      "message": "Even if you set config_dozeAlwaysOnEnabled to false? This is what I have been doing on the device-side: https://github.com/LineageOS/android_device_xiaomi_scorpio/commit/3a35a39210506033819cf9163e2fe5146b448a8d",
+      "parentUuid": "ba8d48c8_39448a21",
+      "revId": "17d7094d020c621aff41af1bb8a43c06ed89e3a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
