@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "708236b3_7f55e778",
+        "filename": "doze/res/xml/doze_settings.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2019-01-08T13:20:17Z",
+      "side": 1,
+      "message": "I don\u0027t see the relation here yet. android:defaultValue is used if no value can be found in shared prefs for the setting. Since we use the settings provider, android:defaultValue becomes irrelevant for us and we should set all prefs backed by settings provider to android:persistent\u003d\"false\" in order to not clobber shared prefs with unused settings. I think the actual root cause is elsewhere though, namely...",
+      "revId": "2605f4b645cb4d278413d6abdb07ff217bf67419",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2de88279_0b46828a",
+        "filename": "doze/src/org/lineageos/settings/doze/DozeSettingsFragment.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2019-01-08T13:20:17Z",
+      "side": 1,
+      "message": "... here: the state of mAlwaysOnDisplayPreference is never initialized (as in: mAlwaysOnDisplayPreference.setChecked() ) from the actual settings provider value. This should probably be done in the fragment\u0027s onResume() method.\n\n(Same applies to all other settings)",
+      "revId": "2605f4b645cb4d278413d6abdb07ff217bf67419",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
