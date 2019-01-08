@@ -22,7 +22,8 @@
         android:defaultValue="@*android:bool/config_dozeAlwaysOnEnabled"
         android:disableDependentsState="true"
         android:title="@string/ambient_display_always_on_title"
-        android:summary="@string/ambient_display_always_on_summary" />
+        android:summary="@string/ambient_display_always_on_summary"
+        android:persistent="false" />
 
     <PreferenceCategory
         android:key="pickup_sensor"
