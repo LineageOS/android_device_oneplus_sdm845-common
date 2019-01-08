@@ -16,7 +16,7 @@ lib64/libaptXHD_encoder.so
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 
 # IMS
--app/ims/ims.apk
+-app/ims/ims.apk|a0b9a51f337f0234ae10694bd3595949a29a3376
 lib64/libdiag_system.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
