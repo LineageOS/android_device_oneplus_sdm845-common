@@ -33,6 +33,23 @@
       "revId": "2605f4b645cb4d278413d6abdb07ff217bf67419",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27d3cdea_5d704ec0",
+        "filename": "doze/src/org/lineageos/settings/doze/DozeSettingsFragment.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-01-08T13:34:13Z",
+      "side": 1,
+      "message": "I think the only other place where we don\u0027t setChecked for a pref that mirror a settings is here\n\nthe rest is either app specific ( so shared prefs bases ) or the switch bar that is handled onViewCreate based off the settings ( isDozeEnabled method )\n\nI don\u0027t really see what\u0027s wrong",
+      "revId": "2605f4b645cb4d278413d6abdb07ff217bf67419",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
