@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1e8a7281_1f391f5d",
+        "filename": "doze/res/xml/doze_settings.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-01-08T12:39:07Z",
+      "side": 1,
+      "message": "@*android:bool/config_dozeAlwaysOnEnabled\n?",
+      "range": {
+        "startLine": 22,
+        "startChar": 30,
+        "endLine": 22,
+        "endChar": 35
+      },
+      "revId": "137591c07e9a3d8344313b3becdf002fc4ffce70",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
