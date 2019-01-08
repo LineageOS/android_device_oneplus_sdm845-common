@@ -45,6 +45,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
     private View mSwitchBar;
 
     private SwitchPreference mPickUpPreference;
+    private SwitchPreference mPocketPreference;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -63,6 +64,10 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         mPickUpPreference = (SwitchPreference) findPreference(Utils.GESTURE_PICK_UP_KEY);
         mPickUpPreference.setEnabled(dozeEnabled);
         mPickUpPreference.setOnPreferenceChangeListener(this);
+
+        mPocketPreference = (SwitchPreference) findPreference(Utils.GESTURE_POCKET_KEY);
+        mPocketPreference.setEnabled(dozeEnabled);
+        mPocketPreference.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -96,7 +101,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        Utils.enablePickUp(getActivity(), (Boolean) newValue);
+        Utils.enableGesture(getActivity(), preference.getKey(), (Boolean) newValue);
         Utils.checkDozeService(getActivity());
         return true;
     }
@@ -110,6 +115,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         mSwitchBar.setActivated(isChecked);
 
         mPickUpPreference.setEnabled(isChecked);
+        mPocketPreference.setEnabled(isChecked);
     }
 
     @Override
