@@ -78,6 +78,7 @@ public class PocketSensor implements SensorEventListener {
     protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
         submit(() -> {
+            mEntryTimestamp = SystemClock.elapsedRealtime();
             mSensorManager.registerListener(this, mSensor,
                     SensorManager.SENSOR_DELAY_NORMAL);
         });
@@ -87,7 +88,6 @@ public class PocketSensor implements SensorEventListener {
         if (DEBUG) Log.d(TAG, "Disabling");
         submit(() -> {
             mSensorManager.unregisterListener(this, mSensor);
-            mEntryTimestamp = SystemClock.elapsedRealtime();
         });
     }
 }
