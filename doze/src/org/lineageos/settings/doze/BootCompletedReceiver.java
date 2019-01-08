@@ -29,10 +29,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        if (Utils.isDozeEnabled(context) && Utils.isPickUpEnabled(context)) {
-            if (DEBUG) Log.d(TAG, "Starting service");
-            Utils.startService(context);
-        }
+        if (DEBUG) Log.d(TAG, "Received boot completed intent");
+        Utils.checkDozeService(context);
     }
-
 }

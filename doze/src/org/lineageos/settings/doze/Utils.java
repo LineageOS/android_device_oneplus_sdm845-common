@@ -51,8 +51,7 @@ public final class Utils {
     }
 
     protected static void checkDozeService(Context context) {
-        if (isDozeEnabled(context) &&
-                (isPickUpEnabled(context) || isPocketEnabled(context))) {
+        if (isDozeEnabled(context) && areGesturesEnabled(context)) {
             startService(context);
         } else {
             stopService(context);
@@ -75,24 +74,26 @@ public final class Utils {
                 new UserHandle(UserHandle.USER_CURRENT));
     }
 
-    protected static void enablePickUp(Context context, boolean enable) {
+    protected static void enableGesture(Context context, String gesture, boolean enable) {
         PreferenceManager.getDefaultSharedPreferences(context).edit()
-                .putBoolean(GESTURE_PICK_UP_KEY, enable).apply();
+                .putBoolean(gesture, enable).apply();
+    }
+
+    protected static boolean isGestureEnabled(Context context, String gesture) {
+        return PreferenceManager.getDefaultSharedPreferences(context)
+                .getBoolean(gesture, false);
     }
 
     protected static boolean isPickUpEnabled(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(GESTURE_PICK_UP_KEY, false);
-    }
-
-    protected static void enablePocket(Context context, boolean enable) {
-        PreferenceManager.getDefaultSharedPreferences(context).edit()
-                .putBoolean(GESTURE_POCKET_KEY, enable).apply();
+        return isGestureEnabled(context, GESTURE_PICK_UP_KEY);
     }
 
     protected static boolean isPocketEnabled(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(GESTURE_POCKET_KEY, false);
+        return isGestureEnabled(context, GESTURE_POCKET_KEY);
+    }
+
+    public static boolean areGesturesEnabled(Context context) {
+        return isPickUpEnabled(context) || isPocketEnabled(context);
     }
 
     protected static Sensor getSensor(SensorManager sm, String type) {
