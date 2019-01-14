@@ -89,7 +89,7 @@ public final class Utils {
 
     protected static boolean isAlwaysOnEnabled(Context context) {
         return Settings.Secure.getIntForUser(context.getContentResolver(),
-                DOZE_ALWAYS_ON, 1, UserHandle.USER_CURRENT) != 0;
+                DOZE_ALWAYS_ON, 0, UserHandle.USER_CURRENT) != 0;
     }
 
     protected static boolean alwaysOnDisplayAvailable(Context context) {
