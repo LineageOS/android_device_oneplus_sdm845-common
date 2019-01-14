@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cf85b973_ee290ee3",
+        "filename": "doze/src/org/lineageos/settings/doze/Utils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-01-14T19:25:46Z",
+      "side": 1,
+      "message": "0",
+      "range": {
+        "startLine": 92,
+        "startChar": 32,
+        "endLine": 92,
+        "endChar": 33
+      },
+      "revId": "5a7e48a92ae4dfb2b0a4dc28c68f8f7b4a9aa0db",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
