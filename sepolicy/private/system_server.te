@@ -1,2 +1,0 @@
-# Allow access to LiveDisplay tuning nodes
-allow system_server sysfs_livedisplay_tuneable:file rw_file_perms;
