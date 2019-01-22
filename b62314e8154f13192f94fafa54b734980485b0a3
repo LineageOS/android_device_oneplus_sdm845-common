@@ -1,0 +1,130 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62808ffe_01352592",
+        "filename": "livedisplay/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-01-22T13:57:04Z",
+      "side": 1,
+      "message": "copy entire header from tri-state-key.",
+      "revId": "b62314e8154f13192f94fafa54b734980485b0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "005eee33_4e1566e2",
+        "filename": "sepolicy/private/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-01-22T13:57:04Z",
+      "side": 1,
+      "message": "4 spaces here plz",
+      "range": {
+        "startLine": 2,
+        "startChar": 19,
+        "endLine": 2,
+        "endChar": 20
+      },
+      "revId": "b62314e8154f13192f94fafa54b734980485b0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ac81b4fa_1d9a49a2",
+        "filename": "sepolicy/private/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-01-22T13:57:04Z",
+      "side": 1,
+      "message": "tab -\u003e spaces, also would be nice if you could align all of them.",
+      "range": {
+        "startLine": 20,
+        "startChar": 72,
+        "endLine": 20,
+        "endChar": 73
+      },
+      "revId": "b62314e8154f13192f94fafa54b734980485b0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e5e29aed_dc239afd",
+        "filename": "touch/Android.bp",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-01-22T13:57:04Z",
+      "side": 1,
+      "message": "copy entire header from tri-state-key.",
+      "revId": "b62314e8154f13192f94fafa54b734980485b0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b09896b1_dc1427af",
+        "filename": "touch/TouchscreenGesture.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-01-22T13:57:04Z",
+      "side": 1,
+      "message": "I think this would look better\n\n```\n    const auto entry \u003d kGestureInfoMap.find(gesture.id);\n    if (entry !\u003d kGestureInfoMap.end()) {\n        std::ofstream file(entry-\u003esecond.path);\n        file \u003c\u003c (enabled ? \"1\" : \"0\");\n        LOG(DEBUG) \u003c\u003c \"Wrote file \" \u003c\u003c entry-\u003esecond.path \u003c\u003c \" fail \" \u003c\u003c file.fail();\n        return !file.fail();\n    }\n    return false;\n```",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 65,
+        "endChar": 5
+      },
+      "revId": "b62314e8154f13192f94fafa54b734980485b0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e15c0907_50b590f9",
+        "filename": "touch/TouchscreenGesture.h",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-01-22T13:57:04Z",
+      "side": 1,
+      "message": "2 spaces to match tri-state-key.",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 4
+      },
+      "revId": "b62314e8154f13192f94fafa54b734980485b0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
