@@ -1,2 +1,5 @@
-# Allow access to LiveDisplay tuning nodes
-allow system_server sysfs_livedisplay:file rw_file_perms;
+allow system_server shal_lineage_livedisplay_hwservice:hwservice_manager find;
+binder_call(system_server, hal_livedisplay_sdm845)
+
+allow system_server shal_lineage_touch_hwservice:hwservice_manager find;
+binder_call(system_server, hal_touch_sdm845)
