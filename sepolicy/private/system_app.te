@@ -1,1 +1,5 @@
-allow system_app sysfs_fpc_proximity:file { w_file_perms getattr };
+allow system_app shal_lineage_livedisplay_hwservice:hwservice_manager find;
+binder_call(system_app, hal_livedisplay_sdm845)
+
+allow system_app shal_lineage_touch_hwservice:hwservice_manager find;
+binder_call(system_app, hal_touch_sdm845)
