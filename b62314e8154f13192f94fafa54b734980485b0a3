@@ -105,6 +105,24 @@
     },
     {
       "key": {
+        "uuid": "5479e69e_e23d9c01",
+        "filename": "touch/TouchscreenGesture.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2019-01-22T15:16:15Z",
+      "side": 1,
+      "message": "I much prefer the original solution (less nesting), except that the else statement should die.\n\nif (entry \u003d\u003d ...) {\n    return false;\n}\nstd::ofstream ...\n...\nreturn !file.fail();",
+      "parentUuid": "b09896b1_dc1427af",
+      "revId": "b62314e8154f13192f94fafa54b734980485b0a3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e15c0907_50b590f9",
         "filename": "touch/TouchscreenGesture.h",
         "patchSetId": 4

@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "db5ebe6a_9289c215",
+        "filename": "livedisplay/DisplayModes.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2019-01-22T15:16:15Z",
+      "side": 1,
+      "message": "Ugh, putting closing brace on the same line is ugly.",
+      "revId": "cc7999b73fb234b6b53e731ddd534bc0ce791ab1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9e12009c_b15e95ab",
+        "filename": "livedisplay/DisplayModes.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2019-01-22T15:16:15Z",
+      "side": 1,
+      "message": "Could also set value to kModeMap.at(mDefaultModeId).value here and use the logic below.\n\nYes, I know it\u0027s a bit less efficient, but I doubt it actually matters here.",
+      "revId": "cc7999b73fb234b6b53e731ddd534bc0ce791ab1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a65316e3_41b393b3",
+        "filename": "livedisplay/DisplayModes.h",
+        "patchSetId": 7
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2019-01-22T15:16:15Z",
+      "side": 1,
+      "message": "Probably should move those (the actually used ones that is) to cpp",
+      "revId": "cc7999b73fb234b6b53e731ddd534bc0ce791ab1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
