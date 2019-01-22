@@ -1,0 +1,17 @@
+type hal_touch_sdm845, domain;
+hwbinder_use(hal_touch_sdm845)
+
+type hal_touch_sdm845_exec, exec_type, file_type;
+init_daemon_domain(hal_touch_sdm845)
+
+add_hwservice(hal_touch_sdm845, shal_lineage_touch_hwservice)
+
+# Talk to the binder device node
+allow hal_touch_sdm845 binder_device:chr_file rw_file_perms;
+
+# Check if hwservicemanager is ready
+get_prop(hal_touch_sdm845, hwservicemanager_prop)
+
+# Allow access to gesture enable nodes
+r_dir_file(hal_touch_sdm845, proc_touchpanel)
+allow hal_touch_sdm845 proc_touchpanel:file w_file_perms;
