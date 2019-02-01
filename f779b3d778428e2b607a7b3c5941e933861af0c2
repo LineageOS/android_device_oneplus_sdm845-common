@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f134a3c_2f167f34",
+        "filename": "sepolicy/private/hal_livedisplay_sdm845.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-01T09:38:49Z",
+      "side": 1,
+      "message": "hal_server_domain(hal_livedisplay_sdm845, hal_lineage_livedisplay)",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 36
+      },
+      "revId": "f779b3d778428e2b607a7b3c5941e933861af0c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec18a6d3_69a7840b",
+        "filename": "sepolicy/private/hal_livedisplay_sdm845.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-01T09:38:49Z",
+      "side": 1,
+      "message": "Can be removed.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 55
+      },
+      "revId": "f779b3d778428e2b607a7b3c5941e933861af0c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3577c40a_e2da2252",
+        "filename": "sepolicy/private/hal_livedisplay_sdm845.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-01T09:38:49Z",
+      "side": 1,
+      "message": "Can be removed if you relabel your nodes to sysfs_livedisplay_tuneable type.",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 66
+      },
+      "revId": "f779b3d778428e2b607a7b3c5941e933861af0c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92dd3c5b_08553a98",
+        "filename": "sepolicy/private/hwservice.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-01T09:38:49Z",
+      "side": 1,
+      "message": "Can be removed.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 0
+      },
+      "revId": "f779b3d778428e2b607a7b3c5941e933861af0c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bd62ba05_eacfbb38",
+        "filename": "sepolicy/private/hwservice_contexts",
+        "patchSetId": 16
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-01T09:38:49Z",
+      "side": 1,
+      "message": "Can be removed.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 84
+      },
+      "revId": "f779b3d778428e2b607a7b3c5941e933861af0c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d1ac2b5_0c497bf3",
+        "filename": "sepolicy/private/system_app.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-01T09:38:49Z",
+      "side": 1,
+      "message": "Can be removed.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 41
+      },
+      "revId": "f779b3d778428e2b607a7b3c5941e933861af0c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "be276c73_86a5e6a9",
+        "filename": "sepolicy/private/system_server.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-02-01T09:38:49Z",
+      "side": 1,
+      "message": "Can be removed.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 44
+      },
+      "revId": "f779b3d778428e2b607a7b3c5941e933861af0c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
