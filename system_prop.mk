@@ -40,6 +40,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=9
 
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1  \
+    persist.dbg.wfc_avail_ovr=1
+
 # IOP
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.iop.enable_prefetch_ofr=1 \
