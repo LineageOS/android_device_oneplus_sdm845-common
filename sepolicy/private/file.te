@@ -5,7 +5,7 @@ type op1_file, file_type;
 type op2_file, file_type;
 type persist_file, file_type;
 type proc_touchpanel, fs_type;
-type sysfs_livedisplay, sysfs_type, fs_type;
 type sysfs_fpc_proximity, sysfs_type, fs_type;
 type sysfs_oem, sysfs_type, fs_type;
+type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_battery_supply, sysfs_type, fs_type;
