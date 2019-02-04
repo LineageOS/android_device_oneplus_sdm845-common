@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
     KeyHandler \
     tri-state-key_daemon
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service.oneplus_sdm845
+
 # Update engine
 PRODUCT_PACKAGES += \
     brillo_update_payload \
