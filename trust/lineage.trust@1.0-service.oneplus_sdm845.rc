@@ -1,0 +1,4 @@
+service trust-hal-1-0 /system/bin/hw/lineage.trust@1.0-service.oneplus_sdm845
+    class hal
+    user root
+    group root
