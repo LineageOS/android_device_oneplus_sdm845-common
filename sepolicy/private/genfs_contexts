@@ -3,3 +3,5 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/main u:object_r:sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/hbm u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/display_mode u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/hbm u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/display_mode u:object_r:sysfs_livedisplay_tuneable:s0
