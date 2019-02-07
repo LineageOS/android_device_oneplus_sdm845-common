@@ -10,6 +10,6 @@ on post-fs-data
     mkdir /data/misc/display 0770 system graphics
 
 service vendor.livedisplay-hal-2-1 /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.oneplus_sdm845
-    class hal
+    class late_start
     user system
     group system
