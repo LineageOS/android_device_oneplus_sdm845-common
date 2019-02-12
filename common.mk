@@ -127,10 +127,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OnePlusDoze
 
-# Fingerprint HAL
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
-
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
