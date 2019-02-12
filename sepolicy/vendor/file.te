@@ -1,0 +1,3 @@
+# rootfs
+type op1_file, file_type;
+type op2_file, file_type;
