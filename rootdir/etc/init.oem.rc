@@ -153,6 +153,10 @@ on init
 on property:vendor.wlan.write.con_mode=*
     write /sys/module/wlan/parameters/con_mode ${vendor.wlan.write.con_mode}
 
+on property:vendor.usb.controller=*
+    #Load WLAN driver
+    insmod /vendor/lib/modules/wlan.ko
+
 service OPNetlinkService /vendor/bin/OPNetlinkService
     class core
     user system
