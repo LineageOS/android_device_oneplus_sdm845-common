@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
+    SecureElement \
     Tag \
     com.android.nfc_extras
 
