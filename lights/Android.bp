@@ -18,15 +18,19 @@ cc_binary {
     defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.oneplus_sdm845",
     init_rc: ["android.hardware.light@2.0-service.oneplus_sdm845.rc"],
-    srcs: ["service.cpp", "Light.cpp"],
+    srcs: [
+        "Light.cpp",
+        "service.cpp",
+    ],
+    vendor: true,
     shared_libs: [
+        "android.hardware.light@2.0",
         "libbase",
         "libhardware",
         "libhidlbase",
         "libhidltransport",
-        "liblog",
         "libhwbinder",
+        "liblog",
         "libutils",
-        "android.hardware.light@2.0",
     ],
 }
