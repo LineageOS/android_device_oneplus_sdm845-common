@@ -1,0 +1,7 @@
+ro.vendor.graphics.memory             u:object_r:public_vendor_default_prop:s0
+vendor.debug.egl.changepixelformat    u:object_r:public_vendor_default_prop:s0
+vendor.debug.egl.profiler             u:object_r:public_vendor_default_prop:s0
+vendor.debug.egl.swapinterval         u:object_r:public_vendor_default_prop:s0
+vendor.debug.prerotation.disable      u:object_r:public_vendor_default_prop:s0
+vendor.debug.rs.                      u:object_r:public_vendor_default_prop:s0
+vendor.dump.gpu.output                u:object_r:public_vendor_default_prop:s0
