@@ -20,14 +20,15 @@ cc_binary {
         "main.cpp",
         "uevent_listener.cpp",
     ],
+    vendor: true,
     cppflags: [
         "-Wall",
         "-Werror",
     ],
     shared_libs: [
         "libbase",
-        "liblog",
         "libcutils",
+        "liblog",
         "libutils",
     ],
 }
