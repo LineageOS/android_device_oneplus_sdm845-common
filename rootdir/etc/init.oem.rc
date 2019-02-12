@@ -1,0 +1,258 @@
+service self-init /vendor/bin/self-init
+    class core
+    user root
+    oneshot
+
+on post-fs-data
+    # Set system property before zygote start
+    start self-init
+
+    #NFC, ruanbanmao add for 15801 nfc. 2015/10/19
+    mkdir /data/nfc
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/oemnvitems  0771 radio radio
+    #fingerint, changhua add for fp debug image usage,feature default off
+    mkdir /data/fpc_images 0770 system system
+    mkdir /data/fpc_images/verify 0770 system system
+    mkdir /data/fpc_images/enroll 0770 system system
+    mkdir /data/fpc 0770 system system
+    mkdir /data/vendor_de/silead 0770 system system
+    mkdir /mnt/vendor/persist/silead 0777 system system
+    mkdir /mnt/vendor/persist/goodix 0777 system system
+    mkdir /data/coredump  0777 system system
+    mkdir /data/theme 0775 system system
+    mkdir /data/mdm 0775 system system
+    mkdir /data/theme_storage 0775 system system
+    #mediaserver, lifei add for Watchdog monitoring mediaextractor process. 2017/08/11
+    mkdir /mnt/vendor/persist/hdcp/media_dump 0770 mediaex mediadrm
+    mkdir /data/reserve-lib 0775 system system
+    mkdir /data/oem_log  0770 system system
+    mkdir /persist/hdcp  775 media mediadrm
+    mkdir /mnt/vendor/persist/hdcp  775 media mediadrm
+    mkdir /data/vendor/misc/qsee/face/  0770 system system
+
+on boot
+    chmod 0664 /sys/devices/platform/soc/soc:fpc_fpc1020/irq
+    chown system system /sys/devices/platform/soc/soc:fpc_fpc1020/irq
+    chmod 0660 /sys/devices/platform/soc/soc:fpc_fpc1020/report_home
+    chown system system /sys/devices/platform/soc/soc:fpc_fpc1020/report_home
+    chmod 0660 /sys/devices/platform/soc/soc:fpc_fpc1020/report_key
+    chown system system /sys/devices/platform/soc/soc:fpc_fpc1020/report_key
+    chmod 0660 /sys/devices/platform/soc/soc:fpc_fpc1020/update_info
+    chown system system /sys/devices/platform/soc/soc:fpc_fpc1020/update_info
+    chmod 0660 /sys/devices/platform/soc/soc:fpc_fpc1020/screen_state
+    chown system system /sys/devices/platform/soc/soc:fpc_fpc1020/screen_state
+    chmod 0660 /sys/devices/platform/soc/soc:fingerprint_detect/sensor_version
+    chown system system /sys/devices/platform/soc/soc:fingerprint_detect/sensor_version
+    chmod 0660 /sys/devices/platform/soc/soc:fpc_fpc1020/hw_reset
+    chown system system /sys/devices/platform/soc/soc:fpc_fpc1020/hw_reset
+    chmod 0660 /sys/devices/platform/soc/soc:fpc_fpc1020/wakeup_enable
+    chown system system /sys/devices/platform/soc/soc:fpc_fpc1020/wakeup_enable
+    chmod 0664 /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0020/fp_irq
+    chown system system /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0020/fp_irq
+    chmod 0664 /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0020/tp_gesture_touch_hold
+    chown system system /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0020/tp_gesture_touch_hold
+    chmod 0664 sys/devices/platform/soc/soc:goodix_fp/screen_state
+    chown system system sys/devices/platform/soc/soc:goodix_fp/screen_state
+    chmod 0664 /sys/devices/platform/soc/soc:silead_fp/screen_state
+    chown system system /sys/devices/platform/soc/soc:silead_fp/screen_state
+    chmod 0666 /dev/qseecom
+    #liuyan 2017/7/27 add for goodix fp
+    chmod 0666 /dev/goodix_fp
+    chmod 0666 /dev/silead_fp
+    chown system system /dev/silead_fp
+    #NFC, ruanbanmao add for 15801 nfc. 2015/10/19
+    setprop ro.nfc.port "I2C"
+    chmod 0666 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+    chmod 0666 /dev/p73
+    chown secure_element secure_element /dev/p73
+    chmod 0666 /dev/dash/
+    restorecon  /dev/dash
+
+    chown system system /sys/class/leds/red/pause_lo
+    chown system system /sys/class/leds/blue/pause_lo
+    chown system system /sys/class/leds/green/pause_lo
+
+    chown system system /sys/class/leds/red/pause_hi
+    chown system system /sys/class/leds/blue/pause_hi
+    chown system system /sys/class/leds/green/pause_hi
+
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/blue/blink
+    chown system system /sys/class/leds/green/blink
+
+    chown system system /proc/touchpanel/gesture_enable
+    chown system system /proc/touchpanel/gesture_switch
+    chown system system /proc/touchpanel/key_switch
+    chown system system /proc/touchpanel/key_disable
+    chown system system /proc/touchpanel/tpedge_limit_enable
+    chown system system /proc/touchpanel/tp_debug_log
+
+    chown system system /sys/bus/i2c/drivers/synaptics,s3320/tp_debug_log
+    chmod 0666 /sys/bus/i2c/drivers/synaptics,s3320/tp_debug_log
+
+    chown system system /proc/rf_cable_config
+
+    # camera. enable mobicat
+    setprop persist.camera.mobicat 2
+    setprop persist.camera.stats.debugexif 3080192
+    # camera. enable mobicat
+
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chmod 666 /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chmod 666 /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chmod 666 /sys/class/leds/led:switch_0/brightness
+
+    chown system system /sys/class/leds/red/ramp_step_ms
+    chown system system /sys/class/leds/blue/ramp_step_ms
+    chown system system /sys/class/leds/green/ramp_step_ms
+    chown system system /sys/class/leds/red/duty_pcts
+    chown system system /sys/class/leds/blue/duty_pcts
+    chown system system /sys/class/leds/green/duty_pcts
+    chmod 660 /sys/class/leds/red/ramp_step_ms
+    chmod 660 /sys/class/leds/green/ramp_step_ms
+    chmod 660 /sys/class/leds/blue/ramp_step_ms
+    chmod 660 /sys/class/leds/red/duty_pcts
+    chmod 660 /sys/class/leds/green/duty_pcts
+    chmod 660 /sys/class/leds/blue/duty_pcts
+    chmod 666 /sys/class/leds/red/brightness
+    chmod 666 /sys/class/leds/green/brightness
+    chmod 666 /sys/class/leds/blue/brightness
+
+    write /sys/bus/i2c/devices/5-0020/tp_fw_update 0
+
+    write /proc/sys/net/ipv4/tcp_mtu_probing 1
+
+    mkdir /data/oiface 0700 system system
+
+    setprop vendor.camera.aux.packagelist "org.codeaurora.snapcam,com.oneplus.factorymode,com.oneplus.camera,com.oneplus.healthcheck"
+
+    chmod 0777 /persist/dual_camera_calibration
+    chmod 0644 /persist/dual_camera_calibration/calibrationOutput.bin
+    setprop camera.disable_zsl_mode "1"
+
+    write /sys/devices/platform/soc/a90000.i2c/i2c-3/3-0020/tp_fw_update 0
+    write /sys/devices/platform/soc/a90000.i2c/i2c-4/4-0020/tp_fw_update 0
+
+on init
+    mount tmpfs none /sys/fs/cgroup mode=0750,uid=0,gid=1000
+    mkdir /sys/fs/cgroup/freezer 0750 root system
+    mount cgroup none /sys/fs/cgroup/freezer  freezer
+    chmod 777 /sys/fs/cgroup/freezer
+
+    mkdir /sys/fs/cgroup/net_cls 
+    chmod 777 /sys/fs/cgroup/net_cls 
+    mount cgroup  none /sys/fs/cgroup/net_cls net_cls
+    chmod 777 /sys/fs/cgroup/net_cls/tasks
+    mkdir /sys/fs/cgroup/net_cls/background 0777
+    chmod 777 /sys/fs/cgroup/net_cls/background/tasks
+
+on property:vendor.wlan.write.con_mode=*
+    write /sys/module/wlan/parameters/con_mode ${vendor.wlan.write.con_mode}
+
+service OPNetlinkService /vendor/bin/OPNetlinkService
+    class core
+    user system
+    group system
+    oneshot
+
+on charger
+    start OPNetlinkService
+
+on post-fs
+    chown system system /proc/ship_mode
+    chown system system /dev/param
+    chown system system /dev/block/mmcblk0p21
+    chmod 660 /dev/block/mmcblk0p21
+    chown system system /sys/class/timed_output/vibrator/vmax
+    chown system system /sys/class/timed_output/vibrator/wf_s0
+    chown system system /sys/class/timed_output/vibrator/wf_s1
+    chown system system /sys/class/timed_output/vibrator/wf_s2
+    chown system system /sys/class/timed_output/vibrator/wf_s3
+    chown system system /sys/class/timed_output/vibrator/wf_s4
+    chown system system /sys/class/timed_output/vibrator/wf_s5
+    chown system system /sys/class/timed_output/vibrator/wf_s6
+    chown system system /sys/class/timed_output/vibrator/wf_s7
+    chown system system /sys/class/timed_output/vibrator/wf_update
+    chown system system /sys/class/timed_output/vibrator/wf_rep
+    chown system system /sys/class/timed_output/vibrator/wf_s_rep
+    chown system system /sys/devices/soc/c179000.i2c/i2c-5/5-0020/tp_grip_ctrl
+    chown system log /sys/fs/pstore/console-ramoops-0
+    chmod 0440 /sys/fs/pstore/console-ramoops-0
+    chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chown system system /sys/module/param_read_write/parameters/normal_reboot_count
+    chown system system /sys/module/param_read_write/parameters/abnormal_reboot_count
+    chown system system /sys/module/param_read_write/parameters/update_count
+    chown system system /sys/module/param_read_write/parameters/fastboot_count
+    chown system system /sys/class/power_supply/bms/set_allow_read_extern_fg_iic
+    chown system system /persist/sensors/registry/registry/tmd3725_platform.rgb.rfac_cal
+    chmod 660 /persist/sensors/registry/registry/tmd3725_platform.rgb.rfac_cal
+    chown system system /persist/sensors/registry/registry/tmd3725_platform.als.afac_cal
+    chmod 660 /persist/sensors/registry/registry/tmd3725_platform.als.afac_cal
+    chown system system /sys/class/leds/vibrator/vmax_mv
+    chmod 660 /sys/class/leds/vibrator/vmax_mv
+    #wangdongdong@MultiMediaService,2018/03/28,change the mode of the file
+    chmod 0664 /persist/spkr_calibration.bin
+    chown system system /sys/class/leds/vibrator/test_mode
+    chmod 660 /sys/class/leds/vibrator/test_mode
+    chown system system /sys/class/leds/vibrator/trigger
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/brightness
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+
+    /* create a empty file for wifi hal to write mac address */
+    write /mnt/vendor/persist/wlan_mac.bin ""
+    chown wifi wifi /mnt/vendor/persist/wlan_mac.bin
+    mkdir /mnt/vendor/persist/engineermode
+    chown system system /mnt/vendor/persist/engineermode
+    mkdir /mnt/vendor/persist/hdcp 775 media mediadrm
+    mkdir /mnt/vendor/persist/camera
+    chown system system /mnt/vendor/persist/camera
+    mkdir /mnt/vendor/persist/dual_camera_calibration 0777 system system
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/msm/mpss/server_check.txt
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/msm/mpss
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/msm/adsp
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/msm/slpi
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/msm
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/apq/gnss
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/apq
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/mdm
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/mdm/adsp
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/mdm/mpss
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/mdm/slpi
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/mdm/tn
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/shared
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs/shared/server_info.txt
+    chown vendor_rfs vendor_rfs /mnt/vendor/persist/rfs
+    mkdir /mnt/vendor/persist/OPDiagnose
+    chown system system /mnt/vendor/persist/OPDiagnose
+    chown system system /sys/class/power_supply/battery/connect_disable
+
+on property:persist.sys.oem.otg_support=true
+    write /sys/class/power_supply/usb/otg_switch 1
+
+on property:persist.sys.oem.otg_support=false
+    write /sys/class/power_supply/usb/otg_switch 0
+
+on property:sys.boot_completed=1
+    write /sys/module/smb_lib/parameters/sys_boot_complete 1
+    chown system system /sys/module/lpm_levels/parameters/cluster_prediction
+    chmod 0666 /sys/module/lpm_levels/parameters/cluster_prediction
+
+service ifaadaemon /vendor/bin/ifaadaemon
+    class late_start
+    user system
+    group system
+
+service remosaic_deamon /vendor/bin/remosaic_daemon
+    class late_start
+    user camera
+
+service dashd /sbin/dashd
+    critical
+    seclabel u:r:dashd:s0
+    group root system
