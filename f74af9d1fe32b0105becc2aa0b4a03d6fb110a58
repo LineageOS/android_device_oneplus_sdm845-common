@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e61f6367_6116ac8f",
+        "filename": "common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-02-12T21:06:46Z",
+      "side": 1,
+      "message": "Is this OSS?",
+      "range": {
+        "startLine": 116,
+        "startChar": 4,
+        "endLine": 116,
+        "endChar": 45
+      },
+      "revId": "f74af9d1fe32b0105becc2aa0b4a03d6fb110a58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
