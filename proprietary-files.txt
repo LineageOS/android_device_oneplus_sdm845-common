@@ -70,6 +70,19 @@ lib64/lib-imsvtutils.so
 lib64/librcc.so
 lib64/vendor.qti.imsrtpservice@1.0.so
 
+# NFC
+-app/NxpNfcNci/NxpNfcNci.apk|3f64ad4d8d03e05fdcbe44b9a97ba87aa7d33afc
+-app/NxpSecureElement/NxpSecureElement.apk
+etc/nfcee_access.xml
+etc/permissions/com.nxp.nfc.xml
+framework/com.nxp.nfc.jar
+lib64/android.hardware.secure_element@1.0.so
+lib64/ese_spi_nxp.so
+lib64/libnxpnfc_nci_jni.so
+lib64/libnxpnfc-nci.so
+lib64/vendor.nxp.nxpese@1.0.so
+lib64/vendor.nxp.nxpnfc@1.0.so
+
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
