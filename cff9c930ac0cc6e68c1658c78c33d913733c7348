@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eedb5431_68e8b06a",
+        "filename": "tri-state-key/Android.bp",
+        "patchSetId": 10
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-02-16T22:47:42Z",
+      "side": 1,
+      "message": "Make .rc point to vendor",
+      "revId": "cff9c930ac0cc6e68c1658c78c33d913733c7348",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
