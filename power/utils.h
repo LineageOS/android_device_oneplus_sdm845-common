@@ -27,6 +27,8 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <time.h>
+
 #include <cutils/properties.h>
 
 int sysfs_read(char* path, char* s, int num_bytes);

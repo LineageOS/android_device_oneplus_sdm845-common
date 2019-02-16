@@ -29,13 +29,15 @@
 
 #define LOG_TAG "QCOM PowerHAL"
 
-#include "powerhintparser.h"
 #include <cutils/log.h>
 #include <cutils/properties.h>
 #include <fcntl.h>
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 #include <string.h>
+#include <unistd.h>
+
+#include "powerhintparser.h"
 
 int parsePowerhintXML() {
     xmlDocPtr doc;

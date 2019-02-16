@@ -32,6 +32,7 @@
 #include <dlfcn.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <pthread.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
@@ -52,8 +53,8 @@
 #define NUM_PERF_MODES 3
 
 const int kMaxInteractiveDuration = 5000; /* ms */
-const int kMinInteractiveDuration = 100; /* ms */
-const int kMinFlingDuration = 1500; /* ms */
+const int kMinInteractiveDuration = 100;  /* ms */
+const int kMinFlingDuration = 1500;       /* ms */
 
 typedef enum {
     NORMAL_MODE = 0,
@@ -216,8 +217,8 @@ static int process_interaction_hint(void* data) {
     if (data) {
         int input_duration = *((int*)data);
         if (input_duration > duration) {
-            duration = (input_duration > kMaxInteractiveDuration) ?
-                    kMaxInteractiveDuration : input_duration;
+            duration = (input_duration > kMaxInteractiveDuration) ? kMaxInteractiveDuration
+                                                                  : input_duration;
         }
     }
 
