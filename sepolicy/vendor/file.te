@@ -1,0 +1,5 @@
+# data
+type wifi_nv_data_file, file_type, data_file_type;
+
+# proc
+type proc_touchpanel, fs_type, proc_type;

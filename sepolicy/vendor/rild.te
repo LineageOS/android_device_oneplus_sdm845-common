@@ -1,0 +1,6 @@
+# Write NV items
+allow rild wifi_nv_data_file:dir rw_dir_perms;
+allow rild wifi_nv_data_file:file create_file_perms;
+
+# Set IMEI props
+set_prop(rild, vendor_oem_prop);
