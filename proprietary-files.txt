@@ -59,7 +59,7 @@ lib64/libdpmtcm.so
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 
 # IMS
--app/ims/ims.apk|a0b9a51f337f0234ae10694bd3595949a29a3376
+-priv-app/ims/ims.apk|ae253323217a6e29155b502eda5d58d332546c5e
 lib64/libdiag_system.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
