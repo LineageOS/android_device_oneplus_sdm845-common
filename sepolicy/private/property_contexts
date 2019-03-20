@@ -1,3 +1,4 @@
+persist.sys.oem.otg_support           u:object_r:public_vendor_default_prop:s0
 ro.vendor.graphics.memory             u:object_r:public_vendor_default_prop:s0
 vendor.debug.egl.changepixelformat    u:object_r:public_vendor_default_prop:s0
 vendor.debug.egl.profiler             u:object_r:public_vendor_default_prop:s0
