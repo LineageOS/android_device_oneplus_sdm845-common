@@ -1,0 +1,5 @@
+package vendor.oneplus.hardware.display@1.0;
+
+interface IOneplusDisplay {
+	setMode(int32_t mode, int32_t enable);
+};
