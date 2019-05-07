@@ -67,6 +67,16 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Treble
 BOARD_VNDK_VERSION := current
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    system \
+    vbmeta \
+    vendor
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
