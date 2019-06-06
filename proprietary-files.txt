@@ -59,7 +59,7 @@ lib64/libdpmtcm.so
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 
 # IMS
--priv-app/ims/ims.apk|ae253323217a6e29155b502eda5d58d332546c5e
+-app/ims/ims.apk|2f46fba0d00216248ebab92abe3c4fba32cf9e2e
 lib64/libdiag_system.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
@@ -79,9 +79,9 @@ lib/libmmparser_lite.so
 lib/libOmxMux.so
 
 # NFC
--app/NxpNfcNci/NxpNfcNci.apk|3f64ad4d8d03e05fdcbe44b9a97ba87aa7d33afc
+-app/NxpNfcNci/NxpNfcNci.apk|7289b5d9db7fa17abf70e6a95690021de8a4cf1c
 -app/NxpSecureElement/NxpSecureElement.apk
-etc/nfcee_access.xml|61a2dbaec0339b6c3c79b487a704d5dc6306b284
+etc/nfcee_access.xml|82bbfb8b456b41e6284562233006862303175e07
 etc/permissions/com.nxp.nfc.xml
 framework/com.nxp.nfc.jar
 lib64/ese_spi_nxp.so
@@ -91,14 +91,14 @@ lib64/libnxpnfc-nci.so
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
-etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
+etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 etc/permissions/qti_permissions.xml
 etc/permissions/telephonyservice.xml
 etc/permissions/privapp-permissions-qti.xml
 etc/sysconfig/qti_whitelist.xml
 framework/qcrilhook.jar
 framework/qcnvitems.jar
-framework/qti-telephony-common.jar|b1d392dbc9b06ac8d650b874c502da0a3fff81c7
+framework/qti-telephony-common.jar|5af50f654d6174a726c0a57b5f32254e1a9d3016
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
@@ -132,5 +132,5 @@ lib/libwfduibcsinkinterface.so
 lib/libwfduibcsrc.so
 lib/libwfduibcsrcinterface.so
 lib64/libwfdclient.so
-lib64/libwfdnative.so|e6553d35102f50b5cf6dbce9b75a4a5c715837b7
+lib64/libwfdnative.so|4b899abe2d21b607b2c2d8ddd94f989d8e5ccd6a
 -priv-app/WfdService/WfdService.apk
