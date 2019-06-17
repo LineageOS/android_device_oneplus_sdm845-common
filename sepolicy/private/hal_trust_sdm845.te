@@ -4,9 +4,6 @@ hal_server_domain(hal_trust_sdm845, hal_lineage_trust)
 type hal_trust_sdm845_exec, exec_type, file_type;
 init_daemon_domain(hal_trust_sdm845)
 
-# Talk to the binder device node
-allow hal_trust_sdm845 binder_device:chr_file rw_file_perms;
-
 # Allow access to otg toggle node
 allow hal_trust_sdm845 sysfs_usb_supply:dir search;
 allow hal_trust_sdm845 sysfs_usb_supply:file rw_file_perms;
