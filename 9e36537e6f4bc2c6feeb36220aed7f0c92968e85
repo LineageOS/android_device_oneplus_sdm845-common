@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8c40531_419ec993",
+        "filename": "livedisplay/lineage.livedisplay@2.0-service.oneplus_sdm845.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-06-17T09:59:35Z",
+      "side": 1,
+      "message": "Danny: Do you have any idea why I have to do that? I logged strerror(errno) in DisplayModes::setDisplayMode() and I supposedly got \u0027Permission denied\u0027 but I don\u0027t really understand why.",
+      "range": {
+        "startLine": 11,
+        "startChar": 10,
+        "endLine": 11,
+        "endChar": 14
+      },
+      "revId": "9e36537e6f4bc2c6feeb36220aed7f0c92968e85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
