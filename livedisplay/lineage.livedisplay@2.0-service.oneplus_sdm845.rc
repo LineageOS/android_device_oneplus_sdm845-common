@@ -8,6 +8,6 @@ on boot
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
 
 service livedisplay-hal-2-0 /system/bin/hw/lineage.livedisplay@2.0-service.oneplus_sdm845
-    class hal
+    class main
     user system
     group system

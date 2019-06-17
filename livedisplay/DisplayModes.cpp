@@ -53,6 +53,8 @@ DisplayModes::DisplayModes() : mDefaultModeId(0) {
             break;
         }
     }
+
+    setDisplayMode(mDefaultModeId, false);
 }
 
 // Methods from ::vendor::lineage::livedisplay::V2_0::IDisplayModes follow.
