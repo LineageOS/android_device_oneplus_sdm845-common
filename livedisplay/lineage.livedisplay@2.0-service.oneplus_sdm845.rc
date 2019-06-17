@@ -1,3 +1,6 @@
+on post-fs-data
+    mkdir /data/misc/display 0770 system graphics
+
 on boot
     chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
