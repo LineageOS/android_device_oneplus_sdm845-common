@@ -1,11 +1,11 @@
-on post-fs-data
-    mkdir /data/misc/display 0770 system graphics
-
-on boot
+on init
     chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
+
+on post-fs-data
+    mkdir /data/misc/display 0770 system graphics
 
 service livedisplay-hal-2-0 /system/bin/hw/lineage.livedisplay@2.0-service.oneplus_sdm845
     class hal
