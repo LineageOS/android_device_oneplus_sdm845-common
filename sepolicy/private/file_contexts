@@ -1,5 +1,5 @@
 # Data files
-/data/display(/.*)?      u:object_r:display_data_file:s0
+/data/misc/display(/.*)?      u:object_r:display_misc_file:s0
 
 # Files in rootfs
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0

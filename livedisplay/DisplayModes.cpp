@@ -28,7 +28,7 @@ namespace implementation {
 
 static constexpr const char* kModePath =
     "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode";
-static constexpr const char* kDefaultPath = "/data/system/default_display_mode";
+static constexpr const char* kDefaultPath = "/data/misc/display/default_display_mode";
 
 const std::map<int32_t, DisplayModes::ModeInfo> DisplayModes::kModeMap = {
     {0, {"Standard", "default"}},
