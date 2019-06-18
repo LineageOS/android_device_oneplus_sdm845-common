@@ -52,10 +52,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.iop.enable_prefetch_ofr=1 \
     vendor.iop.enable_uxe=0
 
-# OTG
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.oem.otg_support=true
-
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.settings.xml=/system/etc/media_profiles_vendor.xml

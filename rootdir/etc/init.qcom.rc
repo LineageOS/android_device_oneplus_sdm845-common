@@ -8,6 +8,9 @@ on boot
     # Fingerprint
     chown system system /sys/devices/platform/soc/soc:goodix_fp/proximity_state
 
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
 
