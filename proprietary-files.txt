@@ -59,7 +59,7 @@ lib64/libdpmtcm.so
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 
 # IMS
--priv-app/ims/ims.apk|ae253323217a6e29155b502eda5d58d332546c5e
+-priv-app/ims/ims.apk|e33b65ab994691938696da56c4f41acd4bf832dc
 lib64/libdiag_system.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
@@ -98,7 +98,7 @@ etc/permissions/privapp-permissions-qti.xml
 etc/sysconfig/qti_whitelist.xml
 framework/qcrilhook.jar
 framework/qcnvitems.jar
-framework/qti-telephony-common.jar|b1d392dbc9b06ac8d650b874c502da0a3fff81c7
+framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
