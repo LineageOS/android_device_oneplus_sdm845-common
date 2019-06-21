@@ -46,6 +46,8 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<void> onHideFODView();
     Return<bool> shouldHandleError(int32_t error);
     Return<void> setLongPressEnabled(bool enabled);
+    Return<int32_t> getDimAmount(int32_t cur_brightness);
+    Return<bool> shouldBoostBrightness();
 
   private:
     sp<IOneplusDisplay> mVendorDisplayService;
