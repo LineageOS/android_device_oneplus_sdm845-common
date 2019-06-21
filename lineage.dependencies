@@ -4,6 +4,10 @@
     "target_path": "kernel/oneplus/sdm845"
   },
   {
+    "repository": "android_device_oneplus_common",
+    "target_path": "device/oneplus/common"
+  },
+  {
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
   }
