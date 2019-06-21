@@ -11,6 +11,7 @@ type proc_touchpanel, fs_type, proc_type;
 
 # sysfs
 type sysfs_battery_supply, sysfs_type, fs_type;
+type sysfs_fod, sysfs_type, fs_type;
 type sysfs_fpc_proximity, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_oem, sysfs_type, fs_type;
