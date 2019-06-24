@@ -122,7 +122,7 @@ lib/libwfdconfigutils.so
 lib/libwfdmminterface.so
 lib/libwfdmmsink.so
 lib/libwfdmmsrc.so
-lib/libwfdnative.so|60e20185f00ed7f3e961787869f83414b820d677
+lib/libwfdnative.so
 lib/libwfdrtsp.so
 lib/libwfdservice.so
 lib/libwfdsm.so
@@ -132,5 +132,5 @@ lib/libwfduibcsinkinterface.so
 lib/libwfduibcsrc.so
 lib/libwfduibcsrcinterface.so
 lib64/libwfdclient.so
-lib64/libwfdnative.so|e6553d35102f50b5cf6dbce9b75a4a5c715837b7
+lib64/libwfdnative.so
 -priv-app/WfdService/WfdService.apk
