@@ -79,7 +79,7 @@ lib/libmmparser_lite.so
 lib/libOmxMux.so
 
 # NFC
--app/NxpNfcNci/NxpNfcNci.apk|3f64ad4d8d03e05fdcbe44b9a97ba87aa7d33afc
+-app/NxpNfcNci/NxpNfcNci.apk|54bdf144c514d8f13c6f0acc37dbe6b6ba79ef4d
 -app/NxpSecureElement/NxpSecureElement.apk
 etc/nfcee_access.xml|61a2dbaec0339b6c3c79b487a704d5dc6306b284
 etc/permissions/com.nxp.nfc.xml
