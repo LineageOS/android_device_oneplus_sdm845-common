@@ -48,10 +48,14 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<void> setLongPressEnabled(bool enabled) override;
     Return<int32_t> getDimAmount(int32_t cur_brightness) override;
     Return<bool> shouldBoostBrightness() override;
+    Return<void> setCallback(const sp<IFingerprintInscreenCallback>& callback) override;
 
   private:
     sp<IOneplusDisplay> mVendorDisplayService;
     sp<IVendorFingerprintExtensions> mVendorFpService;
+
+    std::mutex mCallbackLock;
+    sp<IFingerprintInscreenCallback> mCallback;
 };
 
 }  // namespace implementation
