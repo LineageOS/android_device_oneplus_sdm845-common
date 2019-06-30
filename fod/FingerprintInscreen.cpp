@@ -20,6 +20,8 @@
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
+#include <poll.h>
+#include <thread>
 #include <unistd.h>
 
 #define OP_ENABLE_FP_LONGPRESS 3
@@ -34,6 +36,8 @@
 // This is not a typo by me. It's by OnePlus.
 #define HBM_ENABLE_PATH "/sys/class/drm/card0-DSI-1/op_friginer_print_hbm"
 #define DIM_AMOUNT_PATH "/sys/class/drm/card0-DSI-1/dim_alpha"
+
+#define FP_IRQ_PATH "/sys/devices/platform/soc/a90000.i2c/i2c-4/4-0020/fp_irq"
 
 namespace vendor {
 namespace lineage {
@@ -64,6 +68,51 @@ static T get(const std::string& path, const T& def) {
 FingerprintInscreen::FingerprintInscreen() {
     this->mVendorFpService = IVendorFingerprintExtensions::getService();
     this->mVendorDisplayService = IOneplusDisplay::getService();
+
+    std::thread([this] {
+        while (true) {
+            auto fd = open(FP_IRQ_PATH, O_RDONLY);
+
+            if (fd < 0) {
+                LOG(ERROR) << "Can't open " << FP_IRQ_PATH << "!";
+                return;
+            }
+
+            char value;
+            read(fd, &value, 1);
+
+            {
+                std::lock_guard<std::mutex> _lock(mCallbackLock);
+                if (mCallback != nullptr) {
+                    switch (value) {
+                        case '0': {
+                            Return<void> ret = mCallback->onFingerUp();
+                            if (!ret.isOk()) {
+                                LOG(ERROR) << "FingerUp() error: " << ret.description();
+                            }
+                            break;
+                        }
+                        case '1': {
+                            Return<void> ret = mCallback->onFingerDown();
+                            if (!ret.isOk()) {
+                                LOG(ERROR) << "FingerDown() error: " << ret.description();
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+
+            pollfd ufd{fd, POLLPRI | POLLERR, 0};
+
+            if (poll(&ufd, 1, -1) < 0) {
+                LOG(ERROR) << "Oops, poll() failed";
+                return;
+            }
+
+            close(fd);
+        }
+    }).detach();
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
@@ -144,6 +193,17 @@ Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
     return false;
+}
+
+Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallback>& callback) {
+    LOG(ERROR) << __func__;
+
+    {
+        std::lock_guard<std::mutex> _lock(mCallbackLock);
+        mCallback = callback;
+    }
+
+    return Void();
 }
 
 }  // namespace implementation
