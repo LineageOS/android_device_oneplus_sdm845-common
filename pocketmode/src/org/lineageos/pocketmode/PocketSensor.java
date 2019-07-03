@@ -22,9 +22,11 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.FileUtils;
 import android.text.TextUtils;
 import android.util.Log;
 
+import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -64,8 +66,10 @@ public class PocketSensor implements SensorEventListener {
     }
 
     private void setFPProximityState(boolean isNear) {
-        if (!FileUtils.writeLine(GOODIX_FILE, isNear ? "1" : "0")) {
-            Log.e(TAG, "Proximity state file " + GOODIX_FILE + " is not writable!");
+        try {
+            FileUtils.stringToFile(GOODIX_FILE, isNear ? "1" : "0");
+        } catch (IOException e) {
+            Log.e(TAG, "Failed to write to " + GOODIX_FILE, e);
         }
     }
 
