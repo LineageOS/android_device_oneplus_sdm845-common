@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "122174fe_2788ce55",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 11
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-07-04T20:51:03Z",
+      "side": 1,
+      "message": "SDM845 default value is 2.",
+      "range": {
+        "startLine": 81,
+        "startChar": 35,
+        "endLine": 81,
+        "endChar": 36
+      },
+      "revId": "e9e72fe54c7454e2d774d5201852e2c35676e4aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
