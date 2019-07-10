@@ -171,6 +171,9 @@ persist.backup.ntpServer=0.pool.ntp.org
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # Netflix
 ro.netflix.bsp_rev=Q845-14477-1
 
