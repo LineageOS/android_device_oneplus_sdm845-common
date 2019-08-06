@@ -26,6 +26,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qcom.power.rc",
+    src: "init.qcom.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.recovery.qcom.rc",
     src: "init.recovery.qcom.rc",
     sub_dir: "init",
@@ -43,12 +50,6 @@ prebuilt_etc {
     name: "ueventd.qcom.rc",
     filename: "ueventd.rc",
     src: "ueventd.qcom.rc",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.post_boot.sh",
-    src: "init.qcom.post_boot.sh",
     vendor: true,
 }
 
