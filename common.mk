@@ -170,8 +170,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.oem.rc \
-    init.qcom.post_boot.sh \
     init.qcom.rc \
+    init.qcom.power.rc \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
