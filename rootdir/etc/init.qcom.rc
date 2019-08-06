@@ -29,6 +29,7 @@
 import /vendor/etc/init/hw/init.oem.rc
 #endif VENDOR_EDIT
 
+import /vendor/etc/init/hw/init.qcom.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.target.rc
 
@@ -661,13 +662,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
 #    user root
 #    oneshot
 
-service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
-    class late_start
-    user root
-    group root system wakelock graphics
-    disabled
-    oneshot
-
 service qti-testscripts /system/bin/sh /product/etc/init.qcom.testscripts.sh
     class late_start
     user root
@@ -688,7 +682,6 @@ service wifi-crda /vendor/bin/init.crda.sh
    oneshot
 
 on property:sys.boot_completed=1
-    start qcom-post-boot
     start qti-testscripts
 
 on property:ro.vendor.ril.mbn_copy_completed=1
@@ -788,10 +781,6 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
     user system
     group nfc
 
-on property:init.svc.vendor.charger=running
-    setprop persist.sys.usb.config mass_storage
-    start qcom-post-boot
-
 #add poweroffhandler
 service poweroffhandler /system/vendor/bin/poweroffhandler
     class core
@@ -812,12 +801,6 @@ on property:vendor.rild.libpath=*
 
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
-
-service vendor.power_off_alarm /vendor/bin/power_off_alarm
-    class core
-    group system
-    disabled
-    oneshot
 
 service vendor.hbtp /vendor/bin/hbtp_daemon
      class main
