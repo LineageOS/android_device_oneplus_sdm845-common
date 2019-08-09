@@ -84,7 +84,6 @@ on late-fs
 
 on charger
     setprop persist.sys.usb.config mass_storage
-    trigger enable-low-power
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
 
