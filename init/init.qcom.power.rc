@@ -74,7 +74,6 @@ on property:init.svc.vendor.charger=running
     setprop persist.sys.usb.config mass_storage
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
-    trigger enable-low-power
 
 on enable-low-power
     # Set the default IRQ affinity to the silver cluster.
