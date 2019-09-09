@@ -1,3 +1,9 @@
 soong_namespace {
     imports: ["hardware/qcom/bootctrl"],
 }
+
+dex_import {
+    name: "WfdCommon",
+    owner: "OnePlus",
+    jars: ["WfdCommon.jar"],
+}
