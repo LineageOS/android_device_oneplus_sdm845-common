@@ -36,7 +36,7 @@ lib64/vendor.qti.hardware.data.latency@1.0.so
 # DPM
 bin/dpmd
 etc/dpm/dpm.conf
-etc/init/dpmd.rc
+# etc/init/dpmd.rc
 etc/permissions/com.qti.dpmframework.xml
 etc/permissions/dpmapi.xml
 framework/com.qti.dpmframework.jar
