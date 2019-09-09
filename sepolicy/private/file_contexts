@@ -13,7 +13,7 @@
 /sys/devices/platform/soc/soc:goodix_fp/proximity_state    u:object_r:sysfs_fpc_proximity:s0
 
 # Audio
-/system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+/system/etc/audio_policy_configuration.xml    u:object_r:system_configs_file:s0
 
 # HALs
 /system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
@@ -23,10 +23,7 @@
 /system/bin/hw/lineage\.trust@1\.0-service                    u:object_r:hal_trust_default_exec:s0
 
 # Modules
-/system/lib/modules/wlan\.ko    u:object_r:vendor_file:s0
-
-# Power HAL
-/system/lib64/hw/power\.qcom\.so    u:object_r:vendor_file:s0
+/system/lib/modules/wlan\.ko    u:object_r:system_file:s0
 
 # tri-state-key
 /system/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
