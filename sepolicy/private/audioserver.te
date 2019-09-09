@@ -1,0 +1,2 @@
+# Allow audioserver to read system_configs_file
+allow audioserver system_configs_file:file r_file_perms;
