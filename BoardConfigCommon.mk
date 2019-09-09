@@ -143,5 +143,9 @@ PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
+# TMP: Drop BUILD_BROKEN_DUP_RULES once we get
+#      vendor/oneplus/sdm845-common/Android.bp generation sorted out
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit from the proprietary version
 -include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
