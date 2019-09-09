@@ -1,7 +1,7 @@
 type hal_livedisplay_sdm845, coredomain, domain;
 hal_server_domain(hal_livedisplay_sdm845, hal_lineage_livedisplay)
 
-type hal_livedisplay_sdm845_exec, exec_type, file_type;
+type hal_livedisplay_sdm845_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_livedisplay_sdm845)
 
 # Allow LiveDisplay to store files under /data/misc/display and access them
