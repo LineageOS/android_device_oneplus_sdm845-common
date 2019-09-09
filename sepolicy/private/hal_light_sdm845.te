@@ -12,7 +12,7 @@ binder_call(hal_light_server, hal_light_client)
 add_hwservice(hal_light_server, hal_light_hwservice)
 allow hal_light_client hal_light_hwservice:hwservice_manager find;
 
-type hal_light_sdm845_exec, exec_type, file_type;
+type hal_light_sdm845_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_light_sdm845)
 
 allow hal_light_sdm845 { sysfs_graphics sysfs_oem }:lnk_file read;
