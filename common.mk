@@ -27,6 +27,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
 # A/B
 AB_OTA_UPDATER := true
 
