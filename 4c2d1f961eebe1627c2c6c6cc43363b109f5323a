@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa06dc26_fa6dabfb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-09-12T17:05:24Z",
+      "side": 1,
+      "message": "hmm?",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 52
+      },
+      "revId": "4c2d1f961eebe1627c2c6c6cc43363b109f5323a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cd502f25_0c61f605",
+        "filename": "common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-09-12T17:05:24Z",
+      "side": 1,
+      "message": "PRODUCT_PACKAGES +\u003d \\\n    android.hardware.boot@1.0-impl.recovery \\\n    bootctrl.sdm845.recovery\n\nPRODUCT_PACKAGES_DEBUG +\u003d \\\n    bootctl",
+      "range": {
+        "startLine": 59,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 11
+      },
+      "revId": "4c2d1f961eebe1627c2c6c6cc43363b109f5323a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9c406688_a99b3662",
+        "filename": "common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2019-09-12T17:05:24Z",
+      "side": 1,
+      "message": "remove",
+      "range": {
+        "startLine": 144,
+        "startChar": 0,
+        "endLine": 144,
+        "endChar": 30
+      },
+      "revId": "4c2d1f961eebe1627c2c6c6cc43363b109f5323a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
