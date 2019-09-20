@@ -2,7 +2,7 @@
 allow init { system_file vendor_file }:file mounton;
 
 # Allow init to mount vendor configs
-allow init { system_configs_file vendor_configs_file }:file mounton;
+allow init vendor_configs_file:dir mounton;
 
 # Allow init to chown/chmod on pseudo files in /sys
 allow init {
