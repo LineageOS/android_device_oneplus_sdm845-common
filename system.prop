@@ -29,6 +29,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 
 # NFC
