@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a3fe731d_7ec9ba2d",
+        "filename": "common.mk",
+        "patchSetId": 43
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 7202
+      },
+      "writtenOn": "2019-10-13T11:54:18Z",
+      "side": 1,
+      "message": "vendor/oneplus/sdm845-common/Android.mk: error: WfdCommon: Modules in PRODUCT_BOOT_JARS must be defined in Android.bp files \nbuild/make/core/prebuilt_internal.mk:227: error: done.",
+      "range": {
+        "startLine": 185,
+        "startChar": 0,
+        "endLine": 186,
+        "endChar": 13
+      },
+      "revId": "9608f3eb7c4aac6ddf6e13b75c15dee32694ecf6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
