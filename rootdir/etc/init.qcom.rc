@@ -23,3 +23,6 @@ service dashd /sbin/dashd
 
 service factory-hal-1-0 /system/bin/true
     disabled
+
+service oneplus_brain_service /system/bin/true
+    disabled
