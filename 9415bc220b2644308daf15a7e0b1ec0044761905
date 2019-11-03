@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ecb3975a_cd8c2b9b",
+        "filename": "sepolicy/qcom-qva-private/qspmsvc.te",
+        "patchSetId": 15
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8217
+      },
+      "writtenOn": "2019-11-03T07:56:23Z",
+      "side": 1,
+      "message": "Dead symlink?",
+      "revId": "9415bc220b2644308daf15a7e0b1ec0044761905",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
