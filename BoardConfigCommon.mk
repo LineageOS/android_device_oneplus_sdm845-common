@@ -63,7 +63,6 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Treble
 BOARD_VNDK_VERSION := current
-PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -116,12 +115,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
 # Root
-BOARD_ROOT_EXTRA_FOLDERS := odm op1 op2
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist \
-    /vendor/bt_firmware:/bt_firmware \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware
+BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
@@ -131,7 +125,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/private \
-    $(COMMON_PATH)/sepolicy/qcom-qva-private
+    device/qcom/sepolicy/qva/private
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
