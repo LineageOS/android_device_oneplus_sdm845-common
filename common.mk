@@ -31,7 +31,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 28
+PRODUCT_TARGET_VNDK_VERSION := 29
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -86,6 +86,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
+
+# CVP
+PRODUCT_COPY_FILES += \
+    /dev/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin/hw/vendor.qti.hardware.cvp@1.0-service
 
 # Display
 PRODUCT_PACKAGES += \
