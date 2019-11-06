@@ -34,7 +34,7 @@ const std::map<int32_t, DisplayModes::ModeInfo> DisplayModes::kModeMap = {
     {0, {"Standard", "default"}},
     {1, {"sRGB", "srgb"}},
     {2, {"DCI P3", "dci-p3"}},
-    {3, {"Adaptive", "adaption"}},
+    {3, {"Wide Color", "widecolor"}},
 };
 
 DisplayModes::DisplayModes() : mDefaultModeId(0) {
