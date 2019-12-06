@@ -103,13 +103,6 @@ vendor.camera.aux.packagelist=com.oneplus.camera,com.oneplus.camera.service,org.
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM845
 
-# Dalvik
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapsize=512m
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heaptargetutilization=0.75
-
 # Display
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
