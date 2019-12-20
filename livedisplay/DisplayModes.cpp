@@ -54,6 +54,7 @@ DisplayModes::DisplayModes() : mDefaultModeId(0) {
         }
     }
 
+    setDisplayMode(mDefaultModeId == 0 ? 1 : 0, false);
     setDisplayMode(mDefaultModeId, false);
 }
 
