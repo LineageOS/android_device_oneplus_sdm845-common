@@ -3,6 +3,3 @@ set_prop(vendor_init, public_vendor_default_prop)
 
 # Allow vendor_init to set vendor_camera_prop
 set_prop(vendor_init, vendor_camera_prop)
-
-# Allow vendor_init to load wlan kernel module
-allow vendor_init system_file:system module_load;

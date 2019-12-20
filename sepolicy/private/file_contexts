@@ -18,9 +18,6 @@
 /system/bin/hw/lineage\.livedisplay@2\.0-service\.oneplus_sdm845    u:object_r:hal_livedisplay_sdm845_exec:s0
 /system/bin/hw/lineage\.touch@1\.0-service\.oneplus_sdm845    u:object_r:hal_touch_sdm845_exec:s0
 
-# Modules
-/system/lib/modules/wlan\.ko    u:object_r:system_file:s0
-
 # tri-state-key
 /system/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
 
