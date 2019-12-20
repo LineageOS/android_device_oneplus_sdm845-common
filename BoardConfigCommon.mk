@@ -117,12 +117,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
 # Root
-BOARD_ROOT_EXTRA_FOLDERS := odm op1 op2
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist \
-    /vendor/bt_firmware:/bt_firmware \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware
+BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
