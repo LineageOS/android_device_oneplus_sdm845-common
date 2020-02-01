@@ -85,7 +85,6 @@ product/framework/qti-telephony-common.jar|b4d187700f279cdbd40e74b4c3be4504f10d8
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfigsink.xml
-framework/arm64/boot-WfdCommon.oat
 -framework/WfdCommon.jar
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libmmrtpdecoder.so
