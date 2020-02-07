@@ -178,6 +178,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# Vendor overlay
+PRODUCT_COPY_FILES += \
+    /dev/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_circle/OnePlusIconShapeCircleOverlay.apk \
+    /dev/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_roundedrect/OnePlusIconShapeRoundedRectOverlay.apk \
+    /dev/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_square/OnePlusIconShapeSquareOverlay.apk \
+    /dev/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_squircle/OnePlusIconShapeSquircleOverlay.apk \
+    /dev/null:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_teardrop/OnePlusIconShapeTeardropOverlay.apk
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
