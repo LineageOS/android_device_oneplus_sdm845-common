@@ -40,6 +40,7 @@ const std::map<int32_t, TouchscreenGesture::GestureInfo> TouchscreenGesture::kGe
     {10, {250, "Letter O", "/proc/touchpanel/letter_o_enable"}},
     {11, {248, "Letter S", "/proc/touchpanel/letter_s_enable"}},
     {12, {246, "Letter W", "/proc/touchpanel/letter_w_enable"}},
+    {13, {67, "Single Tap", "/proc/touchpanel/single_tap_enable"}},
 };
 
 Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb resultCb) {
