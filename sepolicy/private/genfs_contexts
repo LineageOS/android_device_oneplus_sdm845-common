@@ -1,3 +1,4 @@
+# Display
 genfscon proc  /touchpanel u:object_r:proc_touchpanel:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/op_friginer_print_hbm u:object_r:sysfs_fod:s0
@@ -7,3 +8,25 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/hbm u:object_r:sysf
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/display_mode u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/hbm u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/display_mode u:object_r:sysfs_livedisplay_tuneable:s0
+
+# SSR
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys0/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys0/restart_level u:object_r:sysfs_ssr_toggle:s0
+
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys1/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys1/restart_level u:object_r:sysfs_ssr_toggle:s0
+
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys2/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys2/restart_level u:object_r:sysfs_ssr_toggle:s0
+
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys3/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys3/restart_level u:object_r:sysfs_ssr_toggle:s0
+
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys4/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys4/restart_level u:object_r:sysfs_ssr_toggle:s0
+
+genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys5/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys5/restart_level u:object_r:sysfs_ssr_toggle:s0
+
+genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys6/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys6/restart_level u:object_r:sysfs_ssr_toggle:s0
