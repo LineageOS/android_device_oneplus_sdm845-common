@@ -15,6 +15,9 @@
 /system/bin/hw/lineage\.livedisplay@2\.0-service\.oneplus_sdm845    u:object_r:hal_livedisplay_sdm845_exec:s0
 /system/bin/hw/lineage\.touch@1\.0-service\.oneplus_sdm845    u:object_r:hal_touch_sdm845_exec:s0
 
+# DASH
+/system/bin/dashd    u:object_r:dashd_exec:s0
+
 # tri-state-key
 /system/bin/tri-state-key_daemon          u:object_r:tri-state-key_daemon_exec:s0
 
