@@ -11,7 +11,7 @@ on charger
 service cvphalservice /system/bin/true
     disabled
 
-service dashd /sbin/dashd
+service dashd /system/bin/dashd
     class core
     critical
     seclabel u:r:dashd:s0
