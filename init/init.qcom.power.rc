@@ -139,36 +139,6 @@ on enable-low-power
     write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/up_scale 250
     write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/idle_mbps 1600
 
-    # Enable mem_latency governor for DDR scaling
-    write /sys/class/devfreq/soc:qcom,memlat-cpu0/governor "mem_latency"
-    write /sys/class/devfreq/soc:qcom,memlat-cpu0/polling_interval 10
-    write /sys/class/devfreq/soc:qcom,memlat-cpu0/mem_latency/ratio_ceil 400
-
-    write /sys/class/devfreq/soc:qcom,memlat-cpu4/governor "mem_latency"
-    write /sys/class/devfreq/soc:qcom,memlat-cpu4/polling_interval 10
-    write /sys/class/devfreq/soc:qcom,memlat-cpu4/mem_latency/ratio_ceil 400
-
-    # Enable mem_latency governor for L3 scaling
-    write /sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/governor "mem_latency"
-    write /sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/polling_interval 10
-    write /sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil 400
-
-    write /sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/governor "mem_latency"
-    write /sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/polling_interval 10
-    write /sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil 400
-
-    # Enable userspace governor for L3 cdsp nodes
-    write /sys/class/devfreq/soc:qcom,cdsp-cdsp-l3-lat/governor "userspace"
-    chown system /sys/class/devfreq/soc:qcom,cdsp-cdsp-l3-lat/userspace/set_freq
-
-    # Gold L3 ratio ceil
-    write /sys/class/devfreq/soc:qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil 4000
-
-    write /sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/governor "compute"
-    write /sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/polling_interval 10
-    write /sys/class/devfreq/soc:qcom,cpu4-cpu-ddr-latfloor/governor "compute"
-    write /sys/class/devfreq/soc:qcom,cpu4-cpu-ddr-latfloor/polling_interval 10
-
     # Runtime FS tuning: as we have init boottime setting and kernel patch setting
     # we should adjust the setting upon boot_complete for runtime performance
     write /sys/block/sda/queue/nr_requests 128
@@ -230,6 +200,8 @@ on enable-low-power
     # Post-setup services
     setprop vendor.post_boot.parsed 1
 
+    start dcvs-sh
+
 on property:sys.boot_completed=1
     trigger enable-low-power
 
@@ -250,3 +222,10 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
+
+service dcvs-sh /vendor/bin/init.qti.dcvs.sh
+    class late_start
+    user root
+    group root system
+    disabled
+    oneshot
