@@ -54,8 +54,6 @@ lib/libmmosal.so
 lib/libmmparser_lite.so
 lib/libOmxMux.so
 lib64/libmmosal.so
--vendor/lib/libplatformconfig.so
--vendor/lib64/libplatformconfig.so
 
 # NFC
 -app/NxpNfcNci/NxpNfcNci.apk|683f26e17a1e3547a821925e8a212720cb4992f6
