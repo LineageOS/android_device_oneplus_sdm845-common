@@ -2,6 +2,7 @@
 ro.build.ab_update=true
 
 # Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.btstack.enable.lpa=true
 persist.vendor.btstack.enable.twsplus=false
