@@ -18,7 +18,9 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.min.duration.secs=30 \
     persist.vendor.audio.hac.enable=false \
-    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
+    persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=7
 
