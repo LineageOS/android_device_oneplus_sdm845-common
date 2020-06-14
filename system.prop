@@ -1,0 +1,57 @@
+# Audio
+audio.offload.min.duration.secs=30
+persist.vendor.audio.hac.enable=false
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+
+# Camera
+camera.disable_zsl_mode=true
+
+# Display
+debug.gralloc.gfx_ubwc_disable=0
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+persist.vendor.color.matrix=2
+
+# CNE
+persist.vendor.cne.feature=1
+
+# DPM
+persist.vendor.dpm.feature=9
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# IOP
+vendor.iop.enable_prefetch_ofr=1
+vendor.iop.enable_uxe=0
+
+# Media
+media.settings.xml=/system/etc/media_profiles_vendor.xml
+
+# Perf
+ro.vendor.qti.core_ctl_max_cpu=4
+ro.vendor.qti.core_ctl_min_cpu=2
+
+# Radio
+persist.vendor.radio.bar_fake_gcell=1
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.ignore_dom_time=10
+ro.telephony.default_network=22,22
+
+# Touchscreen
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+
+# Netmgr
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Vendor
+ro.vendor.qti.va_aosp.support=1
