@@ -1,0 +1,10 @@
+type ab_block_device, dev_type;
+type custom_ab_block_device, dev_type;
+type gpt_block_device, dev_type;
+type mdtp_device, dev_type;
+type modem_block_device, dev_type;
+type persist_block_device, dev_type;
+type sg_device, dev_type;
+type ssd_device, dev_type;
+type uefi_block_device, dev_type;
+type xbl_block_device, dev_type;
