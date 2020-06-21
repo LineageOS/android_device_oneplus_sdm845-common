@@ -1,0 +1,3 @@
+typeattribute recovery coredomain;
+allow recovery sysfs_graphics:dir search;
+allow recovery sysfs_graphics:file rw_file_perms;
