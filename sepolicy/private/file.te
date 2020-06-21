@@ -14,6 +14,19 @@ type sysfs_oem, sysfs_type, fs_type;
 type sysfs_ssr, sysfs_type, fs_type;
 type sysfs_ssr_toggle,  sysfs_type, fs_type;
 type sysfs_usb_supply, sysfs_type, fs_type;
+type sysfs_scsi_target, fs_type, sysfs_type;
+type sysfs_scsi_host, fs_type, sysfs_type;
 
 # data
 type display_misc_file, file_type, data_file_type, core_data_file_type;
+
+type xbl_block_device, dev_type;
+type custom_ab_block_device, dev_type;
+type ab_block_device, dev_type;
+type modem_block_device, dev_type;
+type mdtp_device, dev_type;
+type gpt_block_device, dev_type;
+type ssd_device, dev_type;
+type uefi_block_device, dev_type;
+type persist_block_device, dev_type;
+type sg_device, dev_type;
