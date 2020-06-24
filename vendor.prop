@@ -176,6 +176,9 @@ persist.sys.fuse.passthrough.enable=true
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
+# Incremental FS
+ro.incremental.enable=true
+
 # Keystore
 ro.hardware.keystore_desede=true
 
