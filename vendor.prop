@@ -161,6 +161,9 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 vendor.opengles.version=196610
 
+# Incremental FS
+ro.incremental.enable=true
+
 # Keystore
 ro.hardware.keystore_desede=true
 
