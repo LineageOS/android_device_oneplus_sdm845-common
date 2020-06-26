@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ac211b9_53d90153",
+        "filename": "sepolicy/private/file.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-06-26T08:09:06Z",
+      "side": 1,
+      "message": "also these should go to device.te",
+      "revId": "defb914f490550d8b80ea3df51978061791589bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
