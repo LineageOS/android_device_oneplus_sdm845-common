@@ -47,7 +47,9 @@ Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb re
     std::vector<Gesture> gestures;
 
     for (const auto& entry : kGestureInfoMap) {
-        gestures.push_back({entry.first, entry.second.name, entry.second.keycode});
+        if (access(entry.second.path, F_OK) != -1) {
+            gestures.push_back({entry.first, entry.second.name, entry.second.keycode});
+        }
     }
     resultCb(gestures);
 
