@@ -4,6 +4,11 @@
 /dev/dri/controlD64                             u:object_r:graphics_device:s0
 /dev/dri/renderD128                             u:object_r:graphics_device:s0
 
+# sysfs files
+/sys/class/thermal(/.*)?                                          u:object_r:sysfs_thermal:s0
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight(/.*)?   u:object_r:sysfs_graphics:s0
+/sys/devices/virtual/thermal(/.*)?                                u:object_r:sysfs_thermal:s0
+
 # A/B partitions.
 /dev/block/platform/soc/1d84000.ufshc/by-name/abl_[ab]            u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/apdp_[ab]           u:object_r:custom_ab_block_device:s0
