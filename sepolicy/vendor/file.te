@@ -1,0 +1,3 @@
+# sysfs
+type sysfs_scsi_target, fs_type, sysfs_type;
+type sysfs_scsi_host, fs_type, sysfs_type;
