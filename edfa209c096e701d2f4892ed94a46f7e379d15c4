@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "48a8094d_0b4c16cc",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 12
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 26463
+      },
+      "writtenOn": "2020-06-28T15:49:20Z",
+      "side": 1,
+      "message": "without this sideload fails. I just tested it.",
+      "parentUuid": "35bdff3a_57b76af4",
+      "revId": "edfa209c096e701d2f4892ed94a46f7e379d15c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a7c896be_aad3ae90",
         "filename": "sepolicy/vendor/file_contexts",
         "patchSetId": 12
