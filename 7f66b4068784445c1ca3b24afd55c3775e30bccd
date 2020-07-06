@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b70136aa_2ddebc82",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-06T11:50:36Z",
+      "side": 1,
+      "message": "drop `\"` and append org.codeaurora.snapcam just so that silly gcam mods would be able to still use every cam out there.",
+      "range": {
+        "startLine": 8,
+        "startChar": 30,
+        "endLine": 8,
+        "endChar": 77
+      },
+      "revId": "7f66b4068784445c1ca3b24afd55c3775e30bccd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
