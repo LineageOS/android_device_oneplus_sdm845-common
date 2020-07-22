@@ -4,6 +4,17 @@ hal_server_domain(hal_livedisplay_sdm845, hal_lineage_livedisplay)
 type hal_livedisplay_sdm845_exec, system_file_type, exec_type, file_type;
 init_daemon_domain(hal_livedisplay_sdm845)
 
+# Allow LiveDisplay to find hal_display_color_hwservice
+type hal_display_color_hwservice, hwservice_manager_type;
+allow hal_livedisplay_sdm845 hal_display_color_hwservice:hwservice_manager find;
+
+# Allow binder communication with hal_display_color_default
+type hal_display_color_default, domain;
+binder_call(hal_livedisplay_sdm845, hal_display_color_default)
+
+# Allow LiveDisplay to use binder service
+binder_use(hal_livedisplay_sdm845)
+
 # Allow LiveDisplay to store files under /data/misc/display and access them
 allow hal_livedisplay_sdm845 display_misc_file:dir rw_dir_perms;
 allow hal_livedisplay_sdm845 display_misc_file:file create_file_perms;
