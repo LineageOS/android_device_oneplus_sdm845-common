@@ -139,7 +139,6 @@ persist.backup.ntpServer=0.pool.ntp.org
 ro.hardware.keystore_desede=true
 
 # Media
-debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 
 # Netflix
