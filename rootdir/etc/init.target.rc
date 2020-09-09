@@ -59,7 +59,6 @@ on fs
 #endif /* VENDOR_EDIT */
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
-    swapon_all /vendor/etc/fstab.qcom
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
 
@@ -477,3 +476,7 @@ on property:sys.aod.disable=1
 on property:sys.aod.disable=0
    write /sys/class/drm/card0-DSI-1/aod_disable 0
 #endif
+
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
