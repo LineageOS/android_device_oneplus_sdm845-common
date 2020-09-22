@@ -311,7 +311,7 @@ PRODUCT_BOOT_JARS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom
+    android.hardware.power-service-qti
 
 # QMI
 PRODUCT_PACKAGES += \
