@@ -37,6 +37,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_EXTRA_VNDK_VERSIONS := $(PRODUCT_TARGET_VNDK_VERSION)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -197,8 +198,8 @@ PRODUCT_PACKAGES += \
     libnl \
     WifiOverlay
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
