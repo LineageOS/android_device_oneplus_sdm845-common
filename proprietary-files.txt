@@ -64,7 +64,7 @@ lib64/libmmosal.so
 -app/NxpSecureElement/NxpSecureElement.apk
 etc/nfcee_access.xml
 etc/permissions/com.nxp.nfc.xml
-framework/com.nxp.nfc.jar
+framework/com.nxp.nfc.jar|41d92d0b7fdc3d50cd6ea4be8664614aa9d41823
 lib64/libnxpnfc_nci_jni.so
 lib64/libnxpnfc-nci.so|e31ab7b2b282c3b81fd13ab1b40b3cc8d90d8b5b
 
