@@ -148,9 +148,6 @@ BOARD_ROOT_EXTRA_FOLDERS := op1 op2 op_odm
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-11-01
 
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
