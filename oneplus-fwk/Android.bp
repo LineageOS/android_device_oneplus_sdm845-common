@@ -1,0 +1,8 @@
+java_library {
+    name: "oneplus-fwk.oneplus_sdm845",
+    installable: true,
+
+    srcs: [
+        "src/**/*.java",
+    ],
+}
