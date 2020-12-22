@@ -122,9 +122,6 @@ on boot
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
-on property:vendor.usb.controller=*
-    setprop sys.usb.controller ${vendor.usb.controller}
-
 #ifdef VENDOR_EDIT
    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display@18/dynamic_dsi_clock
    chown radio radio /sys/devices/platform/soc/soc:qcom,dsi-display@18/dynamic_dsi_clock
