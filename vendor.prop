@@ -144,6 +144,9 @@ ro.netflix.bsp_rev=Q845-14477-1
 # NFC
 ro.camera.notify_nfc=1
 
+# OTG
+persist.sys.oem.otg_support=true
+
 # PASR
 vendor.pasr.activemode.enabled=true
 vendor.power.pasr.enabled=false
