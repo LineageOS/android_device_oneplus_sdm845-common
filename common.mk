@@ -340,9 +340,8 @@ PRODUCT_BOOT_JARS += \
     oneplus-fwk
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.2.vendor
+$(call inherit-product, hardware/oneplus/libqti-perfd-client/libqti-perfd-client.mk)
+$(call inherit-product, hardware/oneplus/power-libperfmgr/power-libperfmgr.mk)
 
 # QMI
 PRODUCT_PACKAGES += \
