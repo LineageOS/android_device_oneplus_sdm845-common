@@ -350,8 +350,7 @@ PRODUCT_BOOT_JARS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power-service.libperfmgr
 
 # QMI
 PRODUCT_PACKAGES += \
