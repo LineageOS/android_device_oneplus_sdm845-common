@@ -1,3 +1,9 @@
 soong_namespace {
-    imports: ["hardware/oneplus", "hardware/qcom/bootctrl"],
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/lineage/interfaces/power/aidl/libperfmgr",
+        "hardware/oneplus",
+        "hardware/qcom/bootctrl"
+    ],
 }
