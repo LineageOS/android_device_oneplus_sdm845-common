@@ -99,6 +99,10 @@ ro.bluetooth.a2dp_offload.supported=true
 persist.vendor.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,com.oem.autotest,com.oneplus.healthcheck
 vendor.camera.aux.packagelist=com.oneplus.camera,com.oneplus.camera.service,org.codeaurora.snapcam
 
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM845
+
 # Dalvik
 dalvik.vm.heapmaxfree=8m
 dalvik.vm.heapminfree=512k
