@@ -32,6 +32,7 @@
         <device name="SND_DEVICE_OUT_BT_A2DP" acdb_id="10"/>
         <!-- add by lifei end-->
         <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="124"/>
+        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" acdb_id="43"/>
         <device name="SND_DEVICE_IN_VOICE_REC_QMIC_FLUENCE" acdb_id="131"/>
         <device name="SND_DEVICE_IN_VOICE_REC_TMIC" acdb_id="131"/>
         <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" acdb_id="132"/>
