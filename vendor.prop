@@ -141,6 +141,9 @@ ro.fastbootd.available=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
