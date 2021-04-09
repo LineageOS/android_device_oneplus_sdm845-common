@@ -4,3 +4,6 @@ on fs
 
 on init
     setprop sys.usb.configfs 1
+
+on property:init.svc.fastbootd=running
+    rm /dev/block/bootdevice/by-name/boot_aging
