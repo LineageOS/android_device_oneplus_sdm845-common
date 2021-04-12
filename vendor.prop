@@ -191,7 +191,6 @@ persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 ro.telephony.default_network=22,22
-ro.telephony.iwlan_operation_mode=legacy
 
 # Sensors
 persist.vendor.sensors.firmware_property_read_support=false
