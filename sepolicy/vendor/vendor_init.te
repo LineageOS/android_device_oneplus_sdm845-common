@@ -2,3 +2,5 @@ allow vendor_init tmpfs:chr_file { read open };
 allow vendor_init tmpfs:dir { create_dir_perms mounton };
 
 allow vendor_init op2_file:file create_file_perms;
+
+set_prop(vendor_init, vendor_power_prop)
