@@ -219,6 +219,9 @@ on enable-low-power
     write /proc/sys/vm/swappiness 100
     write /proc/sys/vm/watermark_scale_factor 1
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
     # Post-setup services
     setprop vendor.post_boot.parsed 1
 
