@@ -744,7 +744,7 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 
 # Power-off alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+-product/app/PowerOffAlarm/PowerOffAlarm.apk|24ddc9e4a900b34ea376f1759ba85eb9da87a9b0
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
