@@ -15,7 +15,9 @@
 #
 
 # Enable updating of APEXes
+ifneq (,$(filter true, $(OVERRIDE_TARGET_FLATTEN_APEX) $(TARGET_FLATTEN_APEX)))
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+endif
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
