@@ -363,6 +363,8 @@ on boot
 on init
     setprop vendor.boot.verifiedbootstate ${ro.boot.verifiedbootstate}
     setprop vendor.boot.hw_version ${ro.boot.hw_version}
+    setprop vendor.boot.prj_version ${ro.boot.prj_version}
+    setprop vendor.rf.version ${ro.boot.rf_version}
 
     #@bsp, 2019/08/22 Add dash charging
     chown system system /dev/dash
