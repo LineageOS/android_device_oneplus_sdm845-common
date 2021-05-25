@@ -1,6 +1,6 @@
 int cv_face_init_license_config(void) { return 0; }
 int cv_face_destroy_tracker(void) { return 0; }
-int cv_face_create_tracker(void) { return 0; }
+int cv_face_create_tracker(int* handle) { *handle = 0x13371337; return 0; }
 int __appProtect_cv_face_create_tracker_start(void) { return 0; }
 int __appProtect_cv_face_create_tracker_fill(void) { return 0; }
 int __appProtect_cv_face_create_tracker_end(void) { return 0; }
