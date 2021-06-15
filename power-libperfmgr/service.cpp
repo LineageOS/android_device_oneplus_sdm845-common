@@ -69,8 +69,8 @@ int main() {
     LOG(INFO) << "OnePlus SDM845 Power HAL AIDL Service with Extension is started.";
 
     if (::android::base::GetIntProperty("vendor.powerhal.adpf.rate", -1) != -1) {
-        PowerHintMonitor::getInstance().start();
-        PowerSessionManager::getInstance().setHintManager(hm);
+        PowerHintMonitor::getInstance()->start();
+        PowerSessionManager::getInstance()->setHintManager(hm);
     }
 
     std::thread initThread([&]() {
