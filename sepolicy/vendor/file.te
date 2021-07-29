@@ -1,4 +1,5 @@
 # files
+type blkio_file, file_type;
 type oem_file, file_type;
 type op1_file, file_type;
 type op2_file, file_type;
