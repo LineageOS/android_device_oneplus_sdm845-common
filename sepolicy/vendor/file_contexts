@@ -19,6 +19,9 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/reserve2                u:object_r:reserve2_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/spunvm                  u:object_r:efs_boot_dev:s0
 
+# Block IO
+/dev/blkio(/.*)?                                                       u:object_r:blkio_file:s0
+
 # Devices
 /dev/dash                 u:object_r:dash_device:s0
 /dev/goodix_fp            u:object_r:fingerprintd_device:s0
