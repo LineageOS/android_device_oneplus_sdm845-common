@@ -1,3 +1,6 @@
+# AB Update
+ro.build.ab_update=true
+
 # Audio
 audio.offload.min.duration.secs=30
 persist.vendor.audio.hac.enable=false
