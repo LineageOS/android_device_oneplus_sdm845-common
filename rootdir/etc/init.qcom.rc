@@ -11,11 +11,6 @@ on charger
 service cvphalservice /system/bin/true
     disabled
 
-service dashd /system/bin/dashd
-    class core
-    critical
-    group root system
-
 service factory-hal-1-0 /system/bin/true
     disabled
 
