@@ -11,4 +11,7 @@ LOCAL_SDK_VERSION := current
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/overlay/oneplus_shape_squircle
 
+LOCAL_POST_INSTALL_CMD := mkdir -p $(TARGET_OUT_PRODUCT)/vendor_overlay/29/overlay/oneplus_shape_squircle
+LOCAL_POST_INSTALL_CMD += ; cp $(LOCAL_MODULE_PATH)/$(LOCAL_PACKAGE_NAME).apk $(TARGET_OUT_PRODUCT)/vendor_overlay/29/overlay/oneplus_shape_squircle/$(LOCAL_PACKAGE_NAME).apk
+
 include $(BUILD_PACKAGE)
