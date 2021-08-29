@@ -8,9 +8,17 @@ init_daemon_domain(hal_livedisplay_sdm845)
 type hal_display_color_hwservice, hwservice_manager_type;
 allow hal_livedisplay_sdm845 hal_display_color_hwservice:hwservice_manager find;
 
+# Allow LiveDisplay to find vendor_hal_display_color_hwservice
+type vendor_hal_display_color_hwservice, hwservice_manager_type;
+allow hal_livedisplay_sdm845 vendor_hal_display_color_hwservice:hwservice_manager find;
+
 # Allow binder communication with hal_display_color_default
 type hal_display_color_default, domain;
 binder_call(hal_livedisplay_sdm845, hal_display_color_default)
+
+# Allow binder communication with vendor_hal_display_color_default
+type vendor_hal_display_color_default, domain;
+binder_call(hal_livedisplay_sdm845, vendor_hal_display_color_default)
 
 # Allow LiveDisplay to use binder service
 binder_use(hal_livedisplay_sdm845)
