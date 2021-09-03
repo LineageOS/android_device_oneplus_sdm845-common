@@ -5,6 +5,9 @@ on boot
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
 
+on boot && property:persist.sys.usb.config=*
+    setprop sys.usb.config ${persist.sys.usb.config}
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
 
