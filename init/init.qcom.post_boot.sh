@@ -444,7 +444,3 @@ case "$target" in
     echo 120 > /proc/sys/vm/watermark_scale_factor
     ;;
 esac
-
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy
