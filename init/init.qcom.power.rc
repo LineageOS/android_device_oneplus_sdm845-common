@@ -131,8 +131,7 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rate_limit_us 0
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq 1536000
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl 1
-    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1324800"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 120
+
     # Limit the min frequency to 825MHz
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 825000
 
