@@ -13,4 +13,4 @@ allow init {
 }:file { open read setattr };
 
 # Allow init to write to otg_switch
-allow init sysfs_usb_supply:file w_file_perms;
+allow init { sysfs_usb_supply vendor_sysfs_usb_supply }:file w_file_perms;
