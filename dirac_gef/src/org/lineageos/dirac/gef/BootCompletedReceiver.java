@@ -21,7 +21,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.audiofx.AudioEffect;
 import android.util.Log;
+import com.android.internal.util.HexDump;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 import java.util.UUID;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -39,6 +43,17 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         Log.d(TAG, "Starting");
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(context.getAssets().open("dirac_gef_init.txt")))) {
+            while (reader.ready()) {
+                String[] params = reader.readLine().split("\\|");
+                sAudioEffect.setParameter(
+                        HexDump.hexStringToByteArray(params[0]),
+                        HexDump.hexStringToByteArray(params[1]));
+            }
+        } catch (IOException e) {
+            Log.e(TAG, "Failed to set initial dirac_gef parameters", e);
+        }
         sAudioEffect.setEnabled(true);
     }
 }
