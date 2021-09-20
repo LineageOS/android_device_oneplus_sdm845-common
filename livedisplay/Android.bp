@@ -15,9 +15,10 @@
 
 cc_binary {
     name: "lineage.livedisplay@2.0-service.oneplus_sdm845",
+    defaults: ["hidl_defaults"],
     init_rc: ["lineage.livedisplay@2.0-service.oneplus_sdm845.rc"],
     vintf_fragments: ["lineage.livedisplay@2.0-service.oneplus_sdm845.xml"],
-    defaults: ["hidl_defaults"],
+    system_ext_specific: true,
     relative_install_path: "hw",
     srcs: [
         ":vendor.lineage.livedisplay@2.0-sdm-pa",
