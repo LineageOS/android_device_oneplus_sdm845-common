@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#ifndef TOUCH_ONEPLUS_TOUCHSCREENGESTURE_H
-#define TOUCH_ONEPLUS_TOUCHSCREENGESTURE_H
+#ifndef TOUCH_ONEPLUS_TOUCHSCREENGESTURECONFIG_H
+#define TOUCH_ONEPLUS_TOUCHSCREENGESTURECONFIG_H
 
 #include <map>
 
@@ -48,4 +48,4 @@ const std::map<int32_t, TouchscreenGesture::GestureInfo> kGestureInfoMap = {
 }  // namespace lineage
 }  // namespace vendor
 
-#endif  // TOUCH_ONEPLUS_TOUCHSCREENGESTURE_H
+#endif  // TOUCH_ONEPLUS_TOUCHSCREENGESTURECONFIG_H
