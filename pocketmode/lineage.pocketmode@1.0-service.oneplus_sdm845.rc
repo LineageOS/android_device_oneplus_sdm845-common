@@ -1,0 +1,4 @@
+service pocketmode-hal-1-0 /system_ext/bin/hw/lineage.pocketmode@1.0-service.oneplus_sdm845
+    class hal
+    user system
+    group system

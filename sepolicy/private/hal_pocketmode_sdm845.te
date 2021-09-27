@@ -1,0 +1,8 @@
+type hal_pocketmode_sdm845, coredomain, domain;
+hal_server_domain(hal_pocketmode_sdm845, hal_lineage_pocketmode)
+
+type hal_pocketmode_sdm845_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_pocketmode_sdm845)
+
+# Allow hal_pocketmode_sdm845 to read and write to sysfs_fpc_proximity
+allow hal_pocketmode_sdm845 sysfs_fpc_proximity:file { w_file_perms getattr };
