@@ -195,8 +195,7 @@ PRODUCT_PACKAGES += \
 
 # tri-state-key
 PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key_daemon
+    KeyHandler
 
 # Trust HAL
 PRODUCT_PACKAGES += \
