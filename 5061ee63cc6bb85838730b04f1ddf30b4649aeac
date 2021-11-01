@@ -22,6 +22,30 @@
       "revId": "5061ee63cc6bb85838730b04f1ddf30b4649aeac",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bf9ce7d_503a05e7",
+        "filename": "power/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 23597
+      },
+      "writtenOn": "2021-11-01T16:31:09Z",
+      "side": 1,
+      "message": "Done. Btw the effect of these two flags is the same in the actual build.",
+      "parentUuid": "a0bf225e_6761530d",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 33
+      },
+      "revId": "5061ee63cc6bb85838730b04f1ddf30b4649aeac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
