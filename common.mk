@@ -169,7 +169,7 @@ PRODUCT_BOOT_JARS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    power.qcom
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
