@@ -47,12 +47,6 @@ prebuilt_etc {
 }
 
 sh_binary {
-    name: "init.qcom.class_core.sh",
-    src: "init.qcom.class_core.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "init.qcom.early_boot.sh",
     vendor: true,
