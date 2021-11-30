@@ -213,6 +213,7 @@ Only the three quirks included above are recognized at this point:
              <Limit name="blocks-per-second" min="1" max="108000" />
              <Limit name="bitrate" range="1-4000000" />
              <Limit name="frame-rate" range="1-30" />
+             <Attribute name="software-codec" />
              <Limit name="concurrent-instances" max="16" />
              <Limit name="performance-point-1280x720" value="30" />
         </MediaCodec>
