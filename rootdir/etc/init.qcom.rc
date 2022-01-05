@@ -553,10 +553,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
 #   after setting up the capabilities required for WEXT
 #   user wifi
 #   group wifi inet keystore
-    interface android.hardware.wifi.supplicant@1.0::ISupplicant default
-    interface android.hardware.wifi.supplicant@1.1::ISupplicant default
-    interface android.hardware.wifi.supplicant@1.2::ISupplicant default
-    interface android.hardware.wifi.supplicant@1.3::ISupplicant default
+    interface aidl android.hardware.wifi.supplicant.ISupplicant/default
     interface vendor.qti.hardware.wifi.supplicant@2.0::ISupplicantVendor default
     interface vendor.qti.hardware.wifi.supplicant@2.1::ISupplicantVendor default
     interface vendor.qti.hardware.wifi.supplicant@2.2::ISupplicantVendor default
