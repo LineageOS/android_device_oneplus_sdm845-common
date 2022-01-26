@@ -194,7 +194,9 @@ PRODUCT_PACKAGES += \
     gralloc.sdm845 \
     hwcomposer.sdm845 \
     libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
+    libqdMetaData.system \
     libtinyxml \
     memtrack.sdm845 \
     vendor.display.config@1.0.vendor \
