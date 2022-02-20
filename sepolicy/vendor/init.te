@@ -1,0 +1,6 @@
+# Allow init to chown/chmod on pseudo files in /sys
+allow init {
+    sysfs_fod
+    sysfs_fpc_proximity
+    sysfs_livedisplay_tuneable
+}:file { open read setattr };

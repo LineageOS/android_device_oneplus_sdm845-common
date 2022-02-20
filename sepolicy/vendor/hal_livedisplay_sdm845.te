@@ -1,0 +1,17 @@
+type hal_livedisplay_sdm845, coredomain, domain;
+hal_server_domain(hal_livedisplay_sdm845, hal_lineage_livedisplay)
+
+type hal_livedisplay_sdm845_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_livedisplay_sdm845)
+
+# Allow LiveDisplay to find hal_display_color_hwservice
+allow hal_livedisplay_sdm845 hal_display_color_hwservice:hwservice_manager find;
+
+# Allow binder communication with hal_display_color_default
+binder_call(hal_livedisplay_sdm845, hal_display_color_default)
+
+# Allow LiveDisplay to use binder service
+binder_use(hal_livedisplay_sdm845)
+
+# Grant access over LiveDisplay tuneables
+allow hal_livedisplay_sdm845 sysfs_livedisplay_tuneable:file rw_file_perms;
