@@ -81,7 +81,10 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Display
+TARGET_SCREEN_DENSITY := 450
+TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
+TARGET_USES_ION := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
