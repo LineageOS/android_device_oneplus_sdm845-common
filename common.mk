@@ -133,12 +133,22 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.graphics.mapper@2.0-impl-qti-display \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    gralloc.sdm845 \
+    hwcomposer.sdm845 \
     libdisplayconfig.qti \
     libqdMetaData \
-    libqdMetaData.system \
-    libvulkan \
-    vendor.display.config@1.0 \
-    vendor.display.config@2.0
+    libtinyxml \
+    memtrack.sdm845 \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0 \
+    vendor.qti.hardware.display.allocator@1.0-service \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.0.vendor \
+    vendor.oneplus.hardware.display@1.0.vendor
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -258,3 +268,12 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+    ro.surface_flinger.has_HDR_display=true \
+    ro.surface_flinger.has_wide_color_display=true \
+    ro.surface_flinger.max_virtual_display_dimension=4096 \
+    ro.surface_flinger.protected_contents=true \
+    ro.surface_flinger.use_color_management=true \
+    ro.surface_flinger.wcg_composition_dataspace=143261696
