@@ -25,6 +25,10 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+#ifdef VENDOR_EDIT
+import /vendor/etc/init/hw/init.oem.rc
+#endif VENDOR_EDIT
+
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.target.rc
 
