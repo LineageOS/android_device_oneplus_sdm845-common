@@ -57,12 +57,29 @@ on init
 on fs
     wait /dev/block/platform/soc/1d84000.ufshc
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
+    mkdir /mnt/vendor/op2 0660 system system
     mount_all /vendor/etc/fstab.qcom
+#ifdef VENDOR_EDIT
+# ajinath@SYSTEM, 2020/01/16, [OSP-2080] Recovery boot reason
+    wait /mnt/vendor/op2
+    chown system system /mnt/vendor/op2
+    mkdir /mnt/vendor/op2/recovery 0770 root system
+    mkdir /mnt/vendor/op2/rbr_log 0770 system system
+#endif /* VENDOR_EDIT */
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     swapon_all /vendor/etc/fstab.qcom
     restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
+
+    #yumei.su@system Bug35643 mkdir and mount op1 (cust image porting to R)
+    mkdir /mnt/vendor/op1 0660 system system
+    mount ext4 /dev/block/bootdevice/by-name/op1 /mnt/vendor/op1 noatime nosuid nodev barrier=1
+
+#ifdef VENDOR_EDIT
+# bin.zhong@ASTI, 2019/6/17, add for smartboost
+    chown system system /sys/module/smartboost_core/parameters/page_cache_reside_switch
+#endif
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
@@ -116,6 +133,38 @@ on boot && property:persist.vendor.usb.controller.default=*
 
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
+
+#ifdef VENDOR_EDIT
+   chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display@18/dynamic_dsi_clock
+   chown radio radio /sys/devices/platform/soc/soc:qcom,dsi-display@18/dynamic_dsi_clock
+
+   chmod 0660 /sys/class/drm/card0-DSI-1/aod_disable
+   chown system system /sys/class/drm/card0-DSI-1/aod_disable
+
+   chmod 0666 /sys/class/drm/card0-DSI-1/SRGB
+   chmod 0666 /sys/class/drm/card0-DSI-1/DCI_P3
+   chmod 0666 /sys/class/drm/card0-DSI-1/hbm
+   chmod 0666 /sys/class/drm/card0-DSI-1/aod
+   chmod 0666 /sys/class/drm/card0-DSI-1/night_mode
+   chmod 0666 /sys/class/drm/card0-DSI-1/panel_serial_number
+   chmod 0666 /sys/class/drm/card0-DSI-1/oneplus_mode
+   chmod 0666 /sys/class/drm/card0-DSI-1/adaption_mode
+   chmod 0666 /sys/class/drm/card0-DSI-1/dynamic_dsitiming
+   chmod 0666 /sys/class/drm/card0-DSI-1/notify_fppress
+   chmod 0666 /sys/class/drm/card0-DSI-1/dim_alpha
+   chmod 0666 /sys/class/drm/card0-DSI-1/notify_dim
+   chmod 0666 /sys/class/drm/card0-DSI-1/notify_aod
+   chmod 0666 /sys/class/drm/card0-DSI-1/force_screenfp
+   chmod 0666 /sys/class/drm/card0-DSI-1/dimlayer_bl_en
+   chmod 0666 /sys/class/drm/card0-DSI-1/dither_en
+   chmod 0666 /sys/class/drm/card0-DSI-1/dp_en
+   chmod 0666 /sys/class/drm/card0-DSI-1/dsi_seed_command
+   chmod 0666 /sys/class/drm/card0-DSI-1/native_display_p3_mode
+   chmod 0666 /sys/class/drm/card0-DSI-1/native_display_wide_color_mode
+   chmod 0666 /sys/class/drm/card0-DSI-1/native_display_srgb_color_mode
+   chmod 0666 /sys/class/drm/card0-DSI-1/native_display_customer_srgb_mode
+   chmod 0666 /sys/class/drm/card0-DSI-1/native_display_customer_p3_mode
+#endif
 
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
@@ -385,3 +434,58 @@ service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0
     user system
     group system
     disabled
+
+#ifdef VENDOR_EDIT
+on property:sys.srgb=1
+   write /sys/class/drm/card0-DSI-1/SRGB 1
+on property:sys.srgb=0
+   write /sys/class/drm/card0-DSI-1/SRGB 0
+
+on property:sys.dci3p=1
+   write /sys/class/drm/card0-DSI-1/DCI_P3 1
+on property:sys.dci3p=0
+   write /sys/class/drm/card0-DSI-1/DCI_P3 0
+
+on property:sys.hbm=5
+   write /sys/class/drm/card0-DSI-1/hbm 5
+on property:sys.hbm=4
+   write /sys/class/drm/card0-DSI-1/hbm 4
+on property:sys.hbm=3
+   write /sys/class/drm/card0-DSI-1/hbm 3
+on property:sys.hbm=2
+   write /sys/class/drm/card0-DSI-1/hbm 2
+on property:sys.hbm=1
+   write /sys/class/drm/card0-DSI-1/hbm 1
+on property:sys.hbm=0
+   write /sys/class/drm/card0-DSI-1/hbm 0
+
+on property:sys.aod=4
+   write /sys/class/drm/card0-DSI-1/aod 4
+on property:sys.aod=3
+   write /sys/class/drm/card0-DSI-1/aod 3
+on property:sys.aod=2
+   write /sys/class/drm/card0-DSI-1/aod 2
+on property:sys.aod=1
+   write /sys/class/drm/card0-DSI-1/aod 1
+on property:sys.aod=0
+   write /sys/class/drm/card0-DSI-1/aod 0
+
+on property:sys.night_mode=1
+   write /sys/class/drm/card0-DSI-1/night_mode 1
+on property:sys.night_mode=0
+   write /sys/class/drm/card0-DSI-1/night_mode 0
+on property:sys.default_mode=1
+   write /sys/class/drm/card0-DSI-1/oneplus_mode 1
+on property:sys.default_mode=0
+   write /sys/class/drm/card0-DSI-1/oneplus_mode 0
+on property:sys.automode=1
+   write /sys/class/drm/card0-DSI-1/adaption_mode 1
+on property:sys.automode=0
+   write /sys/class/drm/card0-DSI-1/adaption_mode 0
+
+
+on property:sys.aod.disable=1
+   write /sys/class/drm/card0-DSI-1/aod_disable 1
+on property:sys.aod.disable=0
+   write /sys/class/drm/card0-DSI-1/aod_disable 0
+#endif

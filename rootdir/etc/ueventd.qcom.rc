@@ -162,6 +162,10 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/system_health_monitor 0644  radio      system
 /dev/mdss_rotator         0664   system     system
 
+# liochen@BSP, 2016/12/13, Revise the permissions for FRP and Param
+/dev/block/by-name/config 0600   system     system
+/dev/block/by-name/param  0660   root       system
+
 #QDSS
 /dev/byte-cntr            0660   system    oem_2902
 /dev/mhi_qdss             0660   system    oem_2902
@@ -362,6 +366,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/hbtp_vm              0660   system     system
 
 # Add device block for FRP
+/dev/block/platform/soc/1d84000.ufshc/by-name/config    0600   system     system
 /dev/block/platform/soc/7824900.sdhci/by-name/config    0600   system     system
 /dev/block/platform/soc/7464900.sdhci/by-name/frp       0600   system     system
 /dev/block/platform/soc/624000.ufshc/by-name/frp        0600   system     system
