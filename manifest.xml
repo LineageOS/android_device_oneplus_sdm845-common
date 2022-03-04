@@ -625,15 +625,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpnfclegacy</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfcLegacy</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- WIGIG network performance tuner service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.wigig.netperftuner</name>
@@ -817,4 +808,40 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>qccvndhal</instance>
         </interface>
     </hal> <!-- QCC HAL Service -->
+    <hal format="hidl">
+        <name>vendor.nxp.nxpnfc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOnePlusCameraMDM</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.oneplus.hardware.camera</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOnePlusCameraProvider</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.oneplus.hardware.display</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOneplusDisplay</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
