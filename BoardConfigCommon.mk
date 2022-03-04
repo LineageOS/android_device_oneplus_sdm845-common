@@ -60,8 +60,10 @@ TARGET_BOARD_PLATFORM := sdm845
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 
 # Properties
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Treble
 BOARD_VNDK_VERSION := current
