@@ -16,6 +16,23 @@
       "message": "Blobs: https://github.com/EdwinMoq/proprietary_vendor_oneplus\n\nOn fajita it boots, RIL, wifi, bluetooth and heptics work, audio and averything else is broken",
       "revId": "12ed737659307b1725cf0eccbdd2635146133d24",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f97aa55_0cddeade",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-09T23:51:30Z",
+      "side": 1,
+      "message": "this should also remove local power HAL.",
+      "revId": "12ed737659307b1725cf0eccbdd2635146133d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
