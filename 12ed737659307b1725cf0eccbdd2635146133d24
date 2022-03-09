@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccdb190b_4c4c7d5e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-03-09T04:57:59Z",
+      "side": 1,
+      "message": "Blobs: https://github.com/EdwinMoq/proprietary_vendor_oneplus\n\nOn fajita it boots, RIL, wifi, bluetooth and heptics work, audio and averything else is broken",
+      "revId": "12ed737659307b1725cf0eccbdd2635146133d24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
