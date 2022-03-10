@@ -69,6 +69,9 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
+        vendor/lib64/hw/fingerprint.qcom.so)
+            sed -i "s/goodix.fingerprint\x00/fingerprint\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
     esac
 }
 
