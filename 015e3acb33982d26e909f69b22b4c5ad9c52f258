@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5ba3a0e_e6c5f732",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-10T07:50:11Z",
+      "side": 1,
+      "message": "Would prefer if you just dumped it from stock.",
+      "revId": "015e3acb33982d26e909f69b22b4c5ad9c52f258",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
