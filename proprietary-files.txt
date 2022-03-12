@@ -655,7 +655,6 @@ vendor/lib64/ese_spi_nxp.so
 vendor/lib64/hal_libnfc.so
 vendor/lib64/libchrome.so
 vendor/lib64/nfc_nci_nxp.so
-vendor/lib64/nfc_nci_nxp.so
 vendor/lib64/vendor.nxp.eventprocessor@1.0.so
 
 # OMX
@@ -1216,7 +1215,6 @@ vendor/etc/seccomp_policy/wifidisplayhalservice.policy
 vendor/etc/wfdconfig.xml
 vendor/lib/libFileMux_proprietary.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmmosal.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
 vendor/lib/libwfdcodecv4l2_proprietary.so
