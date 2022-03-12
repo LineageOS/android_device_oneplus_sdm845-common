@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d2b389f4_721ccb53",
+        "filename": "system.prop",
+        "patchSetId": 21
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 19665
+      },
+      "writtenOn": "2022-03-12T03:37:57Z",
+      "side": 1,
+      "message": "pprobably drop this line now that it\u0027s being defined in vendor.prop?",
+      "revId": "5905d380bd6397a00d0785cd12e48227ccbd512e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
