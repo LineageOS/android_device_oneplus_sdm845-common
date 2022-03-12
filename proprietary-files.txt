@@ -624,7 +624,7 @@ vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
 system/etc/nfcee_access.xml
--system_ext/app/NxpNfcNci/NxpNfcNci.apk;OVERRIDES=NfcNci
+-system_ext/app/NxpNfcNci/NxpNfcNci.apk;OVERRIDES=NfcNci|bfd9a2acf6c96332af894c3e2be70410e86f72da
 system_ext/etc/permissions/com.nxp.nfc.xml
 system_ext/framework/com.nxp.nfc.jar
 system_ext/lib64/libnxpnfc-nci.so
