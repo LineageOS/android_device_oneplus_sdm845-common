@@ -1,0 +1,2 @@
+allow sensors vendor_sensors_vendor_data_file:dir create_dir_perms;
+allow sensors vendor_sensors_vendor_data_file:file create_file_perms;
