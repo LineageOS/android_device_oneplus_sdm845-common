@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3729c79_ebbec11a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-03-13T18:32:14Z",
+      "side": 1,
+      "message": "Just a workaround\n\nBroken after this: https://github.com/LineageOS/android_frameworks_native/commit/0957669e413216016e33649a6fd5fe939604dccf",
+      "revId": "2c6df3cf08ff3d8ac488acf14a3f2938969c9783",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
