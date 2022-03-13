@@ -1162,6 +1162,7 @@ vendor/lib64/libwvhidl.so
 vendor/bin/cnss-daemon
 
 # WiFi Display (system) - from lemonadep - SKQ1.210821.001
+system/lib64/libinput.so:system/lib64/libwfdinput.so|2903351af4f6d678c467e69c214f60ac4a566d83
 -system/framework/WfdCommon.jar|9f431b56d7f38c71089333008695dd5f717e5034
 system_ext/bin/wfdservice|2d9bde189325b3faf4e1571543867c6a7e00762d
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
@@ -1196,7 +1197,7 @@ system_ext/lib64/libwfdconfigutils.so|55b9467cc3a373c7f5725e5924d663a70dbf703c
 system_ext/lib64/libwfddisplayconfig.so|8190c64a0e3ebf5ae09dd65c5d0398cd3001b4c9
 system_ext/lib64/libwfdmminterface.so|2e49a3d58c945dc9472a0b6b250c56e60787e62e
 system_ext/lib64/libwfdmmsink.so|6d242e3cea5dc46cbd237a3b02e5596581091250
-system_ext/lib64/libwfdnative.so|ea6fb1e9a767f1dcaffde09a5fc5ab64d7f26071|33e8e82490d67fb1e4b88b3aecdf2d07f135b517
+system_ext/lib64/libwfdnative.so|ea6fb1e9a767f1dcaffde09a5fc5ab64d7f26071|f1d4c0ecb18c01519cde0b377b6035899f412ff5
 system_ext/lib64/libwfdrtsp.so|2fb6c120db75e8b7fb4a08c48659e8bb7d0376b2
 system_ext/lib64/libwfdsinksm.so|7f8ace302737112b7b8b7862d8462e5e55a6af1c
 system_ext/lib64/libwfduibcinterface.so|1e8df941b0c2f71ad0e15e85522f177ed38e766d
