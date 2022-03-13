@@ -1,0 +1,10 @@
+type pocketmode_app, domain;
+
+app_domain(pocketmode_app)
+
+allow pocketmode_app app_api_service:service_manager find;
+
+allow pocketmode_app system_app_data_file:dir create_dir_perms;
+allow pocketmode_app system_app_data_file:{ file lnk_file } create_file_perms;
+
+allow pocketmode_app sysfs_fpc_proximity:file { w_file_perms getattr };
