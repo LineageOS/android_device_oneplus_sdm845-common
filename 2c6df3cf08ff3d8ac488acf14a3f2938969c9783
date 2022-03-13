@@ -52,6 +52,24 @@
       "parentUuid": "4d48c952_364d4ff7",
       "revId": "2c6df3cf08ff3d8ac488acf14a3f2938969c9783",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ff53bf1_0ed68a62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-13T18:39:53Z",
+      "side": 1,
+      "message": "I think it\u0027d be fine to provide a compat function in fw/native this time around. I don\u0027t think many devices will ship android 12L blobs.",
+      "parentUuid": "1810aa4f_ec9f03ae",
+      "revId": "2c6df3cf08ff3d8ac488acf14a3f2938969c9783",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
