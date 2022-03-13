@@ -1,0 +1,4 @@
+allow sensors sensors_vendor_data_file:dir create_dir_perms;
+allow sensors sensors_vendor_data_file:file create_file_perms;
+
+get_prop(sensors, sensors_prop)
