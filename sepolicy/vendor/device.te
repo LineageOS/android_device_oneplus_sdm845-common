@@ -1,0 +1,7 @@
+type dash_device, dev_type;
+type fingerprintd_device, dev_type;
+type op1_block_device, dev_type;
+type op2_block_device, dev_type;
+type param_block_device, dev_type;
+type reserve1_block_device, dev_type;
+type reserve2_block_device, dev_type;

@@ -1,0 +1,13 @@
+# files
+type oem_file, file_type;
+type op1_file, file_type;
+type op2_file, file_type;
+type opf_file, file_type;
+
+# procfs
+type proc_touchpanel, fs_type, proc_type;
+
+# sysfs
+type sysfs_dash_charger, fs_type, proc_type, sysfs_type;
+type sysfs_fod, fs_type, sysfs_type;
+type sysfs_project_info, fs_type, sysfs_type;
