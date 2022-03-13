@@ -1,0 +1,45 @@
+# Binaries
+/(vendor|system/vendor)/bin/dashd                      u:object_r:dashd_exec:s0
+/(vendor|system/vendor)/bin/opf-service                u:object_r:opf_exec:s0
+/(vendor|system/vendor)/bin/wifi-mac-generator         u:object_r:wifi-mac-generator_exec:s0
+
+# Block devices
+/dev/block/platform/soc/1d84000\.ufshc/by-name/config                  u:object_r:frp_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/engineering_cdt_[ab]    u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/fw_4j1ed_[ab]           u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/fw_4u1ea_[ab]           u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/LOGO_[ab]               u:object_r:custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/minidump                u:object_r:rawdump_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oem_dycnvbk             u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oem_stanvbk             u:object_r:modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/op1                     u:object_r:op1_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/op2                     u:object_r:op2_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/param                   u:object_r:param_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/reserve1                u:object_r:reserve1_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/reserve2                u:object_r:reserve2_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/spunvm                  u:object_r:efs_boot_dev:s0
+
+# Devices
+/dev/dash                 u:object_r:dash_device:s0
+/dev/goodix_fp            u:object_r:fingerprintd_device:s0
+/dev/opfeature            u:object_r:opf_file:s0
+/dev/p73                  u:object_r:nfc_device:s0
+/dev/pn553                u:object_r:nfc_device:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845               u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.2-service                      u:object_r:hal_secure_element_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.oneplus_sdm845           u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.oneplus                        u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.camera@1\.0-service                      u:object_r:hal_cameraHIDL_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.CameraMDMHIDL@1\.0-service               u:object_r:hal_cameraHIDL_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                     u:object_r:hal_display_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.param@1\.0-service                       u:object_r:hal_param_default_exec:s0
+
+# OP1, OP2 files
+/mnt/vendor/op1(/.*)?    u:object_r:op1_file:s0
+/mnt/vendor/op2(/.*)?    u:object_r:op2_file:s0
+
+# Sys files
+/sys/project_info(/.*)?    u:object_r:sysfs_project_info:s0
