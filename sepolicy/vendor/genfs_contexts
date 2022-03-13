@@ -1,0 +1,70 @@
+# procfs
+genfscon proc /dash_4300_4p45_exit    u:object_r:sysfs_dash_charger:s0
+genfscon proc /dash_4320_4p45_exit    u:object_r:sysfs_dash_charger:s0
+genfscon proc /dash_4510_4p45_exit    u:object_r:sysfs_dash_charger:s0
+genfscon proc /dash_firmware_ok       u:object_r:sysfs_dash_charger:s0
+genfscon proc /enhance_dash           u:object_r:sysfs_dash_charger:s0
+genfscon proc /n76e_exit              u:object_r:sysfs_dash_charger:s0
+genfscon proc /ship_mode              u:object_r:sysfs_dash_charger:s0
+genfscon proc /swarp_chg_exist        u:object_r:sysfs_dash_charger:s0
+genfscon proc /touchpanel             u:object_r:proc_touchpanel:s0
+genfscon proc /warp_chg_exit          u:object_r:sysfs_dash_charger:s0
+
+# sysfs
+genfscon sysfs /devices/platform/soc/a90000.i2c/i2c-4/4-0020/tp_gesture_touch_hold                                     u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/auth_status                           u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha                             u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_dim                            u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_fppress                        u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/power_status                          u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/soc:goodix_fp/proximity_state                                                     u:object_r:sysfs_fpc_proximity:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/display_mode                                              u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/hbm                                                       u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/display_mode                                              u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/hbm                                                       u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /module/qpnp_smb5/parameters/call_on                                                                    u:object_r:sysfs_dash_charger:s0
+
+# sysfs (ssr)
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys0/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/aae0000.qcom,venus/subsys0/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys1/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys1/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys2/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys2/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys3/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys3/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys4/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys4/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys5/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys5/restart_level u:object_r:sysfs_ssr_toggle:s0
+genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys6/name u:object_r:sysfs_ssr:s0
+genfscon sysfs /devices/platform/soc/4080000.qcom,mss/subsys6/restart_level u:object_r:sysfs_ssr_toggle:s0
+
+# sysfs (wakeup)
+genfscon sysfs /devices/platform/soc/171c0000.slim/tavil-slim-pgd/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-1/1-0028/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/898000.qcom,qup_uart/tty/ttyHS0/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/a600000.ssusb/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8998@0:qcom,pm8998_rtc/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8998@0:qcom,power-on@800/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-qnovo@1500/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:gpio_keys/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_aac/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_alac/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_amrnb/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_amrwb/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_amrwbplus/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_ape/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_evrc/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_g711alaw/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_g711mlaw/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_mp3/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_multi_aac/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_qcelp/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_wma/power/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/misc/msm_wmapro/power/wakeup u:object_r:sysfs_wakeup:s0
