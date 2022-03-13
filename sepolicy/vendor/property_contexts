@@ -1,0 +1,5 @@
+# Bluetooth
+persist.vendor.bluetooth.    u:object_r:vendor_bluetooth_prop:s0
+
+# NFC
+persist.vendor.nfc.    u:object_r:vendor_nfc_prop:s0
