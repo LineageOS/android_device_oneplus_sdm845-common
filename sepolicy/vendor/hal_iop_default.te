@@ -1,0 +1,1 @@
+allow hal_iop_default proc_meminfo:file r_file_perms;
