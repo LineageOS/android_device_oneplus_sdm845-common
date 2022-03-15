@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a429e7db_7b0dc39a",
+        "filename": "sepolicy/vendor/dashd.te",
+        "patchSetId": 11
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-15T14:54:18Z",
+      "side": 1,
+      "message": "Use r_dir_file() macro",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 47
+      },
+      "revId": "26ae2691e2728f7382f32fce40a5a993c1f264e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
