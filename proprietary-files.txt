@@ -72,6 +72,7 @@ vendor/lib/libadsprpc.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
+vendor/lib/libdiracgefwrapper.so
 vendor/lib/libopf.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
