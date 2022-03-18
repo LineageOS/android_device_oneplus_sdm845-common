@@ -15,7 +15,8 @@
         android:label="OnePlusPocketMode"
         android:persistent="true">
 
-        <receiver android:name="org.lineageos.pocketmode.BootCompletedReceiver">
+        <receiver android:name="org.lineageos.pocketmode.BootCompletedReceiver"
+                  android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
