@@ -67,6 +67,9 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Treble
 BOARD_VNDK_VERSION := current
 
+# Trust
+TARGET_TRUST_CONTROL_PATH := /sys/devices/platform/soc/a600000.ssusb/usb_data_enabled
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
