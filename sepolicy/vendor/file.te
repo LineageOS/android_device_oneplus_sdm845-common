@@ -11,3 +11,4 @@ type proc_touchpanel, fs_type, proc_type;
 type sysfs_dash_charger, fs_type, proc_type, sysfs_type;
 type sysfs_fod, fs_type, sysfs_type;
 type sysfs_project_info, fs_type, sysfs_type;
+type sysfs_usb_data_enabled, fs_type, sysfs_type;
