@@ -1,0 +1,1 @@
+allow hal_lineage_trust_server sysfs_usb_data_enabled:file rw_file_perms;
