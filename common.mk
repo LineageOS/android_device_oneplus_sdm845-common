@@ -113,9 +113,19 @@ PRODUCT_PACKAGES += \
     audio.primary.sdm845 \
     audio.r_submix.default \
     audio.usb.default \
+    libbatterylistener \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
+    libssrec \
+    libsynth \
     libtinycompress \
     libvolumelistener \
     tinymix \
