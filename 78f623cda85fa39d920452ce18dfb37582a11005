@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe1f1cb9_3bd29002",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-03-27T21:31:00Z",
+      "side": 1,
+      "message": "Didn\u0027t notice any difference but these are the correct freqs for sdm845 v2",
+      "revId": "78f623cda85fa39d920452ce18dfb37582a11005",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
