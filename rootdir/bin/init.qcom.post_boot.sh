@@ -5003,14 +5003,14 @@ case "$target" in
 	# configure governor settings for little cluster
 	echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 	echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rate_limit_us
-	echo 1209600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+	echo 1228800 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/pl
         echo 576000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
 	# configure governor settings for big cluster
 	echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 	echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rate_limit_us
-	echo 1574400 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
+	echo 1536000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
 	echo 1 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/pl
 	echo "0:1324800" > /sys/module/cpu_boost/parameters/input_boost_freq
 	echo 120 > /sys/module/cpu_boost/parameters/input_boost_ms
@@ -5602,6 +5602,11 @@ case "$target" in
 		echo 1612800 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 	fi
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
+
+	# ifdef VENDOR_EDIT
+	# yankelong@BSP, 2019/5/8/, add for Enable ufs performance.
+	echo 0 > /sys/class/scsi_host/host0/../../../clkscale_enable
+	# endif VENDOR_EDIT
 
 	# Enable bus-dcvs
 	for device in /sys/devices/platform/soc
