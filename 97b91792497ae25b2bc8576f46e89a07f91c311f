@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f938de37_7a2dcd5b",
+        "filename": "rootdir/bin/init.qcom.post_boot.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 4978,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-03-27T17:52:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "44bf8996_f08be209",
+      "revId": "97b91792497ae25b2bc8576f46e89a07f91c311f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6bf1645a_33650d66",
@@ -48,6 +66,30 @@
       "writtenOn": "2022-03-27T17:33:10Z",
       "side": 1,
       "message": "tho i think we\u0027d also want to skip that one.",
+      "range": {
+        "startLine": 5608,
+        "startChar": 0,
+        "endLine": 5608,
+        "endChar": 61
+      },
+      "revId": "97b91792497ae25b2bc8576f46e89a07f91c311f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff2ce6a6_35aff623",
+        "filename": "rootdir/bin/init.qcom.post_boot.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 5608,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-03-27T17:52:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8fed4a6d_0aa4084b",
       "range": {
         "startLine": 5608,
         "startChar": 0,
