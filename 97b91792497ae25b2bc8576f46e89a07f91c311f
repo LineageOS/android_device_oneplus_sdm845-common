@@ -33,6 +33,29 @@
       "message": "wow, what a cool trick.",
       "revId": "97b91792497ae25b2bc8576f46e89a07f91c311f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8fed4a6d_0aa4084b",
+        "filename": "rootdir/bin/init.qcom.post_boot.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 5608,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-27T17:33:10Z",
+      "side": 1,
+      "message": "tho i think we\u0027d also want to skip that one.",
+      "range": {
+        "startLine": 5608,
+        "startChar": 0,
+        "endLine": 5608,
+        "endChar": 61
+      },
+      "revId": "97b91792497ae25b2bc8576f46e89a07f91c311f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
