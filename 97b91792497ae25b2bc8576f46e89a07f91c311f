@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "44bf8996_f08be209",
+        "filename": "rootdir/bin/init.qcom.post_boot.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 4978,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-27T17:31:49Z",
+      "side": 1,
+      "message": "i think we can skip these.",
+      "revId": "97b91792497ae25b2bc8576f46e89a07f91c311f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6bf1645a_33650d66",
         "filename": "rootdir/bin/init.qcom.post_boot.sh",
         "patchSetId": 1
