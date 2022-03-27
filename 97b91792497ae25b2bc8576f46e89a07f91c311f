@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bf1645a_33650d66",
+        "filename": "rootdir/bin/init.qcom.post_boot.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 5608,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-03-27T17:31:15Z",
+      "side": 1,
+      "message": "wow, what a cool trick.",
+      "revId": "97b91792497ae25b2bc8576f46e89a07f91c311f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
