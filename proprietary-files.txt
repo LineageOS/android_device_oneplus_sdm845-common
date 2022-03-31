@@ -226,7 +226,7 @@ vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE
--vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
@@ -444,8 +444,8 @@ vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
@@ -489,13 +489,13 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so
 
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleWCD9340_SDM845/HotwordEnrollmentOKGoogleWCD9340_SDM845.apk
--product/priv-app/HotwordEnrollmentXGoogleWCD9340_SDM845/HotwordEnrollmentXGoogleWCD9340_SDM845.apk
+product/priv-app/HotwordEnrollmentOKGoogleWCD9340_SDM845/HotwordEnrollmentOKGoogleWCD9340_SDM845.apk
+product/priv-app/HotwordEnrollmentXGoogleWCD9340_SDM845/HotwordEnrollmentXGoogleWCD9340_SDM845.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS - from sake - 31.1010.0410.43
--system_ext/priv-app/ims/ims.apk|1ad396eb63e145a636309de191cd267251b6ce6a
+system_ext/priv-app/ims/ims.apk|1ad396eb63e145a636309de191cd267251b6ce6a
 
 # IMS
 system_ext/lib64/lib-imsvideocodec.so
@@ -604,7 +604,7 @@ vendor/lib64/libmmosal.so
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
@@ -612,7 +612,7 @@ vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
 system/etc/nfcee_access.xml
--system_ext/app/NxpNfcNci/NxpNfcNci.apk;OVERRIDES=NfcNci|bfd9a2acf6c96332af894c3e2be70410e86f72da
+system_ext/app/NxpNfcNci/NxpNfcNci.apk;OVERRIDES=NfcNci|bfd9a2acf6c96332af894c3e2be70410e86f72da
 system_ext/etc/permissions/com.nxp.nfc.xml
 system_ext/framework/com.nxp.nfc.jar
 system_ext/lib64/libnxpnfc-nci.so
@@ -739,7 +739,7 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 
 # Power-off alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk|24ddc9e4a900b34ea376f1759ba85eb9da87a9b0
+product/app/PowerOffAlarm/PowerOffAlarm.apk|24ddc9e4a900b34ea376f1759ba85eb9da87a9b0
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
@@ -796,15 +796,15 @@ vendor/lib64/libqmiservices.so
 
 # RIL
 system/framework/qcnvitems.jar
--system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/qcrilhook.jar
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--vendor/app/IWlanService/IWlanService.apk
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrild
 vendor/bin/hw/vendor.oneplus.hardware.param@1.0-service
 vendor/bin/adpl
@@ -1104,7 +1104,7 @@ vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
@@ -1143,7 +1143,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 # Widevine DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
@@ -1153,7 +1153,7 @@ vendor/lib64/libwvhidl.so
 vendor/bin/cnss-daemon
 
 # WiFi Display (system) - from lemonadep - SKQ1.210821.001
--system/framework/WfdCommon.jar|9f431b56d7f38c71089333008695dd5f717e5034
+system/framework/WfdCommon.jar|9f431b56d7f38c71089333008695dd5f717e5034
 system_ext/bin/wfdservice|2d9bde189325b3faf4e1571543867c6a7e00762d
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
@@ -1195,7 +1195,7 @@ system_ext/lib64/libwfduibcsink.so|ba8d0e93566359220c801166e098077db2bc7530
 system_ext/lib64/libwfduibcsinkinterface.so|5625c6182ce0d154698b726f868f299bf736ee97
 system_ext/lib64/libwfduibcsrc.so|03e2b139fb399aa5beb1caaa4df0f5c7eb675a9d
 system_ext/lib64/libwfduibcsrcinterface.so|aef1b83ef458c79cd345031654d38bc8897c94ae
--system_ext/priv-app/WfdService/WfdService.apk|381e93aaa1943526cbeb9957656b5a0622b589d6
+system_ext/priv-app/WfdService/WfdService.apk|381e93aaa1943526cbeb9957656b5a0622b589d6
 
 # WiFi Display (vendor)
 vendor/bin/wfdhdcphalservice
