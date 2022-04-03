@@ -1,6 +1,8 @@
 on init
+    chmod 0660 /sys/class/drm/card0-DSI-1/dimlayer_bl_en
     chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chmod 0660 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
+    chown system graphics /sys/class/drm/card0-DSI-1/dimlayer_bl_en
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/display_mode
     chown system system /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm
 
