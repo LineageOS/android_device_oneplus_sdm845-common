@@ -19,9 +19,9 @@
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
 #include <hidl/HidlTransportSupport.h>
+#include <livedisplay/oneplus/SunlightEnhancement.h>
 #include <livedisplay/sdm/PictureAdjustment.h>
 #include "DisplayModes.h"
-#include "SunlightEnhancement.h"
 
 using ::vendor::lineage::livedisplay::V2_0::IPictureAdjustment;
 using ::vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment;

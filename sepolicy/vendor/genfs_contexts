@@ -15,14 +15,13 @@ genfscon sysfs /devices/platform/soc/a600000.ssusb/usb_data_enabled             
 genfscon sysfs /devices/platform/soc/a90000.i2c/i2c-4/4-0020/tp_gesture_touch_hold                                     u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/auth_status                           u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dim_alpha                             u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm                                   u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_dim                            u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/notify_fppress                        u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/power_status                          u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/proximity_state                                                     u:object_r:sysfs_fpc_proximity:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/display_mode                                              u:object_r:sysfs_livedisplay_tuneable:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/hbm                                                       u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/display_mode                                              u:object_r:sysfs_livedisplay_tuneable:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/hbm                                                       u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /module/qpnp_smb5/parameters/call_on                                                                    u:object_r:sysfs_dash_charger:s0
 
 # sysfs (ssr)
