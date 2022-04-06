@@ -693,6 +693,10 @@ vendor/lib64/libswvdec.so
 vendor/bin/opf-service
 vendor/etc/init/init.opf.rc
 
+# PASR
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
