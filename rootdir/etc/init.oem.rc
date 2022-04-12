@@ -617,6 +617,16 @@ service service_setChain  /vendor/bin/sh /vendor/bin/wifi_setChain ${persist.ven
     disabled
     oneshot
 
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idProduct 0x676c
+    write /config/usb_gadget/g1/functions/diag.diag/pid 0x676c
+
+on property:sys.usb.config=rndis,none && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x2A70
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x2A70
+
 on property:persist.vendor.oem.wifi.txenable=1
     start service_wifi_txEnable
 
