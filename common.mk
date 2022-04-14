@@ -343,6 +343,9 @@ PRODUCT_BOOT_JARS += \
 $(call inherit-product, hardware/oneplus/libqti-perfd-client/libqti-perfd-client.mk)
 $(call inherit-product, hardware/oneplus/power-libperfmgr/power-libperfmgr.mk)
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
