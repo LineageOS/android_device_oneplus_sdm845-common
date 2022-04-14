@@ -491,8 +491,10 @@ vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IMS - from sake - 31.1010.0410.43
+-system_ext/priv-app/ims/ims.apk|1ad396eb63e145a636309de191cd267251b6ce6a
+
 # IMS
--system_ext/priv-app/ims/ims.apk
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
