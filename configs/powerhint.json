@@ -222,6 +222,14 @@
       "ResetOnInit": true
     },
     {
+      "Name": "DoubleTapToWakeEnable",
+      "Path": "/proc/touchpanel/double_tap_enable",
+      "Values": [
+        "1",
+        "0"
+      ],
+    },
+    {
       "Name": "PMQoSCpuDmaLatency",
       "Path": "/dev/cpu_dma_latency",
       "Values": [
@@ -700,6 +708,12 @@
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
       "Node": "DisplayWakeup",
       "Duration": 60,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWakeEnable",
+      "Duration": 0,
       "Value": "1"
     },
     {
