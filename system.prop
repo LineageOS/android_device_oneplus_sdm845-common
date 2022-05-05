@@ -4,9 +4,6 @@ ro.build.ab_update=true
 # BPF
 ro.kernel.ebpf.supported=true
 
-# Charger
-ro.charger.disable_init_blank=true
-
 # CNE
 persist.vendor.cne.feature=1
 
