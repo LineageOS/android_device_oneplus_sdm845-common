@@ -103,6 +103,9 @@ vendor.camera.aux.packagelist=com.oneplus.camera,com.oneplus.camera.service,org.
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM845
 
+# Dalvik
+dalvik.vm.systemuicompilerfilter=speed
+
 # Display
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
