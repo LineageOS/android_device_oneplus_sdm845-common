@@ -163,3 +163,7 @@ ro.telephony.iwlan_operation_mode=legacy
 
 # Sensors
 persist.vendor.sensors.firmware_property_read_support=false
+
+# USB
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
