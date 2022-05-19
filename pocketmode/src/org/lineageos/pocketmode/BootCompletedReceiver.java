@@ -19,6 +19,7 @@ package org.lineageos.pocketmode;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.UserHandle;
 import android.util.Log;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -27,6 +28,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         Log.d(TAG, "Starting");
-        context.startService(new Intent(context, PocketModeService.class));
+        context.startServiceAsUser(new Intent(context, PocketModeService.class),
+                UserHandle.CURRENT);
     }
 }
