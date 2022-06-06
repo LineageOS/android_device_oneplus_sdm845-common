@@ -1,5 +1,0 @@
-hal_client_domain(hal_secure_element_default, hal_nfc)
-
-allow hal_secure_element_default hal_nfc_hwservice:hwservice_manager find;
-
-allow hal_secure_element_default nfc_device:chr_file rw_file_perms;
