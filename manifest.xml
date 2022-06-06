@@ -206,7 +206,8 @@
         <version>1.2</version>
         <interface>
             <name>ISecureElement</name>
-            <instance>eSE1</instance>
+            <instance>SIM1</instance>
+            <instance>SIM2</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -314,24 +315,6 @@
         <version>1.0</version>
         <interface>
             <name>IDisplayPostproc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.eventprocessor</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpEseEvtProcessor</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpese</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpEse</name>
             <instance>default</instance>
         </interface>
     </hal>
