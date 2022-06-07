@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3cb5522_d7e2da7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31203
+      },
+      "writtenOn": "2022-06-07T13:21:13Z",
+      "side": 1,
+      "message": "Android 11",
+      "revId": "bb8881d49dbdf94dc9f7c7af148a48a2fd2abc96",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
