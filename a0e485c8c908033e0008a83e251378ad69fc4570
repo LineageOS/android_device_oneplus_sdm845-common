@@ -16,6 +16,23 @@
       "message": "Makes NFC tags work again on the newest SPL and stops the annoying \"NFC pasted contents from the Clipboard\" toasts.",
       "revId": "a0e485c8c908033e0008a83e251378ad69fc4570",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13888190_486105ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19665
+      },
+      "writtenOn": "2022-06-15T03:20:35Z",
+      "side": 1,
+      "message": "works; NFC tags are readable again on latest SPL. Clipboard reading no longer happens too.",
+      "revId": "a0e485c8c908033e0008a83e251378ad69fc4570",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
