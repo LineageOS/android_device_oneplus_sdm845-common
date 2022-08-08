@@ -72,9 +72,6 @@ function blob_fixup() {
         system_ext/lib64/libnxpnfc_nci_jni.so)
             "${PATCHELF}" --add-needed libjni_shim.so "${2}"
             ;;
-        vendor/lib64/hw/fingerprint.qcom.so)
-            sed -i "s/goodix.fingerprint\x00/fingerprint\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
-            ;;
     esac
 }
 
