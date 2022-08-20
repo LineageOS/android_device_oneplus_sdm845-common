@@ -9,6 +9,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/fw_4j1ed_[ab]           u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/fw_4u1ea_[ab]           u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/LOGO_[ab]               u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/logdump                 u:object_r:metadata_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/minidump                u:object_r:vendor_rawdump_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oem_dycnvbk             u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oem_stanvbk             u:object_r:vendor_modem_efs_partition_device:s0
