@@ -21,5 +21,8 @@ allow hal_fingerprint_default proc_touchpanel:file rw_file_perms;
 
 allow hal_fingerprint_default sysfs_fod:file rw_file_perms;
 
+allow hal_fingerprint_default sysfs_fpc:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_fpc:file rw_file_perms;
+
 get_prop(hal_fingerprint_default, adsprpc_prop)
 get_prop(hal_fingerprint_default, vendor_default_prop)
