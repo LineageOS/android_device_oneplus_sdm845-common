@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab1b95be_476cefaf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-13T21:57:01Z",
+      "side": 1,
+      "message": "Are you sure you can remove all these blobs without breaking A2DP offload?",
+      "revId": "f66a90deab7397bb9e16fcdddcecd074d8dc0be7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
