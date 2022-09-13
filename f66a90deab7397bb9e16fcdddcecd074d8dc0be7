@@ -16,6 +16,24 @@
       "message": "Are you sure you can remove all these blobs without breaking A2DP offload?",
       "revId": "f66a90deab7397bb9e16fcdddcecd074d8dc0be7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "079f8e2f_93716cf3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-09-13T22:41:16Z",
+      "side": 1,
+      "message": "Without the QTI BT stack nothing depends on them, so yeah.",
+      "parentUuid": "ab1b95be_476cefaf",
+      "revId": "f66a90deab7397bb9e16fcdddcecd074d8dc0be7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
