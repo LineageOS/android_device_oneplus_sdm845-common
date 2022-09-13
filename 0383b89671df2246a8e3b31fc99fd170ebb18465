@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cfa51c41_2474ac87",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1194,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-13T14:25:32Z",
+      "side": 1,
+      "message": "Let\u0027s please do this change separately, preferably using blobs_fixup to have it more properly documented.",
+      "range": {
+        "startLine": 1193,
+        "startChar": 0,
+        "endLine": 1194,
+        "endChar": 65
+      },
+      "revId": "0383b89671df2246a8e3b31fc99fd170ebb18465",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
