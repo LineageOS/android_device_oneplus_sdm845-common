@@ -1170,7 +1170,6 @@ vendor/etc/init/wfdvndservice.rc
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
 vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
-vendor/etc/wfdconfig.xml
 vendor/lib/libFileMux_proprietary.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmosal.so
@@ -1198,3 +1197,6 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# WiFi Display (vendor) - from lemonadep - TP1A.220624.003
+vendor/etc/wfdconfig.xml|4f863ac9a71bafff8afc14e8fab26af979bbb1d6
