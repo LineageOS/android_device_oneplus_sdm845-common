@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "380d806a_13a05f7b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2022-09-15T23:55:12Z",
+      "side": 1,
+      "message": "By putting these properties on product, you break A2DP on GSI, FYI. I know that Google does this for Pixels but I don\u0027t think you should break functionality unnecessarily since these are public properties and can be placed on vendor fine.",
+      "revId": "a2d187ffbebb6f71a9e166ff3ce97af3aceeb1ba",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
