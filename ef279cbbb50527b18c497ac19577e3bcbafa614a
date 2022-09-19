@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72833f20_3bc3a854",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-19T20:16:42Z",
+      "side": 1,
+      "message": "from raven - TP1A.220624.021\n\nThey haven\u0027t been updated.",
+      "range": {
+        "startLine": 91,
+        "startChar": 21,
+        "endLine": 91,
+        "endChar": 54
+      },
+      "revId": "ef279cbbb50527b18c497ac19577e3bcbafa614a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
