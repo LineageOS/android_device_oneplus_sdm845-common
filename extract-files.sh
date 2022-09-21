@@ -76,7 +76,7 @@ function blob_fixup() {
             ;;
         system_ext/lib64/lib-imsvideocodec.so)
             [ "$2" = "" ] && return 0
-            grep -q lib-imsvtshim.so "${2}" ||  "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+            grep -q libgui_shim.so "${2}" ||  "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
         system_ext/lib64/libwfdnative.so)
             [ "$2" = "" ] && return 0
