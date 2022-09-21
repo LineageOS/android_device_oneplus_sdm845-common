@@ -1,0 +1,11 @@
+# Audio
+af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.sys.mute.latency.factor=2
+audio.sys.noisy.broadcast.delay=500
+audio.sys.offload.pstimeout.secs=3
+audio.sys.routing.latency=0
+audio.offload.video=true
+media.stagefright.audio.deep=false
+ro.af.client_heap_size_kbyte=7168

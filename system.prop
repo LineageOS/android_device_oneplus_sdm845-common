@@ -1,3 +1,6 @@
+# Audio
+ro.audio.monitorRotation=true
+
 # AB Update
 ro.build.ab_update=true
 

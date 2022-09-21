@@ -1,15 +1,9 @@
 # Audio
-af.fast_track_multiplier=2
-audio.deep_buffer.media=true
-audio.offload.min.duration.secs=30
-audio.sys.noisy.broadcast.delay=600
-audio.sys.offload.pstimeout.secs=3
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.fluence.voicerec=true
 persist.vendor.audio.ras.enabled=false
-ro.audio.monitorRotation=true
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=6
 ro.vendor.audio.sdk.fluencetype=fluence
