@@ -16,6 +16,24 @@
       "message": "Does it also break A2DP offload for you?",
       "revId": "a99748aba948d48a6f302cdd6b6ae5f3561a84f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de2fe739_b2f04f60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2022-09-22T11:27:30Z",
+      "side": 1,
+      "message": "It doesn\u0027t, but I figured it would be better to keep it in line with the other oneplus devices.",
+      "parentUuid": "3e38809e_4bc88e87",
+      "revId": "a99748aba948d48a6f302cdd6b6ae5f3561a84f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
