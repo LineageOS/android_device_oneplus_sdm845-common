@@ -16,6 +16,24 @@
       "message": "Why are you removing the audio hints if it\u0027s the easiest thing we can support with OSS audio HAL and patches from Google?",
       "revId": "588ea29b2a059f66c343e37c025709f4c0586aad",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee7f07e0_e16afa82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-27T07:30:33Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_hardware_qcom_audio/commit/d68434300ec6349f71ae0f25099f800966378272",
+      "parentUuid": "8c9ad002_bae73a19",
+      "revId": "588ea29b2a059f66c343e37c025709f4c0586aad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
