@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c9ad002_bae73a19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-09-27T06:33:27Z",
+      "side": 1,
+      "message": "Why are you removing the audio hints if it\u0027s the easiest thing we can support with OSS audio HAL and patches from Google?",
+      "revId": "588ea29b2a059f66c343e37c025709f4c0586aad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
