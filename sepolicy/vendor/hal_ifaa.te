@@ -1,0 +1,6 @@
+# HwBinder IPC from client to server, and callbacks
+binder_call(hal_ifaa_client, hal_ifaa_server)
+binder_call(hal_ifaa_server, hal_ifaa_client)
+
+add_hwservice(hal_ifaa_server, hal_ifaa_hwservice)
+allow hal_ifaa_client hal_ifaa_hwservice:hwservice_manager find;
