@@ -33,6 +33,24 @@
       "message": "Is this used at all?",
       "revId": "44304810e0a2d99f5e94693094ad72a4fd4971dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f0194b4_4b585085",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T13:31:49Z",
+      "side": 1,
+      "message": "yeah, it seems to be statically linked into SoterService.apk.",
+      "parentUuid": "fe1cb40b_0079c7ad",
+      "revId": "44304810e0a2d99f5e94693094ad72a4fd4971dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
