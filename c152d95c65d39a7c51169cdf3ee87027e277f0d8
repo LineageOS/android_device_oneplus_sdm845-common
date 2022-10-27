@@ -730,6 +730,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6c3380b_176d89a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T13:03:24Z",
+      "side": 1,
+      "message": "...so we don\u0027t need https://review.lineageos.org/c/LineageOS/android_hardware_oneplus/+/342733?",
+      "parentUuid": "bda4b2d9_fc7e9876",
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "497fa645_488187ce",
