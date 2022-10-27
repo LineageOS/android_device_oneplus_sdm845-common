@@ -496,6 +496,12 @@ product/priv-app/HotwordEnrollmentXGoogleWCD9340_SDM845/HotwordEnrollmentXGoogle
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IFAA
+system_ext/priv-app/IFAAService/IFAAService.apk
+vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service
+vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc
+vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so
+
 # IMS - from sake - 31.1010.0410.43
 system_ext/priv-app/ims/ims.apk|1ad396eb63e145a636309de191cd267251b6ce6a
 
@@ -1056,6 +1062,7 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
 # Soter
+system_ext/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
