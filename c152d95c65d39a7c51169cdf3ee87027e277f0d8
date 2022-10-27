@@ -117,6 +117,30 @@
       },
       "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "449ce557_5eea7486",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T11:19:14Z",
+      "side": 1,
+      "message": "There\u0027s ongoing discussion in hw/oneplus change where it was said that this might not really be needed.",
+      "parentUuid": "25c630cf_dd9b2d79",
+      "range": {
+        "startLine": 267,
+        "startChar": 0,
+        "endLine": 272,
+        "endChar": 28
+      },
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
