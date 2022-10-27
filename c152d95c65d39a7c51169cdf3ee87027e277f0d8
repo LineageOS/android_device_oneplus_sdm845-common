@@ -766,6 +766,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "71993667_9272ebb1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T13:06:13Z",
+      "side": 1,
+      "message": "It\u0027s necessary for oneplus MSM8998 IFAAService, but not for oneplus 845.",
+      "parentUuid": "92b713f2_7a037d1f",
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "497fa645_488187ce",
