@@ -123,6 +123,24 @@
       "parentUuid": "76f1b9e2_cf1eb8ef",
       "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dca67354_f12aaebc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T09:23:58Z",
+      "side": 1,
+      "message": "Maybe they just don\u0027t care? Anyway, I don\u0027t really see any reason to have this in tree when op5/op6 are the only users of hardware/oneplus on 19.1",
+      "parentUuid": "d767e5c6_3dd0286c",
+      "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
