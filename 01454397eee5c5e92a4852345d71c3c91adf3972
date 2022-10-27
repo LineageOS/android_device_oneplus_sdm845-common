@@ -51,6 +51,24 @@
       "message": "we should probably label ifaa app... but eh, this is fine for now.",
       "revId": "01454397eee5c5e92a4852345d71c3c91adf3972",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7513ee73_022d432a",
+        "filename": "sepolicy/vendor/platform_app.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-27T13:12:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b90eefe7_8d601715",
+      "revId": "01454397eee5c5e92a4852345d71c3c91adf3972",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
