@@ -16,6 +16,24 @@
       "message": "anyway, if you\u0027re fine with **current** changes, drop +1 +v.",
       "revId": "01454397eee5c5e92a4852345d71c3c91adf3972",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6af5356_ba210341",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T13:09:07Z",
+      "side": 1,
+      "message": "drop +1 +v on PS3, not PS2 ^^",
+      "parentUuid": "6d2fce57_24c6c19a",
+      "revId": "01454397eee5c5e92a4852345d71c3c91adf3972",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
