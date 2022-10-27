@@ -105,6 +105,24 @@
       "parentUuid": "53706893_1a7d3e52",
       "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d767e5c6_3dd0286c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-27T09:22:19Z",
+      "side": 1,
+      "message": "I\u0027ve looked at other device trees and they usually include the ifaa directory directly in them.",
+      "parentUuid": "76f1b9e2_cf1eb8ef",
+      "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
