@@ -515,6 +515,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "44bab8f2_63020e73",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-10-27T12:26:51Z",
+      "side": 1,
+      "message": "well at least the latest 845 is prepared to handle pretty much all models:\nreturn str !\u003d null ? (str.contains(\"A3\") || str.contains(\"5801\") || str.contains(\"5811\")) ? \"ONEPLUS-A3000\" : (str.contains(\"A5\") || str.contains(\"6859\") || str.contains(\"7801\")) ? \"ONEPLUS-A5000\" : (str.contains(\"A6\") || str.contains(\"7819\") || str.contains(\"8801\") || str.contains(\"8811\")) ? \"ONEPLUS-A6000\" : (str.contains(\"SS882\") || str.contains(\"SS883\") || str.contains(\"SS885\") || str.contains(\"SS886\") || str.contains(\"GM190\") || str.contains(\"GM191\") || str.contains(\"GM192\") || str.contains(\"HD190\") || str.contains(\"HD191\") || str.contains(\"HD192\")) ? \"ONEPLUS-GM1910\" : (str.contains(\"IN201\") || str.contains(\"IN202\") || str.contains(\"AC20\")) ? \"ONEPLUS-IN2010\" : (str.contains(\"KB200\") || str.contains(\"LE210\")) ? \"ONEPLUS-KB2000\" : (str.contains(\"LE211\") || str.contains(\"LE212\")) ? \"ONEPLUS-LE2110\" : \"ONEPLUS-A5000\" : \"ONEPLUS-A5000\";",
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "497fa645_488187ce",
