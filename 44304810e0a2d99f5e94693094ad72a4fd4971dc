@@ -69,6 +69,24 @@
       "parentUuid": "2f0194b4_4b585085",
       "revId": "44304810e0a2d99f5e94693094ad72a4fd4971dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b549f92_b75541df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T13:47:16Z",
+      "side": 1,
+      "message": "Yes, but code for that is statically linked, so it\u0027s not loading the jar file.",
+      "parentUuid": "4fd83e06_e0cad786",
+      "revId": "44304810e0a2d99f5e94693094ad72a4fd4971dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
