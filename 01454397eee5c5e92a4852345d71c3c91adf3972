@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d2fce57_24c6c19a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T13:08:46Z",
+      "side": 1,
+      "message": "anyway, if you\u0027re fine with **current** changes, drop +1 +v.",
+      "revId": "01454397eee5c5e92a4852345d71c3c91adf3972",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
