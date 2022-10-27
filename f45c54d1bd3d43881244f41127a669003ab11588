@@ -33,6 +33,42 @@
       "message": "at least the ifaa manager part.",
       "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccb2b62f_e07ffa96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-27T09:06:16Z",
+      "side": 1,
+      "message": "ifaa-manager contains device-specific implementations",
+      "parentUuid": "f1db6348_5ca9a794",
+      "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53706893_1a7d3e52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-27T09:06:16Z",
+      "side": 1,
+      "message": "Should not be in hardware/oneplus, some OnePlus devices do not contain fingerprint sensors",
+      "parentUuid": "097a99e0_5a6dda94",
+      "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
