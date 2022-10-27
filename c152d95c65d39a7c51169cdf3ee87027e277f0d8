@@ -214,6 +214,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b506c90e_51a49ff2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2022-10-27T11:43:55Z",
+      "side": 1,
+      "message": "as per sebas comment in the other patchset: \"I think this isn\u0027t needed at all, you have IFAAService.apk in your device tree, this is the old interface\"\n\nso maybe you (and the doc you linked) refer to an older spec?",
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "497fa645_488187ce",
