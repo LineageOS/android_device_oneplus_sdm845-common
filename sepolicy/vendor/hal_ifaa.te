@@ -1,0 +1,4 @@
+binder_call(hal_ifaa_client, hal_ifaa_server)
+binder_call(hal_ifaa_server, hal_ifaa_client)
+
+hal_attribute_hwservice(hal_ifaa, hal_ifaa_hwservice)
