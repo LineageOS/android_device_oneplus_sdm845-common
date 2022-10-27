@@ -272,6 +272,30 @@
       },
       "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f76a15e2_1d8f0634",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T11:32:03Z",
+      "side": 1,
+      "message": "hmm, I don\u0027t see IFAAManager anywhere on stock rom...",
+      "parentUuid": "23512d6d_97a278f2",
+      "range": {
+        "startLine": 267,
+        "startChar": 0,
+        "endLine": 272,
+        "endChar": 28
+      },
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
