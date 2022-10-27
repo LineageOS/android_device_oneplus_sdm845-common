@@ -69,6 +69,42 @@
       "parentUuid": "097a99e0_5a6dda94",
       "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76f1b9e2_cf1eb8ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T09:09:11Z",
+      "side": 1,
+      "message": "...then somehow there are 0 changes between oneplus 5 and 6.",
+      "parentUuid": "ccb2b62f_e07ffa96",
+      "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94cf72bd_c61ceefc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-27T09:09:11Z",
+      "side": 1,
+      "message": "Only OnePlus 5 and 6 uses hardware/oneplus at the moment, so I have no idea what device you\u0027re thinking of.",
+      "parentUuid": "53706893_1a7d3e52",
+      "revId": "f45c54d1bd3d43881244f41127a669003ab11588",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
