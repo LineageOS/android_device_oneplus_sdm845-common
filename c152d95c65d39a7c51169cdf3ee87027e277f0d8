@@ -461,6 +461,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c0f0eac_04b04056",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-27T12:09:59Z",
+      "side": 1,
+      "message": "ifaa manager binds the services provided in IFAAService.apk",
+      "parentUuid": "3bfe6dec_992e148c",
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "497fa645_488187ce",
