@@ -16,6 +16,24 @@
       "message": "test current patch set.",
       "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51be85a4_d6c848b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-27T11:07:54Z",
+      "side": 1,
+      "message": "tested, WeChat and Alipay fingerprint payments work.",
+      "parentUuid": "18b83c89_fb159d06",
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
