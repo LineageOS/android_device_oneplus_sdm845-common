@@ -124,6 +124,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1498f40d_ecf9d32f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-27T11:40:57Z",
+      "side": 1,
+      "message": "https://patentimages.storage.googleapis.com/77/fb/4f/2898dcc4567093/CN107133794A.pdf\n\nIt is mentioned that OEMs need to implement the processCmdV2 interface themselves",
+      "parentUuid": "8604716e_e4e41378",
+      "revId": "c152d95c65d39a7c51169cdf3ee87027e277f0d8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "497fa645_488187ce",
