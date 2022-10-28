@@ -1,3 +1,5 @@
+hal_client_domain(platform_app, hal_ifaa)
+
 allow platform_app hal_ifaa_hwservice:hwservice_manager find;
 
 binder_call(platform_app, hal_ifaa_default)
