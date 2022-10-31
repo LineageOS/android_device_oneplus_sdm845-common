@@ -58,5 +58,7 @@
         <item>com.oneplus.camera</item>
         <item>com.oneplus.camera.service</item>
         <item>org.codeaurora.snapcam</item>
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
     </string-array>
 </resources>
