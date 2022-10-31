@@ -16,6 +16,24 @@
       "message": "don\u0027t really care about f2fs support.",
       "revId": "52fbf43cd9e68c83d3cfba48303471b669a71c08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6af2e0d2_4070d74e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-10-31T08:29:40Z",
+      "side": 1,
+      "message": "Compared to ext4, f2fs has better random read/write performance.",
+      "parentUuid": "697277d7_b6cfe0e5",
+      "revId": "52fbf43cd9e68c83d3cfba48303471b669a71c08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
