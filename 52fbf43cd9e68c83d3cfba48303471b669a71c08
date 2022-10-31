@@ -87,6 +87,24 @@
       "message": "btw, TARGET_USERIMAGES_USE_F2FS is set in BoardConfigCommon.mk, might wanna remove that if you\u0027re not keen on f2fs",
       "revId": "52fbf43cd9e68c83d3cfba48303471b669a71c08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1e0c2e4_b5b85661",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-10-31T13:30:06Z",
+      "side": 1,
+      "message": "That just adds f2fs tools to build.",
+      "parentUuid": "e16ce551_143eac76",
+      "revId": "52fbf43cd9e68c83d3cfba48303471b669a71c08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
