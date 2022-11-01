@@ -122,6 +122,24 @@
       "parentUuid": "af4a4dd6_630da44e",
       "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "092b600f_729a8915",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-11-01T09:46:28Z",
+      "side": 1,
+      "message": "`11-01 12:27:14.293     0     0 E QSEECOM : __qseecom_send_cmd: scm_call() failed with err: -22 (app_id \u003d 2)`\n`11-01 12:27:14.293     0     0 E QSEECOM : qseecom_ioctl: failed qseecom_send_cmd: -22`",
+      "parentUuid": "39fbee75_01ad160d",
+      "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
