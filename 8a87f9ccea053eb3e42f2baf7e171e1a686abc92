@@ -86,6 +86,24 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e ok but are we ever running it or not?\n\n",
       "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af4a4dd6_630da44e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2022-11-01T09:22:57Z",
+      "side": 1,
+      "message": "```\n$ rg --binary vendor.qti.hardware.soter@1.0-provision device/oneplus vendor/oneplus/sdm845-common\n```\n\nreturns nothing, so I\u0027d think that nothing runs it, thus it\u0027s useless.",
+      "parentUuid": "bdd59998_d37d4573",
+      "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
