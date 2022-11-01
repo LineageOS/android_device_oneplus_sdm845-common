@@ -51,6 +51,24 @@
       "parentUuid": "cec9f3ef_22966e10",
       "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4b375fa_7cd79727",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-11-01T09:19:13Z",
+      "side": 1,
+      "message": "I didn\u0027t notice this file before, but I found the problem when I tested WeChat\u0027s fingerprint payment function today.",
+      "parentUuid": "d7ce3e1e_674afdc9",
+      "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
