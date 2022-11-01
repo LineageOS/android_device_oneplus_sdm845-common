@@ -33,6 +33,24 @@
       "message": "is anything even starting it?",
       "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7ce3e1e_674afdc9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-11-01T09:18:25Z",
+      "side": 1,
+      "message": "vendor.qti.hardware.soter@1.0-provision provides the GetDeviceId, VerifyAttkKeyPair, ExportAttkKeyPair, GenerateAttkKeyPair, RunSoterCmd interface required by SoterService, Missing this dependency, WeChat and other fingerprint authentication dependent on SoterService can not work properly.",
+      "parentUuid": "cec9f3ef_22966e10",
+      "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
