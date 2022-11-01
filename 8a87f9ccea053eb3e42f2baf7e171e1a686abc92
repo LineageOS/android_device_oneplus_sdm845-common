@@ -104,6 +104,24 @@
       "parentUuid": "bdd59998_d37d4573",
       "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39fbee75_01ad160d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-11-01T09:45:19Z",
+      "side": 1,
+      "message": "I took a closer look at the IDA results and found that the problem does not seem to be here. Checked logcat again and found that when SoterService is called, an error occurs.\n\n`QSEECOMAPI: Error::send command ioctl failed. ret \u003d -1, errno \u003d 2`",
+      "parentUuid": "af4a4dd6_630da44e",
+      "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
