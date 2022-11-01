@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3e31b17_12d89f67",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31988
+      },
+      "writtenOn": "2022-11-01T05:26:27Z",
+      "side": 1,
+      "message": "Please check patchset 2.",
+      "revId": "8a87f9ccea053eb3e42f2baf7e171e1a686abc92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
