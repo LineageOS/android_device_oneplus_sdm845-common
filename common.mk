@@ -119,7 +119,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvolumelistener \
     tinymix \
-    OnePlusDiracGef
+    OnePlusDiracGef \
+    sound_trigger.primary.sdm845
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
