@@ -57,6 +57,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/enchilada_defconfig
+TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
 
 # Platform
