@@ -147,6 +147,7 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_transaction_tracing=false
 debug.sf.latch_unsignaled=1
 debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.color_mode=0
