@@ -618,11 +618,7 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# NFC
-vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
-vendor/etc/libese-nxp.conf
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp.conf
+# NFC firmware
 vendor/lib/libpn553_fw.so
 
 # OMX
