@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d06aac55_ded18ee8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2023-03-27T23:24:44Z",
+      "side": 1,
+      "message": "According to a XDA user this fixes SMS issues with Verizon",
+      "revId": "f4af214963c12e4a841b90548d95e983fa7ee404",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
