@@ -295,15 +295,16 @@ vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc
 # Display (HDR) - from kebab - KB2005_11.F.63
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 
-# Display (SDM) - from PNX - RKQ1.200906.002
-vendor/lib64/libdisplayqos.so|c3d45315871e402053dd1f353e9bde5cbf757277
-vendor/lib64/libqseed3.so|f5990f19a99ec5f33b5a262493c4e642a1429f69
-vendor/lib64/libsdedrm.so|4ee7618168f45ee35ce14db2f66f3feff60db702
-vendor/lib64/libsdm-color.so|a2b413dea186f9049cb596a6414efc2739694059
-vendor/lib64/libsdm-diag.so|1a99e15c4220e759abeefc0f4020e4a58f359a10
-vendor/lib64/libsdm-disp-vndapis.so|4c6916fed1e304effa4c06c7207fb0e1b604f3ae
-vendor/lib64/libsdmextension.so|70c18b044897825bc1f15f2b6f73b64b639b6d40
-vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
+# Display (SDM) - from FP4 - FP4.SP25.B.058.20230318
+vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
+vendor/lib64/libdisplayskuutils.so|1ebb27593b446d5be3300646bf86c8b5b9e59f65
+vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
+vendor/lib64/libsdm-color.so|b153b110d1f60e4e759506a72f35312dc0bac25d
+vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
+vendor/lib64/libsdm-diag.so|57e8b57e52b98a0a151434414756fcf91147a511
+vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
+vendor/lib64/libsdmextension.so|54fd1be1437dbe381ff9dd7d31487befea352c07
+vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display calibration data
 vendor/etc/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml
