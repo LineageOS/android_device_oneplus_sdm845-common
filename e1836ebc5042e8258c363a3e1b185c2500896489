@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7f1a6ae_33441397",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-04-27T07:34:24Z",
+      "side": 1,
+      "message": "Aren\u0027t you building audio HAL from source? If so, you can keep audio hints.",
+      "revId": "e1836ebc5042e8258c363a3e1b185c2500896489",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
