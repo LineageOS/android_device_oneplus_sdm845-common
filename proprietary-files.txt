@@ -37,8 +37,8 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libthread_blur_skel.so
 
-# ANT+
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so
+# ANT+ - from instantnoodlep - IN2025_13.1.0.580(EX01)
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|ecdf9f24262c49031c470b14a27d3f99d2b47ff4
 
 # Audio libraries
 vendor/lib/soundfx/libasphere.so
@@ -62,31 +62,35 @@ vendor/lib/libopf.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
+# Bluetooth - from instantnoodlep - IN2025_13.1.0.580(EX01)
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|b0f73b4ac1a88607ec90b514b9602de423bb9be6
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|29eb459b4a18ef7f5685d1b6bd582d1326f4ac33
+vendor/lib64/libbtnv.so|7973f6eeaa23f85709682e6fca66d589f514563d
+vendor/lib64/libsoc_helper.so|cdd194a76c1ff4836411babeb329090c4eae8d3b
 
-# Bluetooth (A2DP)
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libbluetooth_audio_session_qti_2_1.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+# Bluetooth (A2DP) - from instantnoodlep - IN2025_13.1.0.580(EX01)
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|d1dc593424a2be321a5247681afd5d353328ddec
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|fd86a545b332ff67248cadc929d627337bd085eb
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6a950eaa3066fcba19e1d94a04e5823059a951a8
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|de18f44f36a89f8fb8c8b6f5d2e0bff73acaabea
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|b2d984f5f0ed37f70b63a22d4d351d38b5c5e372
+vendor/lib/btaudio_offload_if.so|a6a47f8397048e0286d6291b1996d6af16cbe241
+vendor/lib/libbluetooth_audio_session_qti.so|5e1cfb9b513a59649798f3d54e0c08ea6bc2fecf
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|0ef3dbef231cf497f9298fa3e2f95cd68e210b08
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|42595c79d388cc5ba1c2f50a0caa20640d5d5708
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|b719b696b47d5ba10547bc7a969dd527e61ba650
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|909dabcab82f2d1c6d94351b197ad75469994cbe
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|01b29fd756fdd7314fd9e0691fe17e1ff49fb4c8
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6afb681f9876d632c1369b11672a46e5d56b28c7
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|473f93f5d500186121d4b844b388a83e1e22297d
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|91fc2e9d2560ff260e83f044d0dd05ab50dfa9ad
+vendor/lib64/btaudio_offload_if.so|7c3dfa53e70b7706f1a69e56a9dda109b6ac500c
+vendor/lib64/libbluetooth_audio_session_qti.so|eff7dd73adcef9296cb512e171ecec6add0921ee
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so|a8ff9dc81c08987ab9794685f22938d33f8771e8
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|0eef499251b171cbb4099786fdc3c9877eb77a8e
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|6e36d92f07d5adee0f3b3379a28788c75fd63365
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|2f01b221540ba0c75b34f373b0b1201f10f9f8c0
 
 # Camera
 vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service
