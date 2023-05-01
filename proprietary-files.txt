@@ -65,8 +65,10 @@ vendor/lib64/libadsprpc.so
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
+
+# Bluetooth - from guacamole - OOS 11.0.9.1
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|21377d622c195a815327c34386eaa7f5b68a0f54
 
 # Bluetooth (A2DP)
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
