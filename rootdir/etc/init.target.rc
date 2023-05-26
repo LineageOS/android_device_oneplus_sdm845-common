@@ -167,6 +167,7 @@ on property:sys.shutdown.requested=*
 
 on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
+    setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
 ## import cne init file
