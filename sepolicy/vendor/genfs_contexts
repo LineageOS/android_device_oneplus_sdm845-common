@@ -12,7 +12,6 @@ genfscon proc /touchpanel             u:object_r:proc_touchpanel:s0
 genfscon proc /warp_chg_exit          u:object_r:sysfs_dash_charger:s0
 
 # sysfs
-genfscon sysfs /devices/platform/soc/a600000.ssusb/usb_data_enabled                                                    u:object_r:sysfs_usb_data_enabled:s0
 genfscon sysfs /devices/platform/soc/a90000.i2c/i2c-4/4-0020/tp_gesture_touch_hold                                     u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask                                           u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state                                                  u:object_r:sysfs_graphics:s0
