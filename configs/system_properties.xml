@@ -30,9 +30,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <configs>
         <property name="vidc_dec_log_in" value="0"/>
         <property name="vidc_dec_log_out" value="0"/>
-        <property name="vidc_dec_hfr_fps" value="0"/>
         <property name="vidc_enc_log_in" value="0"/>
         <property name="vidc_enc_log_out" value="0"/>
         <property name="vidc_enc_csc_custom_matrix" value="0"/>
+        <property name="vidc_perf_control_enable" value="0"/>
+        <!-- Buffer size : internal : 200 MB (200 X 1), output : 200 MB (12.5 X 16) -->
+        <property name="vidc_dec_sec_prefetch_size_internal" value="209715200"/>
+        <property name="vidc_dec_sec_prefetch_size_output" value="13434880"/>
+        <!-- Bitmask for arb mode: 1: AVC, 2: HEVC, 4: MPEG2 -->
         <property name="vidc_dec_arb_mode_override" value="4"/>
+        <!-- Bitmask for linear color: 1: 8-bit, 2: 10-bit -->
+        <property name="vidc_enc_linear_color_format" value="0"/>
+        <property name="vidc_enc_bitrate_savings_enable" value="0"/>
 </configs>
