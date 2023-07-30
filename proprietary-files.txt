@@ -588,11 +588,11 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
-# Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
-vendor/lib64/libmmosal.so
+# Media - from guacamole - GM1911_11_H.38
+system_ext/lib/libmmosal.so|4b81152df596a9ad10938c286e879ec3846f6a27
+system_ext/lib/libmmparser_lite.so|959942cf266f3a8b4d6c775a681347b625690a3a
+system_ext/lib64/libmmosal.so|2864420a9d3727c92a02e3423c9026b07b78481e
+vendor/lib64/libmmosal.so|d40d0c91fcc304e669f1c54540064989ef135d6b
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
@@ -609,48 +609,48 @@ vendor/etc/libese-nxp.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib/libpn553_fw.so
 
-# OMX
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
-vendor/lib/libFlacSwDec.so
-vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libswvdec.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libMpeg4SwEncoder.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVpp.so
-vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libswvdec.so
+# OMX - from guacamole - GM1911_11_H.38
+vendor/lib/libAlacSwDec.so|e2357a7115eb39366c2e9af05db154f760fb2682
+vendor/lib/libApeSwDec.so|f14f08a55b32cc252417e3970b1d2cb296d48fa0
+vendor/lib/libFlacSwDec.so|bba6d4155029b2fd1a3d2dfe9f75f422f0d8a35e
+vendor/lib/libMpeg4SwEncoder.so|2ff27b13674b465166ab25938116a882a27430d8
+vendor/lib/libOmxAacDec.so|5d53a6407f46cdde7d420fbe10a37373b0053704
+vendor/lib/libOmxAlacDec.so|286272d63737fa4f9930913b9ee8f116b4fb8f24
+vendor/lib/libOmxAlacDecSw.so|9c455d01e8f3f8663c464b9980e57ad735959529
+vendor/lib/libOmxAmrDec.so|d06aff2857f5a716b036a5655f391f7539ee0ee1
+vendor/lib/libOmxAmrwbplusDec.so|85247fca7f64c08a53eb48b443443a3b892235d7
+vendor/lib/libOmxApeDec.so|3520930fca2ee05a2ce3e76b1d71bdbb6e9fb1f6
+vendor/lib/libOmxApeDecSw.so|281c7f2ea570dab8d1ae73a385b62ad015a6dbf9
+vendor/lib/libOmxDsdDec.so|2ed9ab0f0768c8cfd223762e09fb73a4e92423b0
+vendor/lib/libOmxEvrcDec.so|394fdd9569f3dbd2484a456432640c25005fff77
+vendor/lib/libOmxG711Dec.so|de4774eacbb34f3fd681bb2c8469c6406653e123
+vendor/lib/libOmxQcelp13Dec.so|58370cbd70146383d766efc6cf945b07d9ffaa89
+vendor/lib/libOmxSwVdec.so|a8b021b63fe88561cf678b4c30a5ea71bf9d1d8f
+vendor/lib/libOmxSwVencMpeg4.so|a358ec50ccfc54f56c74ad35eb2dd7c5b2769954
+vendor/lib/libOmxVideoDSMode.so|ce0471a087e72632ec37adc6b7ba9d81773f42cb
+vendor/lib/libOmxVpp.so|e650308d94ab16811e104dca5b2500b3107021b1
+vendor/lib/libOmxWmaDec.so|c93b318a92433d8504eea517ec81e22b4d2d705c
+vendor/lib/libdsd2pcm.so|427be2997fcd72e94c33d08b2cf1fde5bf969fd4
+vendor/lib/libswvdec.so|d1ff2c3c27d3bb50099a41c0c07bc117a26f0196
+vendor/lib64/libAlacSwDec.so|05a25342f39f9fcc924859d5648dbc7cd7324773
+vendor/lib64/libApeSwDec.so|96b957bd6d993737483d9d8705229b406d616ec7
+vendor/lib64/libFlacSwDec.so|720f8497fcbc3d98aa8ff333ed55ca575eb08815
+vendor/lib64/libMpeg4SwEncoder.so|9197ade83f762c2dc955954141be23d53a1bc2e2
+vendor/lib64/libOmxAacDec.so|0851c0efaf67f663c4b9e3d9bb97e21b243f6d6e
+vendor/lib64/libOmxAlacDec.so|354e3c014df9fb8835281aaf7e418ebabff196fa
+vendor/lib64/libOmxAlacDecSw.so|3f9543ac1b98205c31d9f7a987e0cb26918e83bd
+vendor/lib64/libOmxAmrDec.so|03f9ce653729629dc0a2784df1c2ab69be9a2601
+vendor/lib64/libOmxAmrwbplusDec.so|00d7c17f0abeb5e878c64bb06636e568b25d04ab
+vendor/lib64/libOmxApeDec.so|7f490d0963d8b977ce623389b27ce6642a008690
+vendor/lib64/libOmxApeDecSw.so|c922a55b408d3ef6368c87f236527e783731480d
+vendor/lib64/libOmxEvrcDec.so|28dcac9103360d7f04a5b5e8cdbfb6b7244baef6
+vendor/lib64/libOmxG711Dec.so|322307223653ea6bf7e5b6cb766c22083fccf1c8
+vendor/lib64/libOmxQcelp13Dec.so|67af0ab07ecda998c80210b81da1c7b1a6ed845d
+vendor/lib64/libOmxSwVdec.so|e0e4407f6de43facf031a5a134760a606233d104
+vendor/lib64/libOmxSwVencMpeg4.so|34cbf9028b012419ec2ae82951b827618a577322
+vendor/lib64/libOmxVpp.so|1733cb779a86d51f4923f9f1313b477deee9edcd
+vendor/lib64/libOmxWmaDec.so|18aa42014195f431d9118c17c1c6ec70149922c0
+vendor/lib64/libswvdec.so|ef9e3c3d82903ae1b52693432c5f6fa3734bdeac
 
 # OPFeature
 vendor/bin/opf-service
