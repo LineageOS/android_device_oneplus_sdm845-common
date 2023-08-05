@@ -8,14 +8,14 @@ add_hwservice(hal_cameraHIDL_default, hal_cameraHIDL_hwservice)
 
 hwbinder_use(hal_cameraHIDL_default)
 
-binder_call(hal_cameraHIDL_default, hal_perf_default)
-
-allow hal_cameraHIDL_default hal_perf_hwservice:hwservice_manager find;
+binder_call(hal_cameraHIDL_default, vendor_hal_perf_default)
 
 allow hal_cameraHIDL_default ion_device:chr_file r_file_perms;
 allow hal_cameraHIDL_default tee_device:chr_file rw_file_perms;
 
 allow hal_cameraHIDL_default vendor_camera_data_file:dir create_dir_perms;
+
+allow hal_cameraHIDL_default vendor_hal_perf_hwservice:hwservice_manager find;
 
 r_dir_file(hal_cameraHIDL_default, firmware_file)
 
