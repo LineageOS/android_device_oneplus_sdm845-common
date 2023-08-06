@@ -24,8 +24,6 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/power_status                          u:object_r:sysfs_fod:s0
 genfscon sysfs /devices/platform/soc/soc:fpc_fpc1020                                                                   u:object_r:sysfs_fpc:s0
 genfscon sysfs /devices/platform/soc/soc:goodix_fp/proximity_state                                                     u:object_r:sysfs_fpc_proximity:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/display_mode                                              u:object_r:sysfs_livedisplay_tuneable:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/hbm                                                       u:object_r:sysfs_livedisplay_tuneable:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/display_mode                                              u:object_r:sysfs_livedisplay_tuneable:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/hbm                                                       u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/display_mode                                         u:object_r:sysfs_livedisplay_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/hbm                                                  u:object_r:sysfs_livedisplay_tuneable:s0
 genfscon sysfs /module/qpnp_smb5/parameters/call_on                                                                    u:object_r:sysfs_dash_charger:s0
