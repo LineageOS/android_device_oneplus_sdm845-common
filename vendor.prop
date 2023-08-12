@@ -1,9 +1,4 @@
 # Audio
-af.fast_track_multiplier=2
-audio.deep_buffer.media=true
-audio.offload.min.duration.secs=30
-audio.sys.noisy.broadcast.delay=600
-audio.sys.offload.pstimeout.secs=3
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicecomm=true
@@ -71,7 +66,7 @@ vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
 vendor.audio.offload.passthrough=false
 vendor.audio.offload.track.enable=true
-vendor.audio.parser.ip.buffer.size=0
+vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.safx.pbe.enabled=true
 vendor.audio.tunnel.encode=false
 vendor.audio.use.sw.alac.decoder=true
@@ -146,6 +141,7 @@ persist.backup.ntpServer=0.pool.ntp.org
 ro.hardware.keystore_desede=true
 
 # Media
+debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 
 # Netflix
@@ -174,6 +170,7 @@ persist.vendor.radio.sib16_support=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
+ro.telephony.default_network=22,22
 
 # Sensors
 persist.vendor.sensors.firmware_property_read_support=false
