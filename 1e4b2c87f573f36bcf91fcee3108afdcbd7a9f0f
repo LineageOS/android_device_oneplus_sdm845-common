@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3512462d_535c5c27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2023-08-13T21:21:08Z",
+      "side": 1,
+      "message": "Gets rid of the thermal throttling warning on Aperture",
+      "revId": "1e4b2c87f573f36bcf91fcee3108afdcbd7a9f0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
