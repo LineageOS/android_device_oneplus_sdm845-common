@@ -105,7 +105,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libbatterylistener \
-    libcirrusspkrprot \
     libcomprcapture \
     libexthwplugin \
     libhdmiedid \
@@ -116,10 +115,7 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libspkrprot \
     libssrec \
-    libsynth \
-    libtinycompress \
     libvolumelistener \
-    tinymix \
     OnePlusDiracGef
 
 PRODUCT_COPY_FILES += \
