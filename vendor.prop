@@ -112,6 +112,11 @@ persist.vendor.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,co
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM845
 
+# Crypto
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
+
 # Display
 vendor.display.comp_mask=0
 vendor.display.disable_excl_rect=0

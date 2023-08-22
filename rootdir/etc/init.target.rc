@@ -38,7 +38,7 @@ on fs
     wait /dev/block/platform/soc/1d84000.ufshc
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
     mkdir /mnt/vendor/op2 0660 system system
-    mount_all /vendor/etc/fstab.qcom
+    mount_all /vendor/etc/fstab.qcom --early
 #ifdef VENDOR_EDIT
 # ajinath@SYSTEM, 2020/01/16, [OSP-2080] Recovery boot reason
     wait /mnt/vendor/op2
@@ -65,6 +65,9 @@ on post-fs
     setrlimit 8 67108864 67108864
 
     write /dev/ipa 1
+
+on late-fs
+    mount_all /vendor/etc/fstab.qcom --late
 
 service sec_nvm /vendor/bin/sec_nvm
     class core
