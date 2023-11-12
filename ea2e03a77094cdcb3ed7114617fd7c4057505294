@@ -70,6 +70,30 @@
       },
       "revId": "ea2e03a77094cdcb3ed7114617fd7c4057505294",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e257f19a_4bbbfd18",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2023-11-12T23:41:29Z",
+      "side": 0,
+      "message": "Oops, didn\u0027t see you other comment",
+      "parentUuid": "4a46029e_30a43d2e",
+      "range": {
+        "startLine": 45,
+        "startChar": 13,
+        "endLine": 45,
+        "endChar": 28
+      },
+      "revId": "ea2e03a77094cdcb3ed7114617fd7c4057505294",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
