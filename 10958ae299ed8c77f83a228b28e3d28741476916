@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e97b5893_ef70c573",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-12-07T23:35:11Z",
+      "side": 1,
+      "message": "Maybe move this before the health AIDL change, as it can\u0027t read this prop anyway.",
+      "revId": "10958ae299ed8c77f83a228b28e3d28741476916",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
