@@ -16,6 +16,24 @@
       "message": "This only affects devices running 4.9 kernel, right?",
       "revId": "0ac0532599c32b221f01d1fae0855691da1a09e7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55bcf2ff_63c20623",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2024-02-20T14:18:09Z",
+      "side": 1,
+      "message": "Indeed",
+      "parentUuid": "d8d40dd7_dd6577ab",
+      "revId": "0ac0532599c32b221f01d1fae0855691da1a09e7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
