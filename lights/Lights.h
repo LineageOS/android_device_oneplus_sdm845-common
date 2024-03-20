@@ -17,6 +17,7 @@
 #define AIDL_ANDROID_HARDWARE_LIGHT_LIGHTS_H
 
 #include <aidl/android/hardware/light/BnLights.h>
+#include <functional>
 #include <unordered_map>
 #include <mutex>
 
