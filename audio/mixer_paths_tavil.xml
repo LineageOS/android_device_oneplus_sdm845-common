@@ -2192,10 +2192,6 @@
         <ctl name="Voice Sidetone Enable" value="1" />
     </path>
 
-    <path name="speaker-mic">
-        <path name="amic4" />
-    </path>
-
     <path name="speaker-mic-liquid">
         <path name="dmic2" />
     </path>
@@ -2470,10 +2466,6 @@
         <ctl name="mono Profile" value="VOICE_48000" />
 <!--endif -->
         <path name="speaker-fluid" />
-    </path>
-
-    <path name="voice-speaker-mic">
-        <path name="speaker-mic" />
     </path>
 
     <path name="voice-headphones">
@@ -2809,6 +2801,10 @@
         <ctl name="SLIM_0_TX Channels" value="Two" />
     </path>
 
+    <path name="speaker-mic">
+        <path name="speaker-dmic-endfire" />
+    </path>
+
     <path name="dmic-endfire">
         <path name="handset-dmic-endfire" />
         <ctl name="IIR0 INP0 MUX" value="DEC7" />
@@ -2843,6 +2839,10 @@
     <!-- #endif VENDOR_EDIT-->
 
     <path name="voice-speaker-dmic-ef">
+        <path name="speaker-dmic-endfire" />
+    </path>
+
+    <path name="voice-speaker-mic">
         <path name="speaker-dmic-endfire" />
     </path>
 
