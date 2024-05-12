@@ -163,6 +163,7 @@ PRODUCT_PACKAGES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.class_main.sh \
     init.oem.rc \
     init.qcom.class_core.sh \
