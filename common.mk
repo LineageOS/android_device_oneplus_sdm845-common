@@ -161,6 +161,7 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
+    libcamera_metadata.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Common init scripts
@@ -351,9 +352,12 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libsqlite.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -447,6 +451,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
     libnl \
+    libpng.vendor \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
