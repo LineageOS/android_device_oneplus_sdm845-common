@@ -161,6 +161,8 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
+    libion.vendor \
+    libpng.vendor:32 \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Common init scripts
@@ -351,9 +353,12 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor:64 \
     libjson \
+    libjsoncpp.vendor:64 \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libsqlite.vendor:64
 
 # RIL
 PRODUCT_PACKAGES += \
