@@ -190,15 +190,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.vibrator</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IVibrator</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.vr</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -271,33 +262,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.engnative.engineer</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IEngineer</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.faceunlock.hal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFaceUnlockNativeService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.oneplus.fingerprint.extension</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -325,15 +289,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.oneplus.hardware.drmkey</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusDrmKey</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.oneplus.hardware.ifaa</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -348,24 +303,6 @@
         <version>1.0</version>
         <interface>
             <name>IOneplusParam</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.rpmb</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOneplusRpmb</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oneplus.hardware.wifi</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IOneplusWifi</name>
             <instance>default</instance>
         </interface>
     </hal>
