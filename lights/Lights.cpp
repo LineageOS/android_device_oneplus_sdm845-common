@@ -19,16 +19,16 @@
 
 #define LOG_TAG "LightsService"
 
-#include "Light.h"
+#include "Lights.h"
 #include <android-base/logging.h>
 #include <android-base/stringprintf.h>
 #include <fstream>
+#include <map>
 
+namespace aidl {
 namespace android {
 namespace hardware {
 namespace light {
-namespace V2_0 {
-namespace implementation {
 
 /*
  * Write value to path and close file.
@@ -39,16 +39,16 @@ static void set(const std::string& path, const T& value) {
     file << value;
 }
 
-Light::Light() {
-    mLights.emplace(Type::ATTENTION, std::bind(&Light::handleRgb, this, std::placeholders::_1, 0));
-    mLights.emplace(Type::BATTERY, std::bind(&Light::handleRgb, this, std::placeholders::_1, 2));
-    mLights.emplace(Type::NOTIFICATIONS, std::bind(&Light::handleRgb, this, std::placeholders::_1, 1));
+Lights::Lights() {
+    mLights.emplace(LightType::ATTENTION, std::bind(&Lights::handleRgb, this, std::placeholders::_1, 0));
+    mLights.emplace(LightType::BATTERY, std::bind(&Lights::handleRgb, this, std::placeholders::_1, 2));
+    mLights.emplace(LightType::NOTIFICATIONS, std::bind(&Lights::handleRgb, this, std::placeholders::_1, 1));
 }
 
-void Light::handleRgb(const LightState& state, size_t index) {
+void Lights::handleRgb(const HwLightState& state, size_t index) {
     mLightStates.at(index) = state;
 
-    LightState stateToUse = mLightStates.front();
+    HwLightState stateToUse = mLightStates.front();
     for (const auto& lightState : mLightStates) {
         if (lightState.color & 0xffffff) {
             stateToUse = lightState;
@@ -62,8 +62,8 @@ void Light::handleRgb(const LightState& state, size_t index) {
     colorValues["green"] = ((stateToUse.color >> 8) & 0xff) / 2;
     colorValues["blue"] = (stateToUse.color & 0xff) / 2;
 
-    int onMs = stateToUse.flashMode == Flash::TIMED ? stateToUse.flashOnMs : 0;
-    int offMs = stateToUse.flashMode == Flash::TIMED ? stateToUse.flashOffMs : 0;
+    int onMs = stateToUse.flashMode == FlashMode::TIMED ? stateToUse.flashOnMs : 0;
+    int offMs = stateToUse.flashMode == FlashMode::TIMED ? stateToUse.flashOffMs : 0;
 
     // LUT has 63 entries, we could theoretically use them as 3 (colors) * 21 (steps).
     // However, the last LUT entries don't seem to behave correctly for unknown
@@ -122,17 +122,17 @@ void Light::handleRgb(const LightState& state, size_t index) {
         }
     }
 
-    LOG(DEBUG) << base::StringPrintf(
+    LOG(DEBUG) << ::android::base::StringPrintf(
         "handleRgb: mode=%d, color=%08X, onMs=%d, offMs=%d",
-        static_cast<std::underlying_type<Flash>::type>(stateToUse.flashMode), stateToUse.color,
+        static_cast<std::underlying_type<FlashMode>::type>(stateToUse.flashMode), stateToUse.color,
         onMs, offMs);
 }
 
-Return<Status> Light::setLight(Type type, const LightState& state) {
-    auto it = mLights.find(type);
+ndk::ScopedAStatus Lights::setLightState(int32_t id, const HwLightState& state) {
+    auto it = mLights.find(static_cast<LightType>(id));
 
     if (it == mLights.end()) {
-        return Status::LIGHT_NOT_SUPPORTED;
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
 
     /*
@@ -142,23 +142,18 @@ Return<Status> Light::setLight(Type type, const LightState& state) {
 
     it->second(state);
 
-    return Status::SUCCESS;
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<void> Light::getSupportedTypes(getSupportedTypes_cb _hidl_cb) {
-    std::vector<Type> types;
-
+ndk::ScopedAStatus Lights::getLights(std::vector<HwLight> *_aidl_return) {
     for (auto const& light : mLights) {
-        types.push_back(light.first);
+        _aidl_return->push_back(HwLight(static_cast<int>(light.first), 0, light.first));
     }
 
-    _hidl_cb(types);
-
-    return Void();
+    return ndk::ScopedAStatus::ok();
 }
 
-}  // namespace implementation
-}  // namespace V2_0
 }  // namespace light
 }  // namespace hardware
 }  // namespace android
+}  // namespace aidl
