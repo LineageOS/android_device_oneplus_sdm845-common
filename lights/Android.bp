@@ -15,17 +15,14 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.oneplus_sdm845",
-    init_rc: ["android.hardware.light@2.0-service.oneplus_sdm845.rc"],
-    vintf_fragments: ["android.hardware.light@2.0-service.oneplus_sdm845.xml"],
-    srcs: ["service.cpp", "Light.cpp"],
+    name: "android.hardware.light-service.oneplus_sdm845",
+    init_rc: ["android.hardware.light-service.oneplus_sdm845.rc"],
+    vintf_fragments: ["android.hardware.light-service.oneplus_sdm845.xml"],
+    srcs: ["service.cpp", "Lights.cpp"],
     vendor: true,
     shared_libs: [
-        "android.hardware.light@2.0",
         "libbase",
-        "libhardware",
-        "libhidlbase",
-        "liblog",
-        "libutils",
+        "libbinder_ndk",
+        "android.hardware.light-V1-ndk",
     ],
 }
