@@ -67,6 +67,9 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
+        vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc)
+            sed -i "s/@2.1-service$/@2.1-service.oneplus/" "${2}"
+            ;;
     esac
 }
 
