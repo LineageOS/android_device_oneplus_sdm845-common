@@ -1,0 +1,13 @@
+--- a/smali/com/qualcomm/qti/poweroffalarm/PowerOffAlarmUtils.smali
++++ b/smali/com/qualcomm/qti/poweroffalarm/PowerOffAlarmUtils.smali
+@@ -624,6 +624,10 @@
+     .local v8, "rtcTime":J
+     sub-long v10, v1, v4
+ 
++    const-wide/32 v12, 0xea60
++
++    sub-long/2addr v10, v12
++
+     .line 127
+     .local v10, "timeDelta":J
+     const-wide/16 v12, 0x0

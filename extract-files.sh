@@ -64,6 +64,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        product/app/PowerOffAlarm/PowerOffAlarm.apk)
+            apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -r
+            ;;
         system_ext/lib64/libwfdnative.so)
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
