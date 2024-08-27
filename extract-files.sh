@@ -1,8 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2023 The LineageOS Project
-#
+# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -13,6 +12,10 @@ MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}/../../.."
+
+# If XML files don't have comments before the XML header, use this flag
+# Can still be used with broken XML files by using blob_fixup
+export TARGET_DISABLE_XML_FIXING=true
 
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
@@ -32,28 +35,29 @@ SECTION=
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
-        --only-common )
-                ONLY_COMMON=true
-                ;;
-        --only-firmware )
-                ONLY_FIRMWARE=true
-                ;;
-        --only-target )
-                ONLY_TARGET=true
-                ;;
-        -n | --no-cleanup )
-                CLEAN_VENDOR=false
-                ;;
-        -k | --kang )
-                KANG="--kang"
-                ;;
-        -s | --section )
-                SECTION="${2}"; shift
-                CLEAN_VENDOR=false
-                ;;
-        * )
-                SRC="${1}"
-                ;;
+        --only-common)
+            ONLY_COMMON=true
+            ;;
+        --only-firmware)
+            ONLY_FIRMWARE=true
+            ;;
+        --only-target)
+            ONLY_TARGET=true
+            ;;
+        -n | --no-cleanup)
+            CLEAN_VENDOR=false
+            ;;
+        -k | --kang)
+            KANG="--kang"
+            ;;
+        -s | --section)
+            SECTION="${2}"
+            shift
+            CLEAN_VENDOR=false
+            ;;
+        *)
+            SRC="${1}"
+            ;;
     esac
     shift
 done
@@ -65,15 +69,27 @@ fi
 function blob_fixup() {
     case "${1}" in
         product/app/PowerOffAlarm/PowerOffAlarm.apk)
+            [ "$2" = "" ] && return 0
             apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -r
             ;;
         system_ext/lib64/libwfdnative.so)
+            [ "$2" = "" ] && return 0
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc)
+            [ "$2" = "" ] && return 0
             sed -i "s/@2.1-service$/@2.1-service.oneplus/" "${2}"
             ;;
+        *)
+            return 1
+            ;;
     esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
 }
 
 if [ -z "${ONLY_FIRMWARE}" ] && [ -z "${ONLY_TARGET}" ]; then
