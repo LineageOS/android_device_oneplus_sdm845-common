@@ -341,6 +341,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oneplus
 
+$(call soong_config_set,ONEPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/include)
+
 # tri-state-key
 PRODUCT_PACKAGES += \
     KeyHandler
