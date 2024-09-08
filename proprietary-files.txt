@@ -619,10 +619,6 @@ vendor/lib64/unnhal-acc-hvx.so
 # NFC firmware
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
 
-# OMX - from guacamole - GM1911_11_H.38
-vendor/lib/libOmxVideoDSMode.so|ce0471a087e72632ec37adc6b7ba9d81773f42cb
-vendor/lib/libOmxVpp.so|e650308d94ab16811e104dca5b2500b3107021b1
-
 # OPFeature
 vendor/bin/opf-service
 vendor/etc/init/init.opf.rc
