@@ -13,6 +13,8 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}/../../.."
 
+export TARGET_ENABLE_CHECKELF=true
+
 # If XML files don't have comments before the XML header, use this flag
 # Can still be used with broken XML files by using blob_fixup
 export TARGET_DISABLE_XML_FIXING=true
@@ -75,6 +77,10 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             [ "$2" = "" ] && return 0
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
+        system_ext/lib/libwfdservice.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/android.media.audio.common.types-V2-cpp.so/android.media.audio.common.types-V3-cpp.so/" "${2}"
             ;;
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc)
             [ "$2" = "" ] && return 0
