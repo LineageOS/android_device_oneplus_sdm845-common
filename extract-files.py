@@ -62,6 +62,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
     'vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc': blob_fixup()
         .regex_replace('@2.1-service', '@2.1-service.oneplus'),
+    ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
+        .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
