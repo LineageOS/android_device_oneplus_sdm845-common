@@ -33,6 +33,24 @@
       "message": "Just like with the nfc configs...\n\nIf you\u0027re going to commonize blobs by using the blob from enchilada in sdm845-common when the same file is diffeent in fajita; please pin them with sha1sum hashes so that there aren\u0027t inconsistencies when running extract utils on fajita.\n\nThey\u0027re two different devices.\n\nPlease refer to https://wiki.lineageos.org/proprietary_blobs for how to manage the list when kanging from one device for use with another.\n\n```suggestion\nvendor/lib/hw/camera.qcom.so|eff98d66faa0f85750b8284b7953433f3c320a13\n```",
       "revId": "0b67d1da681f9597b97cf88456fa20b3695820b4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "31a5b074_3ddf66ea",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-10-03T18:15:33Z",
+      "side": 1,
+      "message": "what\u0027s the point of pinning when all unpinned blobs are supposed to be from OnePlus6Oxygen_22.J.62_OTA_0620_all_2111252336_14afec75dd6fa anyway?",
+      "parentUuid": "774b600d_b7b3fcbe",
+      "revId": "0b67d1da681f9597b97cf88456fa20b3695820b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
