@@ -69,6 +69,24 @@
       "parentUuid": "31a5b074_3ddf66ea",
       "revId": "0b67d1da681f9597b97cf88456fa20b3695820b4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc06f119_15eb8df6",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 27212
+      },
+      "writtenOn": "2024-10-03T19:30:32Z",
+      "side": 1,
+      "message": "Got it, sorry for the non-issue. Talked to Edwin, makes more sense to me now.",
+      "parentUuid": "c736df41_06b9759a",
+      "revId": "0b67d1da681f9597b97cf88456fa20b3695820b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
