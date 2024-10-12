@@ -54,12 +54,15 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
         .apktool_patch('blob-patches/PowerOffAlarm.patch', '-r'),
+    'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
+        .add_needed('libgui_shim.so'),
     'system_ext/lib/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V3-cpp.so'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
+        .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so')
+        .add_needed('libinput_shim.so'),
     'vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc': blob_fixup()
         .regex_replace('@2.1-service', '@2.1-service.oneplus'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
