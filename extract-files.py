@@ -46,7 +46,7 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
         .apktool_patch('blob-patches/PowerOffAlarm.patch'),
-    'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
+    ('system_ext/lib64/lib-imsvideocodec.so', 'system_ext/lib64/libwfdmmsrc_system.so'): blob_fixup()
         .add_needed('libgui_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libinput_shim.so'),
