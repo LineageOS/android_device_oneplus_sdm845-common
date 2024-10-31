@@ -46,7 +46,6 @@ lib_fixups: lib_fixups_user_type = {
     ): lib_fixup_vendor_suffix,
     (
         'libOmxCore',
-        'libril',
         'libwpa_client',
     ): lib_fixup_remove,
 }
