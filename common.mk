@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     KeyHandlerResCommon \
     Launcher3ResCommon \
+    NcmTetheringOverlay \
     OplusDozeResCommon \
     SettingsProviderResCommon \
     SettingsResCommon \
