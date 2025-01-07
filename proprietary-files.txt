@@ -183,7 +183,7 @@ vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libcvface_api.so
-vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmms_gyro_vstab.so
 vendor/lib/libmms_gyro_vstab_auth.so
@@ -197,7 +197,7 @@ vendor/lib/libstblur_capture_api.so
 vendor/lib/libstmobile_hand.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libvideoutils.so
-vendor/lib/libvidhance.so;DISABLE_CHECKELF
+vendor/lib/libvidhance.so
 vendor/lib/vendor.oneplus.hardware.camera@1.0.so
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so
