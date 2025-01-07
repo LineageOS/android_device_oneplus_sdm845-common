@@ -183,7 +183,7 @@ vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libcvface_api.so
-vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmms_gyro_vstab.so
 vendor/lib/libmms_gyro_vstab_auth.so

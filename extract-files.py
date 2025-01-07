@@ -61,6 +61,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so')
         .add_needed('libbinder_shim.so')
         .add_needed('libinput_shim.so'),
+    'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
