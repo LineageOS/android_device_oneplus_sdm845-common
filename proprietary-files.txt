@@ -185,10 +185,6 @@ vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libcvface_api.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmms_gyro_vstab.so
-vendor/lib/libmms_gyro_vstab_auth.so
-vendor/lib/libmms_hal_vstab.so;DISABLE_CHECKELF
-vendor/lib/libmms_warper_vstab.so;DISABLE_CHECKELF
 vendor/lib/libmpbase.so
 vendor/lib/libop_jpeg.so
 vendor/lib/libopcamera_native_modules.so
