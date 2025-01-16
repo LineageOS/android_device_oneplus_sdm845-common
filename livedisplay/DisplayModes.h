@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_1_DISPLAYMODES_H
-#define VENDOR_LINEAGE_LIVEDISPLAY_V2_1_DISPLAYMODES_H
+#pragma once
 
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
@@ -56,5 +55,3 @@ class DisplayModes : public IDisplayModes {
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor
-
-#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_1_DISPLAYMODES_H
