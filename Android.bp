@@ -1,5 +1,5 @@
 soong_namespace {
-    imports: ["hardware/oneplus", "hardware/qcom/bootctrl"],
+    imports: ["hardware/oneplus"],
 }
 
 install_symlink {
