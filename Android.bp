@@ -1,5 +1,4 @@
 soong_namespace {
-    imports: ["hardware/oneplus"],
 }
 
 install_symlink {
