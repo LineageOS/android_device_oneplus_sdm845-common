@@ -16,6 +16,24 @@
       "message": "\"hardware/oneplus\" should be omittable too?",
       "revId": "84795c545107692087f40693eafe7829ba662151",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "06896ec1_3dc8ec04",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2025-02-23T14:10:49Z",
+      "side": 1,
+      "message": "Probably. I\u0027ll remove it on a separate change since it isn\u0027t related to bootctrl.",
+      "parentUuid": "5079e29d_2fb7ef90",
+      "revId": "84795c545107692087f40693eafe7829ba662151",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
