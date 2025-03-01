@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60053e07_6d0c4997",
+        "filename": "common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 310,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-03-01T21:27:44Z",
+      "side": 1,
+      "message": "Not needed, pick https://review.lineageos.org/c/LineageOS/android_hardware_qcom-caf_common/+/420251",
+      "revId": "05cb47c8e29c6436f5f0969139d97969a6572b4f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
