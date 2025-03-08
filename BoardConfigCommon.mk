@@ -74,8 +74,6 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 BOARD_VNDK_VERSION := current
 
 # A/B
-AB_OTA_UPDATER := true
-
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
