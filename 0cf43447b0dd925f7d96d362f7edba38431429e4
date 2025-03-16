@@ -16,6 +16,24 @@
       "message": "is it necessary for you?\n\n```\n    if (!GetNxpNumValue(NAME_NXP_T4T_NFCEE_ENABLE, (void*)\u0026retlen,\n                        sizeof(retlen))) {\n      retlen \u003d 0x00;\n      NXPLOG_NCIHAL_D(\n          \"T4T_NFCEE_ENABLE not found. Taking default value : 0x%02lx\", retlen);\n    }\n```",
       "revId": "0cf43447b0dd925f7d96d362f7edba38431429e4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a4a4b72_bfeac8d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2025-03-16T19:46:26Z",
+      "side": 1,
+      "message": "Probably not. I\u0027m trying to figure out why NFC broke on QPR2 and this doesn\u0027t fix it",
+      "parentUuid": "9ebbbe80_0d691910",
+      "revId": "0cf43447b0dd925f7d96d362f7edba38431429e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
