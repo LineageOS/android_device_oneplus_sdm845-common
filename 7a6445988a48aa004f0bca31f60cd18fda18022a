@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "254f5799_554c9bcf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-15T19:10:40Z",
+      "side": 1,
+      "message": "You should merge obvious stuff (like this and the touch aidl) into lineage-22.2 and fast-forward the branch.",
+      "revId": "7a6445988a48aa004f0bca31f60cd18fda18022a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
