@@ -189,6 +189,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 $(call soong_config_set,qtidisplay,gralloc4,true)
+$(call soong_config_set,qtidisplay,target_no_camera_custom_format,true)
 
 # Doze
 PRODUCT_PACKAGES += \
