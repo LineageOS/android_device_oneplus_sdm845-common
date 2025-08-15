@@ -1,51 +1,39 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * SPDX-FileCopyrightText: 2022-2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
  */
 
 #define LOG_TAG "SunlightEnhancementService"
 
-#include "SunlightEnhancement.h"
 #include <android-base/logging.h>
 #include <fstream>
+#include "SunlightEnhancement.h"
 
+namespace aidl {
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
-namespace V2_1 {
-namespace implementation {
 
 static constexpr const char* kHbmPath =
     "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/main_display/hbm";
 
-Return<bool> SunlightEnhancement::isEnabled() {
+ndk::ScopedAStatus SunlightEnhancement::getEnabled(bool* _aidl_return) {
     std::ifstream file(kHbmPath);
     int result = -1;
     file >> result;
     LOG(DEBUG) << "Got result " << result << " fail " << file.fail();
-    return !file.fail() && result > 0;
+    *_aidl_return = result > 0;
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
+ndk::ScopedAStatus SunlightEnhancement::setEnabled(bool enabled) {
     std::ofstream file(kHbmPath);
     file << (enabled ? "3" : "0");
     LOG(DEBUG) << "setEnabled fail " << file.fail();
-    return !file.fail();
+    return ndk::ScopedAStatus::ok();
 }
 
-}  // namespace implementation
-}  // namespace V2_1
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl
