@@ -130,6 +130,11 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
+# Encryption
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.contents_mode=aes-256-xts
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # fastbootd
 ro.fastbootd.available=true
 
