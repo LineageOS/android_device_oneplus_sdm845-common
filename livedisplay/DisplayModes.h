@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2025 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,33 +14,26 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_1_DISPLAYMODES_H
-#define VENDOR_LINEAGE_LIVEDISPLAY_V2_1_DISPLAYMODES_H
+#ifndef VENDOR_LINEAGE_LIVEDISPLAY_DISPLAYMODES_H
+#define VENDOR_LINEAGE_LIVEDISPLAY_DISPLAYMODES_H
 
-#include <hidl/MQDescriptor.h>
-#include <hidl/Status.h>
-#include <vendor/lineage/livedisplay/2.1/IDisplayModes.h>
+#include <aidl/vendor/lineage/livedisplay/BnDisplayModes.h>
 #include <map>
 
+namespace aidl {
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
-namespace V2_1 {
-namespace implementation {
 
-using ::android::sp;
-using ::android::hardware::Return;
-using ::android::hardware::Void;
-
-class DisplayModes : public IDisplayModes {
+class DisplayModes : public BnDisplayModes {
   public:
     DisplayModes();
 
-    // Methods from ::vendor::lineage::livedisplay::V2_1::IDisplayModes follow.
-    Return<void> getDisplayModes(getDisplayModes_cb resultCb) override;
-    Return<void> getCurrentDisplayMode(getCurrentDisplayMode_cb resultCb) override;
-    Return<void> getDefaultDisplayMode(getDefaultDisplayMode_cb ResultCb) override;
-    Return<bool> setDisplayMode(int32_t modeID, bool makeDefault) override;
+    // Methods from ::aidl::vendor::lineage::livedisplay::BnDisplayModes follow.
+    ndk::ScopedAStatus getDisplayModes(std::vector<DisplayMode>* _aidl_return) override;
+    ndk::ScopedAStatus getCurrentDisplayMode(DisplayMode* _aidl_return) override;
+    ndk::ScopedAStatus getDefaultDisplayMode(DisplayMode* _aidl_return) override;
+    ndk::ScopedAStatus setDisplayMode(int32_t modeID, bool makeDefault) override;
 
   private:
     struct ModeInfo {
@@ -51,10 +44,9 @@ class DisplayModes : public IDisplayModes {
     int32_t mDefaultModeId;
 };
 
-}  // namespace implementation
-}  // namespace V2_1
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl
 
-#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_1_DISPLAYMODES_H
+#endif  // VENDOR_LINEAGE_LIVEDISPLAY_DISPLAYMODES_H
