@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2019 The LineageOS Project
+// Copyright (C) 2019-2025 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,30 +14,20 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.oneplus_sdm845",
-    defaults: ["hidl_defaults"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.oneplus_sdm845.rc"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oneplus_sdm845.xml"],
+    name: "vendor.lineage.livedisplay-service.oneplus_sdm845",
+    init_rc: ["vendor.lineage.livedisplay-service.oneplus_sdm845.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay-service.oneplus_sdm845.xml"],
     relative_install_path: "hw",
     srcs: [
-        ":vendor.lineage.livedisplay@2.0-sdm-pa",
-        ":vendor.lineage.livedisplay@2.0-sdm-utils",
-        ":vendor.lineage.livedisplay@2.1-oneplus-af",
         "DisplayModes.cpp",
-        "SunlightEnhancement.cpp",
         "service.cpp",
     ],
     shared_libs: [
         "libbase",
+        "libbinder_ndk",
         "libbinder",
-        "libhidlbase",
         "libutils",
-        "vendor.lineage.livedisplay@2.0",
-        "vendor.lineage.livedisplay@2.1",
-    ],
-    header_libs: [
-        "vendor.lineage.livedisplay@2.0-sdm-headers",
-        "vendor.lineage.livedisplay@2.1-oneplus-headers",
+        "vendor.lineage.livedisplay-V1-ndk",
     ],
     proprietary: true,
 }
