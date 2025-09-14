@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2025 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,59 +14,28 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.1-service.oneplus_sdm845"
+#define LOG_TAG "vendor.lineage.livedisplay-service.oneplus_sdm845"
 
 #include <android-base/logging.h>
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 #include <binder/ProcessState.h>
-#include <hidl/HidlTransportSupport.h>
-#include <livedisplay/oneplus/AntiFlicker.h>
-#include <livedisplay/sdm/PictureAdjustment.h>
 #include "DisplayModes.h"
-#include "SunlightEnhancement.h"
 
-using ::vendor::lineage::livedisplay::V2_0::IPictureAdjustment;
-using ::vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment;
-using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
-using ::vendor::lineage::livedisplay::V2_1::IAntiFlicker;
-using ::vendor::lineage::livedisplay::V2_1::IDisplayModes;
-using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
-using ::vendor::lineage::livedisplay::V2_1::implementation::AntiFlicker;
-using ::vendor::lineage::livedisplay::V2_1::implementation::DisplayModes;
-using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
+using ::aidl::vendor::lineage::livedisplay::DisplayModes;
 
 int main() {
-    std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
-    android::sp<IAntiFlicker> afService = new AntiFlicker();
-    android::sp<IDisplayModes> modesService = new DisplayModes();
-    android::sp<IPictureAdjustment> paService = new PictureAdjustment(controller);
-    android::sp<ISunlightEnhancement> sreService = new SunlightEnhancement();
+    android::ProcessState::self()->setThreadPoolMaxThreadCount(1);
+    android::ProcessState::self()->startThreadPool();
 
-    android::hardware::configureRpcThreadpool(2, true /*callerWillJoin*/);
+    std::shared_ptr<DisplayModes> dm = ndk::SharedRefBase::make<DisplayModes>();
 
-    if (afService->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register anti flicker HAL service.";
-        return 1;
-    }
-
-    if (modesService->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register display modes HAL service.";
-        return 1;
-    }
-
-    if (paService->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register picture adjustment HAL service.";
-        return 1;
-    }
-
-    if (sreService->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register sunlight enhancement HAL service.";
-        return 1;
-    }
+    std::string instance = std::string() + DisplayModes::descriptor + "/default";
+    binder_status_t status = AServiceManager_addService(dm->asBinder().get(), instance.c_str());
+    CHECK_EQ(status, STATUS_OK);
 
     LOG(INFO) << "LiveDisplay HAL service ready.";
 
-    android::hardware::joinRpcThreadpool();
-
-    LOG(ERROR) << "LiveDisplay HAL service failed to join thread pool.";
-    return 1;
+    ABinderProcess_joinThreadPool();
+    return EXIT_FAILURE;  // should not reach
 }

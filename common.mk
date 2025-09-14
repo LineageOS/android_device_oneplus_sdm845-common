@@ -248,7 +248,8 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oneplus_sdm845
+    vendor.lineage.livedisplay-service.oneplus \
+    vendor.lineage.livedisplay-service.oneplus_sdm845
 
 # Media
 PRODUCT_PACKAGES += \
