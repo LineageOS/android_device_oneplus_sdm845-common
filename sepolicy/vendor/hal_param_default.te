@@ -10,6 +10,8 @@ allow hal_param_default block_device:dir search;
 
 allow hal_param_default param_block_device:blk_file rw_file_perms;
 
+allow hal_param_default param_device:chr_file rw_file_perms;
+
 r_dir_file(hal_param_default, sysfs_project_info)
 
 get_prop(hal_param_default, exported_default_prop)
