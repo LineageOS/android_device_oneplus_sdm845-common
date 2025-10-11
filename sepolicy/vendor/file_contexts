@@ -44,5 +44,8 @@
 /mnt/vendor/op1(/.*)?    u:object_r:op1_file:s0
 /mnt/vendor/op2(/.*)?    u:object_r:op2_file:s0
 
+# Param
+/dev/param                                                             u:object_r:param_device:s0
+
 # Sys files
 /sys/project_info(/.*)?    u:object_r:sysfs_project_info:s0
