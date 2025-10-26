@@ -1,3 +1,7 @@
+# Extcon
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/extcon                 u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/soc:tri_state_key/extcon                     u:object_r:sysfs_extcon:s0
+
 # procfs
 genfscon proc /dash_4300_4p45_exit    u:object_r:sysfs_dash_charger:s0
 genfscon proc /dash_4320_4p45_exit    u:object_r:sysfs_dash_charger:s0
