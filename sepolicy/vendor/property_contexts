@@ -1,5 +1,2 @@
-# NFC
-persist.vendor.nfc.    u:object_r:vendor_nfc_prop:s0
-
 # RIL
 vendor.oem.bt.addr           u:object_r:vendor_rild_prop:s0
