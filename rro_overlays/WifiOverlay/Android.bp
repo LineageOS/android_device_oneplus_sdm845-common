@@ -1,5 +1,4 @@
 runtime_resource_overlay {
     name: "WifiOverlay",
-    theme: "WifiOverlay",
     vendor: true
 }
