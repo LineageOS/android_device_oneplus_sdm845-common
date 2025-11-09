@@ -1,3 +1,0 @@
-typeattribute system_app system_writes_vendor_properties_violators;
-
-set_prop(system_app, vendor_nfc_prop)
