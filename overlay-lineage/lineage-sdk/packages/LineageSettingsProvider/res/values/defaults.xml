@@ -25,4 +25,7 @@
 
     <!-- Default for LineageSettings.Secure.VOLUME_PANEL_ON_LEFT -->
     <bool name="def_volume_panel_on_left">true</bool>
+
+    <!-- Default for Settings.Global.DISABLE_WINDOW_BLURS -->
+    <integer name="def_disable_window_blurs">1</integer>
 </resources>
