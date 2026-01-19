@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     ApertureResCommon \
     CarrierConfigResCommon \
     FrameworksResCommon \
+    KeyHandlerResCommon \
     Launcher3ResCommon \
     SettingsProviderResCommon \
     SettingsResCommon \
