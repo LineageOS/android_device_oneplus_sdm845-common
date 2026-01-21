@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     KeyHandlerResCommon \
     Launcher3ResCommon \
+    OplusDozeResCommon \
     SettingsProviderResCommon \
     SettingsResCommon \
     SystemUIResCommon \
