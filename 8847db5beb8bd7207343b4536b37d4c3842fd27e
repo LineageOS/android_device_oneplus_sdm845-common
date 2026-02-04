@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05e384f4_c116f3f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-04T18:29:06Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it make more sense to move this commit after \"Kang QTI C2 stack from guacamole\" and import the real media_codec_performance_c2.xml there, so that this one only removes the old omx one?",
+      "revId": "8847db5beb8bd7207343b4536b37d4c3842fd27e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
