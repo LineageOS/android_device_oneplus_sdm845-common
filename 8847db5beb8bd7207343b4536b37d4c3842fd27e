@@ -34,6 +34,24 @@
       "parentUuid": "05e384f4_c116f3f3",
       "revId": "8847db5beb8bd7207343b4536b37d4c3842fd27e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40d69f05_d498d908",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-04T19:13:29Z",
+      "side": 1,
+      "message": "Yes, I meant the one from guacamole.",
+      "parentUuid": "1b4ebbbc_dd9d45cd",
+      "revId": "8847db5beb8bd7207343b4536b37d4c3842fd27e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
