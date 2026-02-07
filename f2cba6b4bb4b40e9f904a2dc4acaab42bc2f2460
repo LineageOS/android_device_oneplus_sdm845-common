@@ -34,6 +34,24 @@
       "parentUuid": "657e04b0_2b5c8f53",
       "revId": "f2cba6b4bb4b40e9f904a2dc4acaab42bc2f2460",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3266a39_26f89681",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 18
+      },
+      "lineNbr": 605,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-07T19:35:47Z",
+      "side": 1,
+      "message": "Got it, you can also abandon https://review.lineageos.org/c/LineageOS/android_device_oneplus_sdm845-common/+/362883/ while at it.",
+      "parentUuid": "a4a5c3af_03515475",
+      "revId": "f2cba6b4bb4b40e9f904a2dc4acaab42bc2f2460",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
