@@ -16,6 +16,24 @@
       "message": "Do you see this too?\n\n04-05 05:01:23.047     1     1 W /system/bin/init: type\u003d1107 audit(0.0:4): uid\u003d0 auid\u003d4294967295 ses\u003d4294967295 subj\u003du:r:init:s0 msg\u003d\u0027avc:  denied  { set } for property\u003dro.apk_verity.mode pid\u003d1 uid\u003d0 gid\u003d0 scontext\u003du:r:vendor_init:s0 tcontext\u003du:object_r:default_prop:s0 tclass\u003dproperty_service permissive\u003d0\u0027\n04-05 05:01:23.049     0     0 E init    : Do not have permissions to set \u0027ro.apk_verity.mode\u0027 to \u00272\u0027 in property file \u0027/vendor/build.prop\u0027: SELinux permission check failed",
       "revId": "0329a2d9bd36a50876dd02dc012d85a6783d62fd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1fa7f22_387df9e7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 21
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2026-02-08T22:18:49Z",
+      "side": 1,
+      "message": "Yeah",
+      "parentUuid": "54652372_f6cf567f",
+      "revId": "0329a2d9bd36a50876dd02dc012d85a6783d62fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
