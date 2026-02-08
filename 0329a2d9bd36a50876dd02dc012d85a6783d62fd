@@ -34,6 +34,23 @@
       "parentUuid": "54652372_f6cf567f",
       "revId": "0329a2d9bd36a50876dd02dc012d85a6783d62fd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb7a9e97_f9b596a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 21
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-02-08T23:21:37Z",
+      "side": 1,
+      "message": "Looks like that this can be dropped in 23.2.",
+      "revId": "0329a2d9bd36a50876dd02dc012d85a6783d62fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
