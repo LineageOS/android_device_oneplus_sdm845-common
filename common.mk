@@ -231,6 +231,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/gf_input.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/gf_input.idc \
     $(LOCAL_PATH)/keylayout/gf_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf_input.kl
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
