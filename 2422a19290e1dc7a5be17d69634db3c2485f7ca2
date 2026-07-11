@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "813a3f79_2a7813c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-07-11T13:41:57Z",
+      "side": 1,
+      "message": "update deps\n\nhttps://github.com/Evolution-X-Devices/device_xiaomi_sm8450-common/commit/fcfc6f7aed15c067bedd11035bde29f812efbe29",
+      "revId": "2422a19290e1dc7a5be17d69634db3c2485f7ca2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
