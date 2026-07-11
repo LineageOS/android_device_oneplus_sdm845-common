@@ -16,6 +16,24 @@
       "message": "update deps\n\nhttps://github.com/Evolution-X-Devices/device_xiaomi_sm8450-common/commit/fcfc6f7aed15c067bedd11035bde29f812efbe29",
       "revId": "2422a19290e1dc7a5be17d69634db3c2485f7ca2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd5a1226_e54f7bdd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33857
+      },
+      "writtenOn": "2026-07-11T14:01:46Z",
+      "side": 1,
+      "message": "I picked this in change 493763.\nWill libperfmgr be built after I3d9e1d9436f1edfbb45bca0aa709334287bb12ce ?",
+      "parentUuid": "813a3f79_2a7813c8",
+      "revId": "2422a19290e1dc7a5be17d69634db3c2485f7ca2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
