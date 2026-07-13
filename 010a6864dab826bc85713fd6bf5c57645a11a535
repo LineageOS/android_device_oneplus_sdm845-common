@@ -33,6 +33,23 @@
       "message": "Hey, sorry, you\u0027re a bit confused.\n\nThis _does not_ make oneplus sdm845 (which is kernel 4.9) work on 23.2.\n\nIt might build, but it 1000% does not work.\n\n4.9 is not supported on 23.2 by eBPF requirements. There is on this device, newer branches because there are staged chains to move to 4.19 kernel. These as far as I am aware are not ready for prime time.",
       "revId": "010a6864dab826bc85713fd6bf5c57645a11a535",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b81d589d_3af893d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-07-13T02:21:55Z",
+      "side": 1,
+      "message": "this also (unlike the chain that already exists) does not attribute any proper authorship to any of the relevant commits to these changes.",
+      "revId": "010a6864dab826bc85713fd6bf5c57645a11a535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
