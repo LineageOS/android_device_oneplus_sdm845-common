@@ -50,6 +50,24 @@
       "message": "this also (unlike the chain that already exists) does not attribute any proper authorship to any of the relevant commits to these changes.",
       "revId": "010a6864dab826bc85713fd6bf5c57645a11a535",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3f0120c_3026965c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37540
+      },
+      "writtenOn": "2026-07-15T05:10:57Z",
+      "side": 1,
+      "message": "I see thank you for the reply! So there are plans to port a new kernel for this device?\nThank you again!",
+      "parentUuid": "5b39d3aa_018f5e4b",
+      "revId": "010a6864dab826bc85713fd6bf5c57645a11a535",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
