@@ -55,6 +55,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libinput_shim.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .add_needed('libaudiobase.so')
+        .add_needed('libwfdservice_shim.so')
         .replace_needed('android.media.audio.common.types-V4-cpp', 'android.media.audio.common.types-V5-cpp'),
     'vendor/lib/libVDBlurlessAPI_v2.so': blob_fixup()
         .clear_symbol_version('remote_handle_close')
