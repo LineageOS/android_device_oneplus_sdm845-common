@@ -8,8 +8,8 @@ allow dashd proc_cmdline:file r_file_perms;
 allow dashd dash_device:chr_file rw_file_perms;
 allow dashd kmsg_device:chr_file rw_file_perms;
 
-allow dashd vendor_sysfs_battery_supply:file w_file_perms;
+allow dashd sysfs_battery_supply:file w_file_perms;
 
 r_dir_file(dashd, sysfs_dash_charger)
-r_dir_file(dashd, vendor_sysfs_battery_supply)
-r_dir_file(dashd, vendor_sysfs_usb_supply)
+r_dir_file(dashd, sysfs_battery_supply)
+r_dir_file(dashd, sysfs_usb_supply)

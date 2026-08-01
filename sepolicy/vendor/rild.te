@@ -10,6 +10,6 @@ allow rild param_block_device:blk_file rw_file_perms;
 allow rild proc:file w_file_perms;
 allow rild proc_net:file w_file_perms;
 
-allow rild vendor_diag_device:chr_file rw_file_perms;
+allow rild diag_device:chr_file rw_file_perms;
 
 set_prop(rild, vendor_rild_prop)
