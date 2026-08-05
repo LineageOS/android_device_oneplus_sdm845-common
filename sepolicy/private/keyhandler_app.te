@@ -1,4 +1,4 @@
-type keyhandler_app, domain;
+type keyhandler_app, domain, coredomain;
 
 app_domain(keyhandler_app)
 
