@@ -16,6 +16,24 @@
       "message": "FAILED: out/target/product/fajita/obj/PACKAGING/check-selinux-treble-labeling_intermediates/check-selinux-treble-labeling.timestamp\n\nERROR: All platform apps must be labeled with a coredomain type.\nPlease fix the following violations by doing one of these.\n1) Add \u0027coredomain\u0027 attribute to labels.\n2) Move apps and corresponding seapp_contexts entries to vendor or odm partition.\nViolations:\n  APK name: KeyHandler.apk\n  package name: org.lineageos.settings.device\n  assigned label: keyhandler_app\n---\n\n******************************\nERROR: SELinux Treble Labeling violations found.\nTreble Labeling will be enforced for devices with BOARD_API_LEVEL \u003e\u003d 202604.\nPlease fix all violations. For more details, please refer to:\nsystem/sepolicy/tests/treble_labeling_tests.md\n******************************",
       "revId": "d9f6c221b60631cc4a5e3e4ecf364b73264a65a7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c3a93ec_c475bd3e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33857
+      },
+      "writtenOn": "2026-08-05T08:41:07Z",
+      "side": 1,
+      "message": "```\nFAILED: out/target/product/fajita/obj/PACKAGING/check-selinux-treble-labeling_intermediates/check-selinux-treble-labeling.timestamp\n\nERROR: All platform apps must be labeled with a coredomain type.\nPlease fix the following violations by doing one of these.\n1) Add \u0027coredomain\u0027 attribute to labels.\n2) Move apps and corresponding seapp_contexts entries to vendor or odm partition.\nViolations:\n  APK name: KeyHandler.apk\n  package name: org.lineageos.settings.device\n  assigned label: keyhandler_app\n---\n\n******************************\nERROR: SELinux Treble Labeling violations found.\nTreble Labeling will be enforced for devices with BOARD_API_LEVEL \u003e\u003d 202604.\nPlease fix all violations. For more details, please refer to:\nsystem/sepolicy/tests/treble_labeling_tests.md\n******************************\n\n```",
+      "parentUuid": "86c10aa9_e6d27630",
+      "revId": "d9f6c221b60631cc4a5e3e4ecf364b73264a65a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
