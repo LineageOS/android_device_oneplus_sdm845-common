@@ -56,7 +56,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     'vendor/etc/wfdconfig.xml': blob_fixup()
         .regex_replace('<AudioStreamInSuspend>0</AudioStreamInSuspend>', '<AudioStreamInSuspend>1</AudioStreamInSuspend>')
-        .regex_replace('<HID>0</HID>', '<HID>1</HID>'),
+        .regex_replace('<HID>0</HID>', '<HID>1</HID>')
+        .regex_replace('<MinQPValue>22</MinQPValue>', '<MinQPValue>12</MinQPValue>'),
     'vendor/lib/libVDBlurlessAPI_v2.so': blob_fixup()
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
