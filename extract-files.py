@@ -65,6 +65,9 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    'vendor/lib/libwfdcodecv4l2_proprietary.so': blob_fixup()
+        .sig_replace('01 28 03 D1 00 20 00 E0 01 20 01 90', '01 28 03 D1 00 20 00 E0 00 20 01 90')
+        .sig_replace('01 38 01 28 1E D8 42 F2 38 01', '01 38 01 28 1E E0 42 F2 38 01'),
     'vendor/lib64/libdpps.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
